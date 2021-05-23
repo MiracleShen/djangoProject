@@ -1,0 +1,22 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %}
+
+<!-- 写入 base.html 中定义的 title -->
+{% block title %}
+    Miracle码号
+{% endblock title %}
+
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+<h3>号码查询</h3>
+    <form action="" method="get">
+{{ filter.form.as_p }}
+        <input type="submit" />
+    </form>
+<ul>
+{% for obj in filter.qs %}
+     <li>{{obj.Zip}}{{ obj.Number }} {{obj.Operator}} {{obj.Status}}</li>
+{% endfor %}
+</ul>
+<p>总计：{{filter.qs.count}} 个号码</p>
+{% endblock content %}

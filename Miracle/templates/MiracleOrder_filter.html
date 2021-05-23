@@ -1,0 +1,174 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %}
+
+<!-- 写入 base.html 中定义的 title -->
+{% block title %}
+    首页
+{% endblock title %}
+
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+{% load widget_tweaks %}
+{% block js %}
+
+<!-- XDSoft DateTimePicker -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" integrity="sha256-DOS9W6NR+NFe1fUhEE0PGKY/fubbUCnOfTje2JMDw3Y=" crossorigin="anonymous" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha256-FEqEelWI3WouFOo2VWP/uJfs1y8KJ++FLh2Lbqc8SJk=" crossorigin="anonymous"></script>
+  <script>
+$(function () {
+    $.datetimepicker.setLocale('ch');
+        $("#id_OrderDate").datetimepicker( {
+            format:'Y-m-d H:i',
+        });
+    });
+  </script>
+{% endblock %}
+<br>
+<br>
+<div class="well justify-content-center">
+    <form action="" role="search" method="get">
+        <div class="input-group col-md-12 align-self-center">
+    {% with form=filter.form %}
+            {% for field in form.visible_fields %}
+            <div ,class="form-group col align-self-center">
+                {{ field.label_tag }}
+            </div>
+            <div class="form-group col align-self-center">
+                  {% render_field field class="form-control" %}
+            </div>
+    {% endfor %}
+           <span class="input-group-btn">
+                <button class="btn btn-info form-control" type="submit" value="submit">筛选</button>
+            </span>
+        </div>
+    {% endwith %}
+    </form>
+</div>
+
+<div class="container">
+    <div  class="row text-center">
+        <div class="col">
+        <h1 >Miracle总月租</h1>
+        <h2>{{Total.Total|add:PBX_Sum|add:MCU_Sum|add:API_Sum|add:Number_Total.Number_Total}} 元/月</h2>
+        <br>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col">
+            <h2>Miracle Number</h2>
+            <h3>{{Number_Total.Number_Total}}元/月</h3>
+            <div class="text-left">
+                <p>普通号码总月租为{% widthratio Number_0_Sum.Number_0_Sum 1 35%} 元/月</p>
+                <p>1星号码总月租为{% widthratio Number_1_Sum.Number_1_Sum 1 100%} 元/月</p>
+                <p>2星号码总月租为{% widthratio Number_2_Sum.Number_2_Sum 1 200%} 元/月</p>
+                <p>3星号码总月租为{% widthratio Number_3_Sum.Number_3_Sum 1 500%} 元/月</p>
+                <p>4星号码总月租为{% widthratio Number_4_Sum.Number_4_Sum 1 2000%} 元/月</p>
+                <p>5星号码总月租为{% widthratio Number_5_Sum.Number_5_Sum 1 5000%} 元/月</p>
+                <p>并发线路总月租为{% widthratio Line_Number_Sum.Line_Number_Sum 1 35%} 元/月</p>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Miracle PBX</h2>
+            <h3>{{PBX_Sum|add:MCU_Sum|add:API_Sum}}元/月</h3>
+            <div class="text-left">
+                <p>PBX总月租为{{PBX_Sum}} 元/月</p>
+                <p>MCU总月租为{{MCU_Sum}} 元/月</p>
+                <p>API总月租为{{API_Sum}} 元/月</p>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Miracle Phone</h2>
+            <h3>{{Total.Total}}元/月</h3>
+            <div class="text-left">
+                <p>APP总数为：{{APP_Sum.APP_Sum}}个，总月租为{% widthratio APP_Sum.APP_Sum 1 10%} 元/月</p>
+                <p>SIP总数为：{{SIP_Sum.SIP_Sum}}个，总月租为{% widthratio SIP_Sum.SIP_Sum 1 10%} 元/月</p>
+                <p>Log总数为：{{Log_Sum.Log_Sum}}个，总月租为{% widthratio Log_Sum.Log_Sum 1 30%} 元/月</p>
+                <p>CC总数为：{{CC_Sum.CC_Sum}}个，总月租为{% widthratio CC_Sum.CC_Sum 1 30%} 元/月</p>
+                <p>HPR总数为：{{HPR_Sum.HPR_Sum}}个，总月租为{% widthratio HPR_Sum.HPR_Sum 1 10%} 元/月</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if is_paginated %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>公司名称</th>
+            <th>下单日期</th>
+            <th>PBX类型</th>
+            <th>MCU类型</th>
+            <th>API类型</th>
+            <th>APP许可数量</th>
+            <th>SIP许可数量</th>
+            <th>Log许可数量</th>
+            <th>CC许可数量</th>
+            <th>话机月租数量</th>
+        </tr>
+    </thead>
+    <tbody>
+{% for Order in page_obj %}
+        <tr>
+            <td>
+{{ Order.CustomerName }}
+            </td>
+            <td>
+{{ Order.OrderDate | date:"Y-m-d"}}
+            </td>
+            <td>
+{{ Order.PBX_Type }}
+            </td>
+            <td>
+{{ Order.MCU_Type }}
+            </td>
+            <td>
+{{ Order.API_Type }}
+            </td>
+            <td>
+{{ Order.APP_Number }}
+            </td>
+            <td>
+{{ Order.SIP_Number }}
+            </td>
+            <td>
+{{ Order.Log_Number }}
+            </td>
+            <td>
+{{ Order.CC_Number }}
+            </td>
+            <td>
+{{ Order.HPR_Number }}
+            </td>
+{% endfor %}
+        </tr>
+    </tbody>
+</table>
+{% else %}
+<p>There are no Orders yet.</p>
+{% endif %}
+{% if is_paginated %}
+     <ul class="pagination">
+{% if page_obj.has_previous %}
+         <li class="page-item"><a class="page-link" href="?page={{page_obj.previous_page_number}}">&laquo;</a></li>
+{% else %}
+         <li class="page-item disabled"><span class="page-link">&laquo;</span></li>
+{% endif %}
+
+         {% for i in paginator.page_range %}
+         {% if page_obj.number == i %}
+         <li class="page-item active"><span class="page-link"> {{ i }} <span class="sr-only">(current)</span></span></li>
+{% else %}
+               <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+{% endif %}
+         {% endfor %}
+
+         {% if page_obj.has_next %}
+         <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+{% else %}
+         <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
+{% endif %}
+     </ul>
+{% endif %}
+<p>总计：{{filter.qs.count}} 个记录</p>
+
+{% endblock content %}

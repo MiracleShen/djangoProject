@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>号码查询</title>
+</head>
+<body>
+<h3>号码查询</h3>
+{% block content %}
+    <form action="" method="get">
+{{ filter.form.as_p }}
+        <input type="submit" />
+    </form>
+<ul>
+{% for obj in filter.qs %}
+     <li>{{obj.Zip}}{{ obj.Number }} {{obj.Operator}} {{obj.Status}}</li>
+{% endfor %}
+</ul>
+<p>总计：{{filter.qs.count}} 个号码</p>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %}
+
+<!-- 写入 base.html 中定义的 title -->
+{% block title %}
+    首页
+{% endblock title %}
+
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+<h1>静态资源{{static}}</h1>
+<h1>{{ time|date:"Y 年 m 月 d 日 H 时 i 分 s 秒"}}</h1>
+<br>
+<h2>{{hello|lower}}</h2>
+<p>{{list.0|upper}}</p>
+<p>{{list.1|length}}</p>
+<p>{{list.2}}</p>
+<p>{{dict|truncatechars:2}}</p>
+<p>{{dict.name}}</p>
+<p>{{link|safe}}</p>
+
+{% if num > 90 and num <= 100%}
+优秀
+{% elif num > 60 and num <= 90%}
+合格
+{% else %}
+不合格
+{% endif %}
+<ul>
+{% for a in list reversed%}
+<li>{{a}}</li>
+{% endfor %}
+
+</ul>
+<ul>
+{% for i,j in dict.items %}
+    <li>{{i}}:{{j}}</li>
+{% endfor %}
+</ul>
+
+<div class="container">
+    <div class="row mt-2">
+
+        {% for article in articles %}
+        <!-- 文章内容 -->
+        <div class="col-4 mb-4">
+        <!-- 卡片容器 -->
+            <div class="card h-100">
+                <!-- 标题 -->
+                <h4 class="card-header">{{ article.title }}</h4>
+                <!-- 摘要 -->
+                <div class="card-body">
+                    <p class="card-text">{{ article.body|slice:'100' }}...</p>
+                </div>
+                <!-- 注脚 -->
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">阅读本文</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+{% endblock content %}
