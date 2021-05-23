@@ -11,6 +11,7 @@ class MiracleNumberAdmin(admin.ModelAdmin):
     fields = ('Zip','Number','Operator','Status')
     search_fields = ('Zip','Number','Operator','Status')
     list_display = ('Zip','Number','Operator','colored_Status')
+    list_filter = ('Zip','Operator','Status')
 admin.site.register(MiracleNumber,MiracleNumberAdmin)
 
 class MiracleOrdersAdmin(admin.ModelAdmin):
