@@ -18,7 +18,11 @@ def hello(req):
 
 def MiracleNumber_search(request):
     f = MiracleNumberFilter(request.GET,queryset=MiracleNumber.objects.all())
-    context = {'filter':f,}
+    paginator = Paginator(f.qs, 10)
+    page = request.GET.get('page')
+    page_obj = paginator.get_page(page)
+    context = {'page_obj': page_obj, 'paginator': paginator,
+               'is_paginated': True, 'filter': f, }
     return render(request,'MiracleNumber_filter.html',context)
 
 def MiracleOrder_search(request):
