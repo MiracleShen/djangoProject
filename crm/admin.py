@@ -3,6 +3,16 @@ from .models import *
 
 
 # Register your models here.
+class ContactHistoryAdmin(admin.ModelAdmin):
+    fields = ('Name', 'ContactDateTime', 'ContactMedia', 'Memo')
+    search_fields = ('Name', 'ContactDateTime', 'ContactMedia', 'Memo')
+    list_display = ('Name', 'ContactDateTime', 'ContactMedia', 'Memo')
+    list_filter = ('Name', 'ContactDateTime', 'ContactMedia', 'Memo')
+
+
+admin.site.register(ContactHistory, ContactHistoryAdmin)
+
+
 class ContactsAdmin(admin.ModelAdmin):
     fields = ('Name', 'Mobile', 'Email', 'Memo')
     search_fields = ('Name', 'Mobile', 'Email', 'Memo')

@@ -2,6 +2,14 @@ from django.db import models
 
 
 # Create your models here.
+class ContactHistory(models.Model):
+    Name = models.CharField(max_length=20, verbose_name='姓名')
+    ContactDateTime = models.DateTimeField(verbose_name='联系时间')
+    ContactMedia = models.CharField(max_length=20, verbose_name='联系方式')
+    Memo = models.TextField(verbose_name='联系内容')
+
+    class Meta:
+        verbose_name_plural = '联系记录'
 
 class Contacts(models.Model):
     Name = models.CharField(max_length=20, verbose_name='姓名')
