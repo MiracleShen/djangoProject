@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crm.apps.CrmConfig',
     'Miracle.apps.MiracleConfig',
     'widget_tweaks',
     'django_tables2',
