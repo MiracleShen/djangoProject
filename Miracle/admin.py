@@ -2,8 +2,9 @@ from django.contrib import admin
 
 # Register your models here.
 from django.contrib import admin
-from .models import MiracleNumber,MiracleOrders,MiracleCredit
+from .models import MiracleNumber,MiracleOrders,MiracleCredit,Contact,Organize
 from datetimepicker.widgets import DateTimePicker
+
 admin.AdminSite.site_header = 'Miracle电话运营管理系统'
 admin.AdminSite.site_title = 'Miracle电话运营管理系统'
 
@@ -31,3 +32,17 @@ class MiracleCreditAdmin(admin.ModelAdmin):
     search_fields = ('CustomerName',)
     list_display = ('CustomerName','Year','Month','Credit','RecordDate')
 admin.site.register(MiracleCredit,MiracleCreditAdmin)
+
+class ContactAdmin(admin.ModelAdmin):
+    fields = ('Name','Mobile','Email','Memo')
+    search_fields = ('Name','Mobile','Email','Memo')
+    list_display = ('Name','Mobile','Email','Memo')
+    list_filter = ('Name','Mobile','Email','Memo')
+admin.site.register(Contact,ContactAdmin)
+
+class OrganizeAdmin(admin.ModelAdmin):
+    fields = ('OrganizeName','OrganizeID','Memo')
+    search_fields = ('OrganizeName','OrganizeID','Memo')
+    list_display = ('OrganizeName','OrganizeID','Memo')
+    list_filter = ('OrganizeName','OrganizeID','Memo')
+admin.site.register(Organize,OrganizeAdmin)

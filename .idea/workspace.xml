@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Miracle/templates/MiracleNumber_filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/templates/MiracleNumber_filter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Miracle/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Miracle/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Miracle/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/static/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/static/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/static/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/static/bootstrap/js/bootstrap.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/djangoProject/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tests" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -138,7 +136,8 @@
       <workItem from="1621659562458" duration="25139000" />
       <workItem from="1621734302804" duration="31420000" />
       <workItem from="1621802161105" duration="1132000" />
-      <workItem from="1621803610185" duration="3260000" />
+      <workItem from="1621803610185" duration="4666000" />
+      <workItem from="1621818107470" duration="2937000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，在家里的电脑上做的一些工作：&#10;1、MiracleOrders做的比较完整&#10;2、MiracleNumber刚刚开始">
       <created>1621805529488</created>
@@ -161,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621805876103</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1、MiracleNumber查询的表格美化了一下，风格跟MiracleOrders一致了">
+      <created>1621807252795</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621807252795</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,14 +183,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="第一次提交，在家里的电脑上做的一些工作：&#10;1、MiracleOrders做的比较完整&#10;2、MiracleNumber刚刚开始" />
     <MESSAGE value="1、修改了Miracle Number的 List_filter，挺好用的。&#10;2、MiracleNumber的模板页面用base.html&#10;3、在head.html上加上了MiracleNumber的超级链接，使用起来方便些&#10;=========&#10;下一步可以花点时间在数据建模上，admin管理数据还是比较方便的，我要先把数据结构都建好，用view和template做一些查询、分析、运算的工作，暂时不考虑把这个部分开放给其他人，先作为我自己的实践基地。" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、修改了Miracle Number的 List_filter，挺好用的。&#10;2、MiracleNumber的模板页面用base.html&#10;3、在head.html上加上了MiracleNumber的超级链接，使用起来方便些&#10;=========&#10;下一步可以花点时间在数据建模上，admin管理数据还是比较方便的，我要先把数据结构都建好，用view和template做一些查询、分析、运算的工作，暂时不考虑把这个部分开放给其他人，先作为我自己的实践基地。" />
+    <MESSAGE value="1、MiracleNumber查询的表格美化了一下，风格跟MiracleOrders一致了" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、MiracleNumber查询的表格美化了一下，风格跟MiracleOrders一致了" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/djangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1621806758035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/djangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1621819627280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
