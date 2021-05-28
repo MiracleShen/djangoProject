@@ -41,6 +41,7 @@ class MiracleNumber(models.Model):
     colored_Status.short_description = u"状态"
 
     class Meta:
+        unique_together = (("Zip", "Number"),)
         verbose_name_plural = 'Miracle码号'
 
 

@@ -24,6 +24,41 @@
     <script src="{%static 'popper/popper.js'%}"></script>
     <!-- 引入bootstrap的js文件 -->
     <script src="{%static 'bootstrap/js/bootstrap.js'%}"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("p").click(function(){
+  $(this).hide();
+  });
+});
+function makecall(){
+    $.ajax({
+
+        crossDomain: true,
+        // contentType:"application/json;charset=utf-8",#这一段不能加，加上了就会导致csrf_token丢失
+        headers:{
+        "Access-Control-Allow-Origin":"http://127.0.0.1:8000",
+        "Access-Control-Allow-Headers": "Authentication",
+        "Access-Control-Allow-Headers":"Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With",
+        "Access-Control-Allow-Methods":"GET, POST, OPTIONS",
+        },
+        method:'POST',
+        url:'/makecall/',
+        dataType:"json",
+        data:{
+        apiKey:"zwbz2ghQdxzu2s6IKF8JWzjhG3tM9tYQGaLaQARJa-s",
+        callerKey:"wlh01",
+        callerKeyType:"loginAccount",
+        destNumber:"013918858680",
+        csrfmiddlewaretoken:'{{ csrf_token }}',
+        },
+        success : function(makecall) {
+            alert (callid)
+                },
+    })
+
+}
+
+</script>
 </body>
 
 </html>

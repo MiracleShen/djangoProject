@@ -1,0 +1,7 @@
+<!DOCTYPEhtml>
+
+<form method="post">{% csrf_token %}
+    <p>你确认删除记录 "{{ task }}"吗?</p>
+    <input type="submit" value="确认" />
+</form>
+</html>

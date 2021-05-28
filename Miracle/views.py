@@ -3,7 +3,10 @@ from django.shortcuts import render
 from .models import MiracleNumber,MiracleOrders
 from .filters import MiracleNumberFilter,MiracleOrderFilter
 from django.db.models import Sum
-import datetime
+import datetime,json,ast
+from urllib import request,parse
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 # Create your views here.
 def hello(req):
     context = {}
@@ -15,6 +18,23 @@ def hello(req):
     context['num']=88
     return render(req,"a_hello.html",context)
 
+def makecall(req):
+    context={}
+    context['test'] = 'Miracle Test'
+    if (req.method == 'POST'):
+        print("the POST method")
+        URL = "https://ct001.ezphone.cn:9443/ucrm/api/phone/dialOutbound?para="
+        query_string = parse.urlencode(req.POST)
+        dict = str(parse.parse_qs(query_string)).replace("'","\"").replace("[","").replace("]","").replace(" ","")
+        URL = URL + dict
+        print(URL)
+        page = request.urlopen(URL)
+        print (page)
+        html = page.read().decode('utf-8')  # 将接收到的数据使用utf8解码
+        print (html)
+        json_data = json.loads(html)
+        print(json_data)
+    return render(req,"makecall.html",context)
 
 def MiracleNumber_search(request):
     f = MiracleNumberFilter(request.GET,queryset=MiracleNumber.objects.all())

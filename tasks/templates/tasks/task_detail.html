@@ -1,0 +1,17 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>任务详情</title>
+ </head>
+ <body>
+ <p> 任务名称: {{ task.name }}
+ </p>
+  <p> 任务内容: {{ task.content }} </p>
+ <p> 任务状态: {{ task.get_status_display }} </p>
+ <p>| <a href="{% url 'tasks:task_update' task.id %}">修改</a> |
+     <a href="{% url 'tasks:task_delete' task.id %}">删除</a>| <a href="{% url 'tasks:task_list' %}">查看所有任务</a> |
+     <a href="{% url 'tasks:task_create'%}">新建任务</a>
+ </p>
+ </body>
+ </html>

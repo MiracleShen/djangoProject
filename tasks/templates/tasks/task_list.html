@@ -5,71 +5,51 @@
 {% block title %}
     Miracle码号
 {% endblock title %}
-
 <!-- 写入 base.html 中定义的 content -->
 {% block content %}
 {% load widget_tweaks %}
-<br>
-<div class="well justify-content-center">
-    <form action="" role="search" method="get">
-        <div class="input-group col-md-12 align-self-center">
-    {% with form=filter.form %}
-            {% for field in form.visible_fields %}
-            <div ,class="form-group col align-self-center">
-                {{ field.label_tag }}
-            </div>
-            <div class="form-group col align-self-center">
-                  {% render_field field class="form-control" %}
-            </div>
-    {% endfor %}
-           <span class="input-group-btn">
-                <button class="btn btn-info form-control" type="submit" value="submit">筛选</button>
-            </span>
-        </div>
-    {% endwith %}
-    </form>
-</div>
-{% if is_paginated %}
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>区号</th>
-            <th>码号</th>
-            <th>运营商</th>
-            <th>状态</th>
+            <th>序号</th>
+            <th>任务名称</th>
+            <th>任务内容</th>
+            <th data-formatter="displaycolor"><span>任务状态</span></th>
+            <th>操作</th>
         </tr>
     </thead>
     <tbody>
-{% for Number in page_obj %}
+{% for task in tasks %}
         <tr>
             <td>
-{{ Number.Zip }}
+{{ forloop.counter }}
             </td>
             <td>
-                {{ Number.Number}}
-                <button onclick="makecall()">拨打</button>
+{{ task.name }}
             </td>
             <td>
-{{ Number.Operator }}
+{{ task.content }}
             </td>
-            {% if Number.Status == "已售" %}
+            {% if task.get_status_display == "未开始" %}
             <td style="color: red">
-            {%elif Number.Status == "锁定" %}
+            {%elif task.get_status_display == "进行中" %}
             <td style="color: orange">
-            {%elif Number.Status == "可选" %}
+            {%elif task.get_status_display == "已完成" %}
             <td style="color: green">
             {% else %}
             <td>
             {%endif%}
-{{ Number.Status }}
+
+                <span>{{ task.get_status_display }}</span>
+            </td>
+            <td>
+         (<a href="{% url 'tasks:task_detail' task.id %}">查看</a> | <a href="{% url 'tasks:task_update' task.id %}">修改</a> |
+         <a href="{% url 'tasks:task_delete' task.id %}">删除</a>)
             </td>
 {% endfor %}
         </tr>
     </tbody>
 </table>
-{% else %}
-<p>There are no Numbers yet.</p>
-{% endif %}
 {% if is_paginated %}
      <ul class="pagination">
 {% if page_obj.has_previous %}
@@ -93,5 +73,7 @@
 {% endif %}
      </ul>
 {% endif %}
-<p>总计：{{filter.qs.count}} 个号码</p>
+<p>总计：{{tasks.count}} 个记录</p>
+
+ <p> <a href="{% url 'tasks:task_create' %}">新增任务</a></p>
 {% endblock content %}
