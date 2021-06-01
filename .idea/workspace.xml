@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="不知道改了啥，为了跟公司的电脑同步，提交一下。">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../tests" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -147,6 +145,7 @@
       <workItem from="1622208864535" duration="8143000" />
       <workItem from="1622443027796" duration="719000" />
       <workItem from="1622545102363" duration="925000" />
+      <workItem from="1622564023191" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，在家里的电脑上做的一些工作：&#10;1、MiracleOrders做的比较完整&#10;2、MiracleNumber刚刚开始">
       <created>1621805529488</created>
@@ -211,7 +210,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622523905806</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="task里的文件漏掉了，补上">
+      <created>1622564163437</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1622564163437</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Scripts里的文件漏掉了，补上">
+      <created>1622564219792</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622564219792</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +252,9 @@
     <MESSAGE value="机器重启后，也不知道改了什么，好了&#10;&#10;不知道CTRL +F5会不会有用。" />
     <MESSAGE value="点击拨号终于弄好了！&#10;&#10;不过传参数，拼SQL还需要研究一下。&#10;&#10;这是伟大的一步。" />
     <MESSAGE value="不知道改了啥，为了跟公司的电脑同步，提交一下。" />
-    <option name="LAST_COMMIT_MESSAGE" value="不知道改了啥，为了跟公司的电脑同步，提交一下。" />
+    <MESSAGE value="task里的文件漏掉了，补上" />
+    <MESSAGE value="Scripts里的文件漏掉了，补上" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scripts里的文件漏掉了，补上" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/djangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1622443062409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
