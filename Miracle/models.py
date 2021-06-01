@@ -24,7 +24,7 @@ class MiracleNumber(models.Model):
     Number = models.IntegerField(verbose_name='固话号码')
     Operator = models.CharField(max_length=12, verbose_name='运营商', choices=OPERATORS)
     Status = models.CharField(max_length=8, verbose_name='状态', default='可选', choices=STATUSS)
-
+    Organize =models.CharField(max_length=30,default=' ',verbose_name='客户名称')
     def colored_Status(self):
         if self.Status == '可选':
             color_code = 'green'

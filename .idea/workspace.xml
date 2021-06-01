@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="" />
+    <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="依赖包文件">
+      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0016_miraclenumber_organize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/migrations/0003_alter_task_status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Miracle/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Miracle/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +46,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -145,7 +153,7 @@
       <workItem from="1622208864535" duration="8143000" />
       <workItem from="1622443027796" duration="719000" />
       <workItem from="1622545102363" duration="925000" />
-      <workItem from="1622564023191" duration="308000" />
+      <workItem from="1622564023191" duration="1576000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，在家里的电脑上做的一些工作：&#10;1、MiracleOrders做的比较完整&#10;2、MiracleNumber刚刚开始">
       <created>1621805529488</created>
@@ -224,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622564219792</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="依赖包文件">
+      <created>1622564394680</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622564394680</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +259,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="第一次提交，在家里的电脑上做的一些工作：&#10;1、MiracleOrders做的比较完整&#10;2、MiracleNumber刚刚开始" />
     <MESSAGE value="1、修改了Miracle Number的 List_filter，挺好用的。&#10;2、MiracleNumber的模板页面用base.html&#10;3、在head.html上加上了MiracleNumber的超级链接，使用起来方便些&#10;=========&#10;下一步可以花点时间在数据建模上，admin管理数据还是比较方便的，我要先把数据结构都建好，用view和template做一些查询、分析、运算的工作，暂时不考虑把这个部分开放给其他人，先作为我自己的实践基地。" />
     <MESSAGE value="1、MiracleNumber查询的表格美化了一下，风格跟MiracleOrders一致了" />
@@ -254,9 +270,10 @@
     <MESSAGE value="不知道改了啥，为了跟公司的电脑同步，提交一下。" />
     <MESSAGE value="task里的文件漏掉了，补上" />
     <MESSAGE value="Scripts里的文件漏掉了，补上" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scripts里的文件漏掉了，补上" />
+    <MESSAGE value="依赖包文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="依赖包文件" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/djangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1622443062409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/djangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1622564700598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
