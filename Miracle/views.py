@@ -1,5 +1,5 @@
 from django.core.paginator import Paginator
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
 from .models import MiracleNumber,MiracleOrders
 from .filters import MiracleNumberFilter,MiracleOrderFilter
 from django.db.models import Sum
@@ -24,9 +24,13 @@ def makecall(req):
     if (req.method == 'POST'):
         print("the POST method")
         URL = "https://ct001.ezphone.cn:9443/ucrm/api/phone/dialOutbound?para="
-        query_string = parse.urlencode(req.POST)
-        dict = str(parse.parse_qs(query_string)).replace("'","\"").replace("[","").replace("]","").replace(" ","")
-        URL = URL + dict
+        data = {"apiKey":"zwbz2ghQdxzu2s6IKF8JWzjhG3tM9tYQGaLaQARJa-s"}
+        data["callerKey"]=str(req.POST["callerKey"])
+        data["callerKeyType"]="loginAccount"
+        data["destNumber"]=str(req.POST["destNumber"]).replace("\n","")
+        data = parse.urlencode(data)
+        data = str(parse.parse_qs(data)).replace("'","\"").replace("[","").replace("]","").replace(" ","").replace("\n","")
+        URL = URL + data
         print(URL)
         page = request.urlopen(URL)
         print (page)
@@ -34,7 +38,7 @@ def makecall(req):
         print (html)
         json_data = json.loads(html)
         print(json_data)
-    return render(req,"makecall.html",context)
+    return HttpResponse(html)
 
 def MiracleNumber_search(request):
     f = MiracleNumberFilter(request.GET,queryset=MiracleNumber.objects.all())
