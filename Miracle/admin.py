@@ -9,6 +9,7 @@ from datetimepicker.widgets import DateTimePicker
 from django.forms import forms #2021-02-27 admin添加导入功能，上传文件
 from django.http import HttpResponse
 
+
 admin.AdminSite.site_header = 'Miracle电话运营管理系统'
 admin.AdminSite.site_title = 'Miracle电话运营管理系统'
 
@@ -18,7 +19,7 @@ class ExportExcelMixin(object):
     meta = self.model._meta
     field_names = [field.name for field in meta.fields]
     response = HttpResponse(content_type='application/msexcel')
-    response['Content-Disposition'] = f'attachment; filename={meta}.xlsx'
+    response['Content-Disposition'] = f'attachment; filename={meta}.xls'
     wb = Workbook()
     ws = wb.active
     ws.append(field_names)

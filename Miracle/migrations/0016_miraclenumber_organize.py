@@ -5,9 +5,9 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    # dependencies = [
-    #     ('Miracle', '0015_alter_miraclenumber_unique_together'),
-    # ]
+    dependencies = [
+        ('Miracle', '0015_alter_miraclenumber_unique_together'),
+    ]
 
     operations = [
         migrations.AddField(
