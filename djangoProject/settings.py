@@ -16,7 +16,6 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -27,7 +26,6 @@ SECRET_KEY = 'django-insecure-s@1*o8p#^bvq-wlixba)i=8=l1ptqc!i+*(r4@gb0^awmlnevn
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
@@ -48,6 +46,7 @@ INSTALLED_APPS = [
     'import_export',
     'tasks',
     'corsheaders',
+    'pymysql',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -81,7 +80,7 @@ ROOT_URLCONF = 'djangoProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'djangoProject/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'djangoProject/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -96,17 +95,23 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # },
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "MiracleOS",
+        "USER": "root",
+        "PASSWORD": "Kind2021",
+        "HOST": "sz001.ezphone.cn",
+        "PORT": "3306",
+    },
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -125,7 +130,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
