@@ -13,11 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.urls import path,include
+from django.contrib.staticfiles.views import serve
+from django.urls import path,include,re_path
 from Miracle import views as MiracleViews
 from django.contrib import admin
+def return_static(request, path, insecure=True, **kwargs):
+  return serve(request, path, insecure, **kwargs)
 admin.autodiscover()
 urlpatterns = [
+    re_path(r'^static/(?P<path>.*)$', return_static, name='static'),
     path('admin/', admin.site.urls),
     path('tasks/', include('tasks.urls')),
     path("Miracle/",MiracleViews.hello),
