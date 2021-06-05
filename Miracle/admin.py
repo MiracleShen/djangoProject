@@ -10,8 +10,8 @@ from django.forms import forms #2021-02-27 admin添加导入功能，上传文�
 from django.http import HttpResponse
 
 
-admin.AdminSite.site_header = 'Miracle电话运营管理系统'
-admin.AdminSite.site_title = 'Miracle电话运营管理系统'
+admin.AdminSite.site_header = 'MiracleOS系统'
+admin.AdminSite.site_title = 'MiracleOS系统'
 
 
 class ExportExcelMixin(object):
