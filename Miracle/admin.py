@@ -40,7 +40,7 @@ class MiracleNumberAdmin(admin.ModelAdmin,ExportExcelMixin):
     search_fields = ('Zip', 'Number', 'Operator', 'Status','Organize')
     list_display = ('Zip', 'Number', 'Operator', 'colored_Status','Organize')
     list_filter = ('Zip', 'Operator', 'Status','Organize')
-    list_per_page = 10
+    list_per_page = 20
     actions = ['export_as_excel']
 
 admin.site.register(MiracleNumber, MiracleNumberAdmin)
