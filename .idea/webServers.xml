@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7f1f92ea-08c2-4063-82a9-413693ca6ef0" name="Miracle-GW1" url="http://sh002.miraclephone.cn/admin/">
+        <fileTransfer rootFolder="/var/www/html/djangoProject/" accessType="SFTP" host="sh002.miraclephone.cn" port="222" sshConfigId="87296a1c-beab-4d6d-a4cd-a95d1f4f7ca3" sshConfig="root@sh002.miraclephone.cn:222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

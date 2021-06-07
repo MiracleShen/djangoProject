@@ -65,13 +65,13 @@ class MiracleOrders(models.Model):
     HPR_Number = models.IntegerField(default=0, verbose_name='话机月租数量')  # 话机月租统一10元/月，WiFi话机，看长线
 
     class Meta:
-        verbose_name_plural = 'Miracle月租'
+        verbose_name_plural = 'Miracle订单'
 
 
 # 话费账单，由EZUC+系统生成，每月月初手工录入到系统中
 # 后期考虑系统自动从EZUC+抓取通话清单，系统自动计算生成月度账单到MiracleBill，用户也可以在系统中查询详单；实时的话单，还是要到服务器上去查看
 class MiracleCredit(models.Model):
-    CustomerName = models.CharField(max_length=40, verbose_name='客户名称')
+    CustomerID = models.ForeignKey('crm.Organization',default=1,on_delete=models.CASCADE,verbose_name='客户名称')
     Year = models.CharField(max_length=4, verbose_name='年份')
     Month = models.CharField(max_length=2, verbose_name='月份')
     Credit = models.FloatField(verbose_name='消费金额')
@@ -84,14 +84,14 @@ class MiracleCredit(models.Model):
 # 客户账单，目前由两部分生成，一部分是根据Miracle Order里的数据，每月自动计算生成月租费账单；另一部分是从EZUC+中获取每月话费账单，插入到Miracle Bill中。两者相加，就是用户当月应付的账单。
 # 前期由慈俭运营人员每月月初手工生成账单发给客户，后期可以采用电子邮件的方式发送给客户的指定邮箱；或者短信、微信、电话的方式通知到用户的联系人，并告知对方付费。
 class MiracleBill(models.Model):
-    CustomerName = models.CharField(max_length=40, verbose_name='客户名称')
+    CustomerID = models.ForeignKey('crm.Organization',on_delete=models.CASCADE,verbose_name='客户名称')
     Year = models.CharField(max_length=4, verbose_name='年份')
     Month = models.CharField(max_length=2, verbose_name='月份')
     Bill_Cycle = models.CharField(max_length=2, verbose_name='计费周期')
     Bill_Type = models.CharField(max_length=2, verbose_name='账单类型')
     Bill = models.FloatField(verbose_name='账单金额')
     RecordDate = models.DateTimeField(auto_now=True, verbose_name='记录时间')
-
+    Memo = models.TextField(default= '1',verbose_name='备注')
     class Meta:
         verbose_name_plural = 'Miracle账单'
 

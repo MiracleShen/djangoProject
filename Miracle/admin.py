@@ -4,7 +4,7 @@ from django.contrib import admin
 
 from openpyxl import Workbook
 from django.contrib import admin
-from .models import MiracleNumber, MiracleOrders, MiracleCredit
+from .models import MiracleNumber, MiracleOrders, MiracleCredit,MiracleBill
 from datetimepicker.widgets import DateTimePicker
 from django.forms import forms #2021-02-27 admin添加导入功能，上传文件
 from django.http import HttpResponse
@@ -68,13 +68,23 @@ admin.site.register(MiracleOrders, MiracleOrdersAdmin)
 
 
 class MiracleCreditAdmin(admin.ModelAdmin):
-    fields = ('CustomerName', 'Year', 'Month', 'Credit')
-    search_fields = ('CustomerName',)
-    list_display = ('CustomerName', 'Year', 'Month', 'Credit', 'RecordDate')
+    fields = ('CustomerID', 'Year', 'Month', 'Credit')
+    search_fields = ('CustomerID',)
+    list_display = ('CustomerID', 'Year', 'Month', 'Credit', 'RecordDate')
     list_per_page = 10
 
 
 admin.site.register(MiracleCredit, MiracleCreditAdmin)
+
+class MiracleBillAdmin(admin.ModelAdmin):
+    fields = ('CustomerID', 'Year', 'Month', 'Bill_Cycle','Bill_Type','Bill','Memo')
+    search_fields = ('CustomerID',)
+    list_display = ('CustomerID', 'Year', 'Month', 'Bill_Cycle','Bill_Type','Bill','RecordDate','Memo')
+    list_per_page = 20
+    list_filter = ('Year','Month','Bill_Cycle','Bill_Type')
+    autocomplete_fields = ['CustomerID']
+
+admin.site.register(MiracleBill, MiracleBillAdmin)
 
 
 

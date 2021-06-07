@@ -11,6 +11,7 @@ class ContactHistory(models.Model):
     class Meta:
         verbose_name_plural = '联系记录'
 
+
 class Contacts(models.Model):
     Name = models.CharField(max_length=20, verbose_name='姓名')
     Mobile = models.IntegerField(verbose_name='手机号')
@@ -23,8 +24,11 @@ class Contacts(models.Model):
 
 class Organization(models.Model):
     OrganizeName = models.CharField(max_length=60, verbose_name='组织名称')
-    OrganizeID = models.CharField(max_length=60, verbose_name='组织代码')
+    OrganizeID = models.CharField(max_length=60, unique=True, verbose_name='组织代码')
     Memo = models.TextField(verbose_name='备注')
+
+    def __str__(self):
+        return self.OrganizeName
 
     class Meta:
         verbose_name_plural = '组织'

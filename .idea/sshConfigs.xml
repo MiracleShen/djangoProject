@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="sh002.miraclephone.cn" id="87296a1c-beab-4d6d-a4cd-a95d1f4f7ca3" port="222" nameFormat="DESCRIPTIVE" username="root" />
+    </configs>
+  </component>
+</project>
