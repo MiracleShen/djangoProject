@@ -1,97 +1,111 @@
-<!-- extends表明此页面继承自 base.html 文件 -->
-{% extends "base.html" %}
-
-<!-- 写入 base.html 中定义的 title -->
-{% block title %}
-    Miracle码号
-{% endblock title %}
-
-<!-- 写入 base.html 中定义的 content -->
-{% block content %}
 {% load widget_tweaks %}
+{% load static %}
+<!-- 网站主语言 -->
+<html lang="zh-cn">
+
+<head>
+    <!-- 网站采用的字符编码 -->
+    <meta charset="utf-8">
+    <!-- 预留网站标题的位置 -->
+    <title></title>
+    <!-- 引入bootstrap的css文件 -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+</head>
+
+<body>
+{% block content %}
+<!-- extends表明此页面继承自 base.html 文件 -->
+<script src="{% static 'jquery/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'popper/popper.js' %}"></script>
+<!-- 引入bootstrap的js文件 -->
+<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
 <br>
 <div class="well justify-content-center">
     <form action="" role="search" method="get">
         <div class="input-group col-md-12 align-self-center">
-    {% with form=filter.form %}
-            {% for field in form.visible_fields %}
-            <div ,class="form-group col align-self-center">
-                {{ field.label_tag }}
-            </div>
-            <div class="form-group col align-self-center">
-                  {% render_field field class="form-control" %}
-            </div>
-    {% endfor %}
-           <span class="input-group-btn">
+            {% with form=filter.form %}
+                {% for field in form.visible_fields %}
+                    <div ,class="form-group col align-self-center">
+                        {{ field.label_tag }}
+                    </div>
+                    <div class="form-group col align-self-center">
+                        {% render_field field class="form-control" %}
+                    </div>
+                {% endfor %}
+                <span class="input-group-btn">
                 <button class="btn btn-info form-control" type="submit" value="submit">筛选</button>
             </span>
-        </div>
-    {% endwith %}
+                </div>
+            {% endwith %}
     </form>
 </div>
 {% if is_paginated %}
-<table class="table table-striped">
-    <thead>
+    <table class="table table-striped">
+        <thead>
         <tr>
             <th>区号</th>
             <th>码号</th>
             <th>运营商</th>
             <th>状态</th>
         </tr>
-    </thead>
-    <tbody>
-{% for Number in page_obj %}
-        <tr>
+        </thead>
+        <tbody>
+        {% for Number in page_obj %}
+            <tr>
             <td>
-{{ Number.Zip }}
+                {{ Number.Zip }}
             </td>
             <td>
-                {{ Number.Number}}
+                {{ Number.Number }}
             </td>
-{#    <button onclick="makecall($(parentNode.firstChild).text())">拨打</button>#}
+            {#    <button onclick="makecall($(parentNode.firstChild).text())">拨打</button>#}
             <td>
-{{ Number.Operator }}
+                {{ Number.Operator }}
             </td>
             {% if Number.Status == "已售" %}
-            <td style="color: red">
-            {%elif Number.Status == "锁定" %}
-            <td style="color: orange">
-            {%elif Number.Status == "可选" %}
-            <td style="color: green">
-            {% else %}
-            <td>
-            {%endif%}
-{{ Number.Status }}
-            </td>
-{% endfor %}
+                <td style="color: red">
+                    {% elif Number.Status == "锁定" %}
+                <td style="color: orange">
+                    {% elif Number.Status == "可选" %}
+                <td style="color: green">
+                    {% else %}
+                <td>
+            {% endif %}
+        {{ Number.Status }}
+        </td>
+        {% endfor %}
         </tr>
-    </tbody>
-</table>
+        </tbody>
+    </table>
 {% else %}
-<p>There are no Numbers yet.</p>
+    <p>There are no Numbers yet.</p>
 {% endif %}
 {% if is_paginated %}
-     <ul class="pagination">
-{% if page_obj.has_previous %}
-         <li class="page-item"><a class="page-link" href="?page={{page_obj.previous_page_number}}">&laquo;</a></li>
-{% else %}
-         <li class="page-item disabled"><span class="page-link">&laquo;</span></li>
-{% endif %}
+    <ul class="pagination">
+        {% if page_obj.has_previous %}
+            <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+        {% else %}
+            <li class="page-item disabled"><span class="page-link">&laquo;</span></li>
+        {% endif %}
 
-         {% for i in paginator.page_range %}
-         {% if page_obj.number == i %}
-         <li class="page-item active"><span class="page-link"> {{ i }} <span class="sr-only">(current)</span></span></li>
-{% else %}
-               <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
-{% endif %}
-         {% endfor %}
+        {% for i in paginator.page_range %}
+            {% if page_obj.number == i %}
+                <li class="page-item active"><span class="page-link"> {{ i }} <span
+                        class="sr-only">(current)</span></span></li>
+            {% else %}
+                <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+            {% endif %}
+        {% endfor %}
 
-         {% if page_obj.has_next %}
-         <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
-{% else %}
-         <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
+        {% if page_obj.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+        {% else %}
+            <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
+        {% endif %}
+    </ul>
 {% endif %}
-     </ul>
-{% endif %}
-<p>总计：{{filter.qs.count}} 个号码</p>
+<p>总计：{{ filter.qs.count }} 个号码</p>
 {% endblock content %}
+</body>
+
+</html>
