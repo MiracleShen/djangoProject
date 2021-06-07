@@ -41,8 +41,8 @@ def makecall(req):
     return HttpResponse(html)
 
 def MiracleNumber_search(request):
-    f = MiracleNumberFilter(request.GET,queryset=MiracleNumber.objects.all().order_by('id'))
-    paginator = Paginator(f.qs, 10)
+    f = MiracleNumberFilter(request.GET,queryset=MiracleNumber.objects.filter(Status = '可选').order_by('Number'))
+    paginator = Paginator(f.qs, 20)
     page = request.GET.get('page')
     page_obj = paginator.get_page(page)
     context = {'page_obj': page_obj, 'paginator': paginator,
