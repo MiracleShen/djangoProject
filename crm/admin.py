@@ -4,21 +4,21 @@ from .models import *
 
 # Register your models here.
 class ContactHistoryAdmin(admin.ModelAdmin):
-    fields = ('Name', 'ContactDateTime', 'ContactMedia', 'Memo')
-    search_fields = ('Name', 'ContactDateTime', 'ContactMedia', 'Memo')
-    list_display = ('Name', 'ContactDateTime', 'ContactMedia', 'Memo')
-    list_filter = ('Name', 'ContactDateTime', 'ContactMedia', 'Memo')
-
+    fields = ('Contact', 'ContactMedia', 'Memo')
+    search_fields = ('Contact__Name', 'ContactDateTime', 'ContactMedia', 'Memo')
+    list_display = ('Contact', 'ContactDateTime', 'ContactMedia', 'Memo')
+    list_filter = ('Contact', 'ContactDateTime', 'ContactMedia', 'Memo')
+    autocomplete_fields = ['Contact']
 
 admin.site.register(ContactHistory, ContactHistoryAdmin)
 
 
 class ContactsAdmin(admin.ModelAdmin):
-    fields = ('Name', 'Mobile', 'Email', 'Memo')
-    search_fields = ('Name', 'Mobile', 'Email', 'Memo')
-    list_display = ('Name', 'Mobile', 'Email', 'Memo')
-    list_filter = ('Name', 'Mobile', 'Email', 'Memo')
-
+    fields = ('Organize','Name', 'Mobile', 'Email', 'Memo')
+    search_fields = ('Organize__OrganizeName','Name', 'Mobile', 'Email', 'Memo')
+    list_display = ('Organize','Name', 'Mobile', 'Email', 'Memo')
+    list_filter = ('Organize','Name', 'Mobile', 'Email', 'Memo')
+    autocomplete_fields = ['Organize']
 
 admin.site.register(Contacts, ContactsAdmin)
 

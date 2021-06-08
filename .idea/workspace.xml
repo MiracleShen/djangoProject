@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0023_alter_miracleorders_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0004_auto_20210607_2242.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0005_rename_name_contacthistory_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Miracle/templates/MiracleNumber_filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/templates/MiracleNumber_filter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/migrations/0002_contacthistory.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/migrations/0002_contacthistory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
