@@ -9,9 +9,10 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-import os
+import os,django
 from pathlib import Path
-
+# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangoProject.settings")# project_name 项目名称
+# django.setup()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
     'tasks',
     'corsheaders',
     'pymysql',
+    'guardian',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -62,6 +64,15 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
     'Access-Control-Allow-Origin:http://127.0.0.1:8000',
     'Access-Control-Allow-Credentials:true',
 ]
+###django-guardian设置#######
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend', # django默认的backend
+    'guardian.backends.ObjectPermissionBackend',
+)
+
+ANONYMOUS_USER_ID=-1
+###django-guardian设置--结束====
+
 IMPORT_EXPORT_USE_TRANSACTIONS = True
 MIDDLEWARE = [
 
@@ -73,6 +84,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'guardian.backends.ObjectPermissionBackend',
 ]
 
 ROOT_URLCONF = 'djangoProject.urls'

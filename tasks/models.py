@@ -20,7 +20,7 @@ class Tasktype(models.TextChoices):
     TS = '技术支持', "技术支持"
     SM = '系统维护', "系统维护"
     RD = '软件开发', "软件开发"
-    CO = '合伙人管理',"合伙人管理"
+    CO = '合伙人管理', "合伙人管理"
 
 
 class Task(models.Model):
@@ -30,7 +30,7 @@ class Task(models.Model):
     status = models.CharField(verbose_name="状态", max_length=8, choices=Status.choices)
     createdtime = models.DateTimeField(auto_now_add=True)
     updatedtime = models.DateTimeField(auto_now=True)
-
+    User = models.CharField(verbose_name='用户',default='匿名',max_length=40)
     def short_content(self):
 
         if len(str(self.content)) > 60:
@@ -58,5 +58,11 @@ class Task(models.Model):
 
     colored_status.short_description = u"状态"
 
+    def get_absolute_url(self):
+        return {'assign_task': self.name}
+
     class Meta:
         verbose_name_plural = 'Miracle任务'
+        permissions = (
+            ('assign_task', '分配任务'),
+        )
