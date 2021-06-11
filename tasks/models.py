@@ -6,11 +6,11 @@ from django.db import models
 from django.db import models
 from django.utils.html import format_html
 
-
 class Status(models.TextChoices):
     UNSTARTED = '未开始', "未开始"
     ONGOING = '进行中', "进行中"
     FINISHED = '已完成', "已完成"
+    CANCEL = '已取消', '已取消'
 
 
 class Tasktype(models.TextChoices):
@@ -28,9 +28,10 @@ class Task(models.Model):
     name = models.CharField(verbose_name="任务名称", max_length=65, unique=True)
     content = models.TextField(verbose_name="任务内容", default=" ")
     status = models.CharField(verbose_name="状态", max_length=8, choices=Status.choices)
-    createdtime = models.DateTimeField(auto_now_add=True)
-    updatedtime = models.DateTimeField(auto_now=True)
-    User = models.CharField(verbose_name='用户',default='匿名',max_length=40)
+    createdtime = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
+    updatedtime = models.DateTimeField(auto_now=True, verbose_name='更新时间')
+    Creator = models.CharField(verbose_name='创建人', default='沈承永', max_length=40)
+
     def short_content(self):
 
         if len(str(self.content)) > 60:
@@ -48,8 +49,12 @@ class Task(models.Model):
             color_code = 'green'
         elif self.status == '进行中':
             color_code = 'orange'
-        else:
+        elif self.status == '未开始':
             color_code = 'red'
+        elif self.status == '已取消':
+            color_code = 'blue'
+        else:
+            color_code = 'black'
         return format_html(
             '<span style="color: {};">{}</span>',
             color_code,
@@ -62,7 +67,14 @@ class Task(models.Model):
         return {'assign_task': self.name}
 
     class Meta:
-        verbose_name_plural = 'Miracle任务'
+        verbose_name_plural = '任务管理'
         permissions = (
             ('assign_task', '分配任务'),
         )
+
+
+
+
+
+# Create your models here.
+

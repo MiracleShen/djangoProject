@@ -1,16 +1,19 @@
 from django.contrib import admin
 from Miracle.admin import ExportExcelMixin
-from .models import Task
-from django.utils.html import format_html
+from .models import *
+
 from guardian.admin import GuardedModelAdmin
+
+
+# Register your models here.
 
 
 # Register your models here.
 class TaskAdmin(admin.ModelAdmin):
     fields = ('tasktype', 'name', 'content', 'status')
-    search_fields = ('tasktype', 'name', 'content', 'status', 'User')
-    list_display = ('tasktype', 'name', 'short_content', 'colored_status', 'createdtime', 'updatedtime', 'User')
-    list_filter = ('tasktype', 'status', 'User', 'createdtime', 'updatedtime')
+    search_fields = ('tasktype', 'name', 'content', 'status', 'Creator')
+    list_display = ('tasktype', 'name', 'short_content', 'colored_status', 'createdtime', 'updatedtime', 'Creator')
+    list_filter = ('tasktype', 'status', 'Creator', 'createdtime', 'updatedtime')
     list_per_page = 10
     actions = ['export_as_excel']
     ordering = ['-updatedtime']
@@ -20,12 +23,15 @@ class TaskAdmin(admin.ModelAdmin):
         if request.user.is_superuser:  # 判断如果是超级管理员返回所有信息
             return qs
         else:
-            return qs.filter(User=request.user.last_name+request.user.first_name)  # User为当前关联的用户，如果是普通管理员只能看自己
+            return qs.filter(User=request.user.last_name + request.user.first_name)  # User为当前关联的用户，如果是普通管理员只能看自己
 
     def save_model(self, request, obj, form, change):
         if not change:
             # the object is being created, so set the user
-            obj.User = request.user.last_name+request.user.first_name
+            obj.User = request.user.last_name + request.user.first_name
         obj.save()
 
+
 admin.site.register(Task, TaskAdmin)
+
+
