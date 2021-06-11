@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crm/migrations/0006_auto_20210610_2105.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/migrations/0009_alter_task_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/migrations/0010_task_user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Miracle/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
