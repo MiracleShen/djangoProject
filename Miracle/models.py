@@ -24,7 +24,8 @@ class MiracleNumber(models.Model):
     Number = models.IntegerField(verbose_name='固话号码')
     Operator = models.CharField(max_length=12, verbose_name='运营商', choices=OPERATORS)
     Status = models.CharField(max_length=8, verbose_name='状态', default='可选', choices=STATUSS)
-    Organize =models.CharField(max_length=30,default=' ',verbose_name='客户名称')
+    Organize = models.CharField(max_length=30, default=' ', verbose_name='客户名称')
+
     def colored_Status(self):
         if self.Status == '可选':
             color_code = 'green'
@@ -71,7 +72,7 @@ class MiracleOrders(models.Model):
 # 话费账单，由EZUC+系统生成，每月月初手工录入到系统中
 # 后期考虑系统自动从EZUC+抓取通话清单，系统自动计算生成月度账单到MiracleBill，用户也可以在系统中查询详单；实时的话单，还是要到服务器上去查看
 class MiracleCredit(models.Model):
-    CustomerID = models.ForeignKey('crm.Organization',default=1,on_delete=models.CASCADE,verbose_name='客户名称')
+    CustomerID = models.ForeignKey('crm.Organization', default=1, on_delete=models.CASCADE, verbose_name='客户名称')
     Year = models.CharField(max_length=4, verbose_name='年份')
     Month = models.CharField(max_length=2, verbose_name='月份')
     Credit = models.FloatField(verbose_name='消费金额')
@@ -88,14 +89,22 @@ class MiracleBill(models.Model):
         ('租金', '租金'),
         ('话费', '话费'),
     )
-    CustomerID = models.ForeignKey('crm.Organization',on_delete=models.CASCADE,verbose_name='客户名称')
+    BILL_STATUS = (
+        ('已出账', '已出账'),
+        ('已到账', '已到账'),
+        ('已坏账', '已坏账'),
+    )
+    CustomerID = models.ForeignKey('crm.Organization', on_delete=models.CASCADE, verbose_name='客户名称')
     Year = models.CharField(max_length=4, verbose_name='年份')
     Month = models.CharField(max_length=2, verbose_name='月份')
     Bill_Cycle = models.CharField(max_length=2, verbose_name='计费周期')
-    Bill_Type = models.CharField(choices=BILL_TYPE,default='租金',max_length=2, verbose_name='账单类型')
+    Bill_Type = models.CharField(choices=BILL_TYPE, default='租金', max_length=4, verbose_name='账单类型')
     Bill = models.FloatField(verbose_name='账单金额')
-    RecordDate = models.DateTimeField(auto_now=True, verbose_name='记录时间')
-    Memo = models.TextField(default= '1',verbose_name='备注')
+    Bill_Status = models.CharField(choices=BILL_STATUS, default='已出账', max_length=8, verbose_name='账单状态')
+    RecordDate = models.DateTimeField(auto_now_add=True, verbose_name='记录时间')
+    UpdateDate = models.DateTimeField(auto_now=True, null=True, verbose_name='更新时间')
+    Memo = models.TextField(default='1', verbose_name='备注')
+
     def colored_Bill_Type(self):
         if self.Bill_Type == '租金':
             color_code = 'orange'
@@ -108,9 +117,23 @@ class MiracleBill(models.Model):
             color_code,
             self.Bill_Type,
         )
+
     colored_Bill_Type.short_description = u"账单类型"
+    def colored_Bill_Status(self):
+        if self.Bill_Status == '已出账':
+            color_code = 'blue'
+        elif self.Bill_Status == '已到账':
+            color_code = 'green'
+        elif self.Bill_Status == '已坏账':
+            color_code = 'red'
+        else:
+            color_code = 'black'
+        return format_html(
+            '<span style="color: {};">{}</span>',
+            color_code,
+            self.Bill_Status,
+        )
+
+    colored_Bill_Status.short_description = u"账单状态"
     class Meta:
         verbose_name_plural = 'Miracle账单'
-
-
-
