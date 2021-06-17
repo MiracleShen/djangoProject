@@ -13,12 +13,12 @@ class ContactHistoryAdmin(admin.ModelAdmin):
         if request.user.is_superuser:  # 判断如果是超级管理员返回所有信息
             return qs
         else:
-            return qs.filter(User=request.user.last_name + request.user.first_name)  # User为当前关联的用户，如果是普通管理员只能看自己
+            return qs.filter(Creator=request.user.last_name + request.user.first_name)  # User为当前关联的用户，如果是普通管理员只能看自己
 
     def save_model(self, request, obj, form, change):
         if not change:
             # the object is being created, so set the user
-            obj.User = request.user.last_name + request.user.first_name
+            obj.Creator = request.user.last_name + request.user.first_name
         obj.save()
 
 
