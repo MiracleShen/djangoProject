@@ -20,8 +20,17 @@ class MiracleNumber(models.Model):
         ('锁定', '锁定'),
         ('已售', '已售'),
     )
+    STAR =(
+        ('普通号', '普通号'),
+        ('1星级','1星级'),
+        ('2星级', '2星级'),
+        ('3星级', '3星级'),
+        ('4星级', '4星级'),
+        ('5星级', '5星级'),
+    )
     Zip = models.CharField(max_length=4, default='021', verbose_name='区号')
     Number = models.IntegerField(verbose_name='固话号码')
+    Stars = models.CharField(max_length=8,verbose_name='星级',default='普通号',choices= STAR)
     Operator = models.CharField(max_length=12, verbose_name='运营商', choices=OPERATORS)
     Status = models.CharField(max_length=8, verbose_name='状态', default='可选', choices=STATUSS)
     Organize = models.CharField(max_length=30, default=' ', verbose_name='客户名称')

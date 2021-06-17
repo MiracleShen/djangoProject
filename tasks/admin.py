@@ -14,7 +14,7 @@ class TaskAdmin(admin.ModelAdmin):
     search_fields = ('tasktype', 'name', 'content', 'status', 'Creator')
     list_display = ('tasktype', 'name', 'short_content', 'colored_status', 'createdtime', 'updatedtime', 'Creator')
     list_filter = ('tasktype', 'status', 'Creator', 'createdtime', 'updatedtime')
-    list_per_page = 10
+    list_per_page = 15
     actions = ['export_as_excel']
     ordering = ['-updatedtime']
 

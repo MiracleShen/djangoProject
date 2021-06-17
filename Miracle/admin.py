@@ -37,10 +37,10 @@ class ExcelImportForm(forms.Form):
 
 
 class MiracleNumberAdmin(admin.ModelAdmin, ExportExcelMixin):
-    fields = ('Zip', 'Number', 'Operator', 'Status', 'Organize')
-    search_fields = ('Zip', 'Number', 'Operator', 'Status', 'Organize')
-    list_display = ('Zip', 'Number', 'Operator', 'colored_Status', 'Organize')
-    list_filter = ('Zip', 'Operator', 'Status', 'Organize')
+    fields = ('Zip', 'Number', 'Stars','Operator', 'Status', 'Organize')
+    search_fields = ('Zip', 'Number', 'Stars','Operator', 'Status', 'Organize')
+    list_display = ('Zip', 'Number', 'Stars','Operator', 'colored_Status', 'Organize')
+    list_filter = ('Zip', 'Operator', 'Stars','Status', 'Organize')
     list_per_page = 20
     actions = ['export_as_excel']
 

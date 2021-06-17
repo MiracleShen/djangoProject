@@ -5,6 +5,8 @@ class MiracleNumberFilter(django_filters.FilterSet):
                                   lookup_expr='icontains', label="区号")
     Number = django_filters.CharFilter(field_name='Number',
                                   lookup_expr='icontains', label="号码")
+    Stars = django_filters.ChoiceFilter(field_name='Stars',
+                                  choices=MiracleNumber.STAR)
     Operator = django_filters.ChoiceFilter(field_name='Operator',choices=MiracleNumber.OPERATORS)
     Status = django_filters.ChoiceFilter(field_name='Status',choices=MiracleNumber.STATUSS)
     class Meta:

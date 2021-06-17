@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0025_auto_20210611_1254.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0027_miraclenumber_stars.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Miracle/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Miracle/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Miracle/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Miracle/templates/MiracleNumber_filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/templates/MiracleNumber_filter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Miracle/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +56,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="D:/Customer.csv" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/号码资源202101.csv" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -158,6 +162,7 @@
       <workItem from="1622564023191" duration="1576000" />
       <workItem from="1622737704911" duration="297000" />
       <workItem from="1622796747350" duration="3053000" />
+      <workItem from="1623932173190" duration="7155000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，在家里的电脑上做的一些工作：&#10;1、MiracleOrders做的比较完整&#10;2、MiracleNumber刚刚开始">
       <created>1621805529488</created>
@@ -278,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623386610999</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="1、联系记录完整使用&#10;2、账单格式化">
+      <created>1623387732808</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1623387732808</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
