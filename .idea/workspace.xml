@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0027_miraclenumber_stars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/djangoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Miracle/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Miracle/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Miracle/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Miracle/templates/MiracleNumber_filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/templates/MiracleNumber_filter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Miracle/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasks/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

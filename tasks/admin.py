@@ -2,7 +2,6 @@ from django.contrib import admin
 from Miracle.admin import ExportExcelMixin
 from .models import *
 
-from guardian.admin import GuardedModelAdmin
 
 
 # Register your models here.
