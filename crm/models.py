@@ -37,7 +37,7 @@ class ContactHistory(models.Model):
 class Contacts(models.Model):
     Organize = models.ForeignKey('Organization', on_delete=models.CASCADE, default='1', verbose_name='客户名称')
     Name = models.CharField(max_length=20, verbose_name='姓名')
-    Mobile = models.IntegerField(null=True, verbose_name='手机号')
+    Mobile = models.CharField(max_length=11,null=True, verbose_name='手机号')
     Email = models.EmailField(null=True, verbose_name='电子邮件')
     Memo = models.TextField(null=True, verbose_name='备注')
 
@@ -58,3 +58,13 @@ class Organization(models.Model):
 
     class Meta:
         verbose_name_plural = '组织'
+
+class Oblist(models.Model):
+    Campaign = models.CharField(max_length=20, verbose_name='战役')
+    Name = models.CharField(max_length=50, verbose_name='名称')
+    Phone1 = models.CharField(max_length=50,verbose_name='号码1')
+    Phone2 = models.CharField(max_length=50,null=True, verbose_name='号码2')
+    Status = models.CharField(max_length=20,default='未联系',verbose_name='状态')
+    Memo = models.TextField(null=True, verbose_name='备注')
+    class Meta:
+        verbose_name_plural = '外呼名单'

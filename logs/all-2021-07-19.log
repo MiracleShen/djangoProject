@@ -1,0 +1,6 @@
+[2021-07-19 10:08:39,172] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-19 10:08:40,681] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22935
+[2021-07-19 10:08:48,720] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/Miracle/miraclenumber/ HTTP/1.1" 200 61261
+[2021-07-19 10:08:48,866] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-19 10:25:21,371] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\tasks\admin.py changed, reloading.
+[2021-07-19 10:25:23,207] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader

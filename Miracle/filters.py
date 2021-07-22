@@ -1,7 +1,7 @@
 import django_filters
 from Miracle.models import MiracleNumber,MiracleOrders
 class MiracleNumberFilter(django_filters.FilterSet):
-    Zip =     Number = django_filters.CharFilter(field_name='Zip',
+    Zip = django_filters.CharFilter(field_name='Zip',
                                   lookup_expr='icontains', label="区号")
     Number = django_filters.CharFilter(field_name='Number',
                                   lookup_expr='icontains', label="号码")

@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+
 {% load widget_tweaks %}
 {% load static %}
 <!-- 网站主语言 -->
@@ -58,11 +60,11 @@
             </td>
             <td>
                 {{ Number.Number }}
+                <button onclick="makecall($(parentNode.firstChild).text())">拨打</button>
             </td>
             <td>
                 {{ Number.Stars }}
             </td>
-            {#    <button onclick="makecall($(parentNode.firstChild).text())">拨打</button>#}
             <td>
                 {{ Number.Operator }}
             </td>

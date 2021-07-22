@@ -1,5 +1,7 @@
 from django.contrib import admin
 from .models import *
+from django.views.decorators.csrf import csrf_exempt
+
 
 class ContactHistoryAdmin(admin.ModelAdmin):
     fields = ('Contact', 'ContactType', 'Memo')
@@ -24,6 +26,7 @@ class ContactHistoryAdmin(admin.ModelAdmin):
 
 admin.site.register(ContactHistory, ContactHistoryAdmin)
 
+
 class ContactsAdmin(admin.ModelAdmin):
     fields = ('Organize', 'Name', 'Mobile', 'Email', 'Memo')
     search_fields = ('Organize__OrganizeName', 'Name', 'Mobile', 'Email', 'Memo')
@@ -43,3 +46,22 @@ class OrganizationAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Organization, OrganizationAdmin)
+
+@csrf_exempt
+class OblistAdmin(admin.ModelAdmin):
+    fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo')
+    search_fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo')
+    list_display = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'makecall')
+    list_filter = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo')
+    def makecall(self,obj):
+        # html = '<a target="blank" href="/makecall/?destNumber='
+        # html = html + obj.Phone1
+        # html = html +'">拨打<a/>'
+        html = '<button onclick="makecall('
+        html = html + obj.Phone1
+        html = html +')">拨打</button>'
+        return format_html(html)
+    makecall.short_description = '功能按钮'
+    class Media:
+        js = ('js/call.js',)
+admin.site.register(Oblist, OblistAdmin)

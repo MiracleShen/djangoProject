@@ -2,13 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/djangoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0009_alter_contacts_mobile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0010_oblist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0011_auto_20210722_1956.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0012_auto_20210722_2009.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0013_alter_oblist_campaign.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0014_auto_20210722_2014.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0015_alter_oblist_name.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/Contacts_filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/Oblist_filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djangoProject/static/js/call.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/all-2021-07-19.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/all-2021-07-20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/all-2021-07-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/error-2021-07-19.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/error-2021-07-20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/error-2021-07-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/info-2021-07-19.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/info-2021-07-20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/info-2021-07-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/migrations/0015_task_owner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/migrations/0016_alter_task_owner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/migrations/0017_alter_task_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/migrations/0018_alter_task_tasktype.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Miracle/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Miracle/templates/MiracleNumber_filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/templates/MiracleNumber_filter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Miracle/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasks/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +51,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -37,6 +67,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="7720ed84-c9f1-4098-9461-bfc30ff66078" />
   </component>
   <component name="ProjectId" id="1snnGSJ6QzcYBP6Wc9BvmW4aZgD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -55,14 +88,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/号码资源202101.csv" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="D:/电脑维修公司-手机.csv" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\djangoProject\crm\templates" />
+      <recent name="E:\djangoProject\crm" />
+      <recent name="E:\djangoProject\Miracle\templates" />
       <recent name="C:\Users\Miracle\PycharmProjects\djangoProject\djangoProject\static\images" />
       <recent name="C:\Users\Miracle\PycharmProjects\djangoProject\djangoProject\Static\popper" />
-      <recent name="C:\Users\Miracle\PycharmProjects\djangoProject\Miracle\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Miracle\PycharmProjects\djangoProject\djangoProject\Static\jquery" />
@@ -162,6 +197,14 @@
       <workItem from="1622737704911" duration="297000" />
       <workItem from="1622796747350" duration="3053000" />
       <workItem from="1623932173190" duration="7155000" />
+      <workItem from="1626008054242" duration="693000" />
+      <workItem from="1626009425701" duration="3631000" />
+      <workItem from="1626332555838" duration="966000" />
+      <workItem from="1626658379608" duration="3649000" />
+      <workItem from="1626764726609" duration="3405000" />
+      <workItem from="1626949358025" duration="1326000" />
+      <workItem from="1626951778650" duration="2189000" />
+      <workItem from="1626953985549" duration="11992000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，在家里的电脑上做的一些工作：&#10;1、MiracleOrders做的比较完整&#10;2、MiracleNumber刚刚开始">
       <created>1621805529488</created>
@@ -289,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623387732808</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="1、联系记录完整使用&#10;2、账单格式化">
+      <created>1626008145840</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1626008145840</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

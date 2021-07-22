@@ -16,20 +16,25 @@ class Status(models.TextChoices):
 class Tasktype(models.TextChoices):
     FIN = '账务管理', "账务管理"
     ADMIN = '行政管理', "行政管理"
+    OP = '商机管理', "商机管理"
     CS = '客户服务', "客户服务"
     TS = '技术支持', "技术支持"
     SM = '系统维护', "系统维护"
     RD = '软件开发', "软件开发"
     CO = '合伙人管理', "合伙人管理"
 
+class OWNERS(models.TextChoices):
+    MIR = '沈承永','沈承永'
+    GMM = '耿萌萌','耿萌萌'
 
 class Task(models.Model):
     tasktype = models.CharField(verbose_name='任务类型', default='账务管理', max_length=8, choices=Tasktype.choices)
     name = models.CharField(verbose_name="任务名称", max_length=65, unique=True)
     content = models.TextField(verbose_name="任务内容", default=" ")
-    status = models.CharField(verbose_name="状态", max_length=8, choices=Status.choices)
+    status = models.CharField(verbose_name="状态", default='未开始',max_length=8, choices=Status.choices)
     createdtime = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
     updatedtime = models.DateTimeField(auto_now=True, verbose_name='更新时间')
+    Owner = models.CharField(verbose_name='执行人', default='沈承永', max_length=40,choices=OWNERS.choices)
     Creator = models.CharField(verbose_name='创建人', default='沈承永', max_length=40)
 
     def short_content(self):

@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% load widget_tweaks %}
+{% load static %}
+<!-- 网站主语言 -->
+<html lang="zh-cn">
+
+<head>
+    <!-- 网站采用的字符编码 -->
+    <meta charset="utf-8">
+    <!-- 预留网站标题的位置 -->
+    <title></title>
+    <!-- 引入bootstrap的css文件 -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+</head>
+
+<body>
+{% block content %}
+    <!-- extends表明此页面继承自 base.html 文件 -->
+    <script src="{% static 'jquery/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'popper/popper.js' %}"></script>
+    <!-- 引入bootstrap的js文件 -->
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+    <br>
+    <div class="well justify-content-center">
+        <form action="" role="search" method="get">
+            <div class="input-group col-md-12 align-self-center">
+                {% with form=filter.form %}
+                    {% for field in form.visible_fields %}
+                        <div ,class="form-group col align-self-center">
+                            {{ field.label_tag }}
+                        </div>
+                        <div class="form-group col align-self-center">
+                            {% render_field field class="form-control" %}
+                        </div>
+                    {% endfor %}
+                    <span class="input-group-btn">
+                <button class="btn btn-info form-control" type="submit" value="submit">筛选</button>
+            </span>
+                    </div>
+                {% endwith %}
+        </form>
+    </div>
+    {% if is_paginated %}
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>战役</th>
+                <th>名称</th>
+                <th>电话1</th>
+                <th>电话2</th>
+                <th>状态</th>
+                <th>备注</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for Oblist in page_obj %}
+                <tr>
+                <td>
+                    {{ Oblist.Campaign }}
+                </td>
+                <td>
+                    {{ Oblist.Name }}
+                </td>
+                <td>
+                    {{ Oblist.Phone1 }}
+                    <button onclick="makecall($(parentNode.firstChild).text())">拨打</button>
+                </td>
+                <td>
+                    {{ Oblist.Phone2 }}
+                    <button onclick="makecall($(parentNode.firstChild).text())">拨打</button>
+                </td>
+                <td>
+                    {{ Oblist.Status }}
+                </td>
+                <td>
+                    {{ Oblist.Memo }}
+                </td>
+            {% endfor %}
+            </tr>
+            </tbody>
+        </table>
+    {% else %}
+        <p>There are no Numbers yet.</p>
+    {% endif %}
+    {% if is_paginated %}
+        <ul class="pagination">
+            {% if page_obj.has_previous %}
+                <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
+                </li>
+            {% else %}
+                <li class="page-item disabled"><span class="page-link">&laquo;</span></li>
+            {% endif %}
+
+            {% for i in paginator.page_range %}
+                {% if page_obj.number == i %}
+                    <li class="page-item active"><span class="page-link"> {{ i }} <span
+                            class="sr-only">(current)</span></span></li>
+                {% else %}
+                    <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+                <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+            {% else %}
+                <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
+            {% endif %}
+        </ul>
+    {% endif %}
+    <p>总计：{{ filter.qs.count }} 个号码</p>
+{% endblock content %}
+</body>
+
+</html>
