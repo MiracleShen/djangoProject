@@ -43,15 +43,20 @@ def makecall(req):
     # json_data = json.loads(html)
     # print(json_data)
     # return HttpResponse(html)
-
-
     context = {}
     context['test'] = 'Miracle Test'
+
     if (req.method == 'POST'):
-        print("the POST method")
+        print(req.user.username)
+
         URL = "https://sh001.ezphone.cn:8443/ucrm/api/phone/dialOutbound?para="
         data = {"apiKey": "PYTIzDD7W9BBzvkjvYX0E6dj8nzPBnCvwQzIHC3zpPs"}
-        data["callerKey"] = str(req.POST["callerKey"])
+        if (req.user.username =='admin'):
+            data["callerKey"] = 'miracle.shen'
+        elif (req.user.username =='mengmeng.geng'):
+            data["callerKey"] = 'gengmengmeng'
+        else:
+            data["callerKey"] = req.user.username
         data["callerKeyType"] = "loginAccount"
         data["destNumber"] = str(req.POST["destNumber"]).replace("\n", "")
         data = parse.urlencode(data)

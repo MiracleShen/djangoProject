@@ -13,8 +13,6 @@ function makecall(callnum) {
         url: '/makecall/',
         dataType: "json",
         data: {
-            callerKey: "miracle.shen",
-            callerKeyType: "loginAccount",
             destNumber: callnum,
             csrfmiddlewaretoken: '{{ csrf_token }}',
         },

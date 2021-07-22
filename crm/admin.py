@@ -1,6 +1,5 @@
 from django.contrib import admin
 from .models import *
-from django.views.decorators.csrf import csrf_exempt
 
 
 class ContactHistoryAdmin(admin.ModelAdmin):
@@ -47,7 +46,6 @@ class OrganizationAdmin(admin.ModelAdmin):
 
 admin.site.register(Organization, OrganizationAdmin)
 
-@csrf_exempt
 class OblistAdmin(admin.ModelAdmin):
     fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo')
     search_fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo')
