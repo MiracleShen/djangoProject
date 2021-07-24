@@ -20,7 +20,7 @@ function makecall(callnum) {
             //这里返回请求成功的数据，数据包含在data中
             console.log(data)
             if (data['returnInfo'] = 'Succeeded!') {
-                alert("拨打电话成功！")
+                // alert("拨打电话成功！")
             } else {
                 alert("拨打电话失败！失败原因是：" + data['returnCode'])
             }

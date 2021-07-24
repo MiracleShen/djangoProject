@@ -47,19 +47,32 @@ class OrganizationAdmin(admin.ModelAdmin):
 admin.site.register(Organization, OrganizationAdmin)
 
 class OblistAdmin(admin.ModelAdmin):
-    fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo')
-    search_fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo')
-    list_display = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'makecall')
-    list_filter = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo')
+    fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo','Owner')
+    search_fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo','Owner')
+    list_display = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status','colored_Status', 'Memo','Owner', 'makecall')
+    list_filter = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo','Owner')
+    list_editable = ('Status','Owner')
     def makecall(self,obj):
         # html = '<a target="blank" href="/makecall/?destNumber='
         # html = html + obj.Phone1
         # html = html +'">拨打<a/>'
         html = '<button onclick="makecall('
         html = html + obj.Phone1
-        html = html +')">拨打</button>'
+        html = html +')">拨打1</button>'
+        if  obj.Phone2 :
+            print ('我有老二：'+obj.Phone2)
+            html = html + '<button onclick="makecall('
+            html = html + obj.Phone2
+            html = html +')">拨打2</button>'
         return format_html(html)
     makecall.short_description = '功能按钮'
+    def get_queryset(self, request):  # 重写get_queryset
+        qs = super(OblistAdmin, self).get_queryset(request)
+        if request.user.is_superuser:  # 判断如果是超级管理员返回所有信息
+            return qs
+        else:
+            return qs.filter(Owner=request.user.last_name + request.user.first_name)  # User为当前关联的用户，如果是普通管理员只能看自己
+
     class Media:
         js = ('js/call.js',)
 admin.site.register(Oblist, OblistAdmin)
