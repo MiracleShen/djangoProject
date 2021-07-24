@@ -1,5 +1,8 @@
 from django.contrib import admin
 from .models import *
+import json
+from django.http import JsonResponse
+from simpleui.admin import AjaxAdmin
 
 
 class ContactHistoryAdmin(admin.ModelAdmin):
@@ -46,26 +49,85 @@ class OrganizationAdmin(admin.ModelAdmin):
 
 admin.site.register(Organization, OrganizationAdmin)
 
-class OblistAdmin(admin.ModelAdmin):
-    fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo','Owner')
-    search_fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo','Owner')
-    list_display = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status','colored_Status', 'Memo','Owner', 'makecall')
-    list_filter = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo','Owner')
-    list_editable = ('Status','Owner')
-    def makecall(self,obj):
+
+class OblistAdmin(AjaxAdmin):
+    fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
+    search_fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
+    list_display = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'colored_Status', 'Memo', 'Owner', 'makecall')
+    list_filter = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
+    list_editable = ('Status', 'Owner')
+    # 增加自定义按钮
+    actions = ('layer_input',)
+
+    def layer_input(self, request, queryset):
+
+        post = request.POST
+        # 这里获取到数据后，可以做些业务处理
+        # post中的_action 是方法名
+        # post中 _selected 是选中的数据，逗号分割
+        if not post.get('_selected'):
+            return JsonResponse(data={
+                'status': 'error',
+                'msg': '请选择数据'
+            })
+        else:
+            # print('我是参数'+post['type'])
+            for qs in queryset:
+                self.model.objects.filter(id=qs.id).update(Owner=post['type'])
+                # print(str(qs.id)+'我被选中了'+qs.Owner)
+            return JsonResponse(data={
+                'status': 'success',
+                'msg': '处理成功！'
+            })
+
+    layer_input.short_description = '分配数据'
+    layer_input.type = 'success'
+    layer_input.icon = 'el-icon-s-promotion'
+
+    # 指定一个输入参数，应该是一个数组
+
+    # 指定为弹出层，这个参数最关键
+    layer_input.layer = {
+        'title': '批量分配数据',
+        'tips': '勾选多条数据，批量分配数据给执行人',
+        'confirm_button': '确认提交',
+        'cancel_button': '取消',
+        'width': '40%',
+        'labelWidth': "80px",
+        'params': [
+            {
+                'type': 'select',
+                'key': 'type',
+                'label': '执行人',
+                'width': '200px',
+                'size': 'small',
+                'value': '沈承永',
+                'options': [{
+                    'key': '沈承永',
+                    'label': '沈承永'
+                }, {
+                    'key': '耿萌萌',
+                    'label': '耿萌萌'
+                }]
+            }, ]
+    }
+
+    def makecall(self, obj):
         # html = '<a target="blank" href="/makecall/?destNumber='
         # html = html + obj.Phone1
         # html = html +'">拨打<a/>'
         html = '<button onclick="makecall('
         html = html + obj.Phone1
-        html = html +')">拨打1</button>'
-        if  obj.Phone2 :
-            print ('我有老二：'+obj.Phone2)
+        html = html + ')">拨打1</button>'
+        if obj.Phone2:
+            # print('我有老二：' + obj.Phone2)
             html = html + '<button onclick="makecall('
             html = html + obj.Phone2
-            html = html +')">拨打2</button>'
+            html = html + ')">拨打2</button>'
         return format_html(html)
+
     makecall.short_description = '功能按钮'
+
     def get_queryset(self, request):  # 重写get_queryset
         qs = super(OblistAdmin, self).get_queryset(request)
         if request.user.is_superuser:  # 判断如果是超级管理员返回所有信息
@@ -75,4 +137,6 @@ class OblistAdmin(admin.ModelAdmin):
 
     class Media:
         js = ('js/call.js',)
+
+
 admin.site.register(Oblist, OblistAdmin)
