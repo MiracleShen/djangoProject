@@ -78,6 +78,17 @@ class Oblist(models.Model):
     Status = models.CharField(max_length=20, default='未联系', verbose_name='状态', choices=Status.choices)
     Memo = models.TextField(null=True, verbose_name='备注')
     Owner = models.CharField(verbose_name='执行人', default='沈承永', max_length=40, choices=OWNERS.choices)
+    def short_content(self):
+
+        if len(str(self.Memo)) > 30:
+
+            return '{}...'.format(str(self.Memo)[0:30])
+
+        else:
+
+            return str(self.Memo)
+
+    short_content.short_description = u"备注"
     def colored_Status(self):
         if self.Status == '未联系' or self.Status== '未接通':
             color_code = 'blue'

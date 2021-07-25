@@ -1,11 +1,9 @@
 from django.contrib import admin
 from .models import *
-import json
 from django.http import JsonResponse
 from simpleui.admin import AjaxAdmin
-from import_export.fields import Field
 from import_export.admin import ImportExportModelAdmin
-from import_export import resources
+
 
 
 class ContactHistoryAdmin(admin.ModelAdmin):
@@ -53,27 +51,98 @@ class OrganizationAdmin(admin.ModelAdmin):
 admin.site.register(Organization, OrganizationAdmin)
 
 
-class OblistResource(resources.ModelResource):
-    class Meta:
-        model = Oblist
-
-
 class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
     fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
     search_fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
-    list_display = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'colored_Status', 'Memo', 'Owner', 'makecall')
+    list_display = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'colored_Status', 'short_content', 'Owner', 'makecall')
     list_filter = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
     list_editable = ('Status', 'Owner')
-    resources_class = OblistResource
-    # 增加自定义按钮
-    actions = ('layer_input','Status_report')
+    actions = ('CallDetail', 'layer_input', 'Status_report')
+
+    def CallDetail(self, request, queryset):
+        post = request.POST
+        # 这里获取到数据后，可以做些业务处理
+        # post中的_action 是方法名
+        # post中 _selected 是选中的数据，逗号分割
+        if not post.get('_selected'):
+            return JsonResponse(data={
+                'status': 'error',
+                'msg': '请选择数据'
+            })
+        else:
+            for qs in queryset:
+                self.model.objects.filter(id=qs.id).update(Memo=post['Memo'])
+                # print(str(qs.id)+'我被选中了'+qs.Owner)
+            return JsonResponse(data={
+                'status': 'success',
+                'msg': '处理成功！'
+            })
+
+    CallDetail.short_description = '添加沟通结果'
+    CallDetail.type = 'success'
+    CallDetail.icon = 'el-icon-s-promotion'
+
+    # 指定一个输入参数，应该是一个数组
+
+    # 指定为弹出层，这个参数最关键
+    CallDetail.layer = {
+        'title': '沟通内容',
+        'tips': '填写沟通内容',
+        'confirm_button': '确认提交',
+        'cancel_button': '取消',
+        'width': '40%',
+        'labelWidth': "80px",
+        'params': [
+            {
+                'type': 'radio',
+                'key': 'Status',
+                'label': '沟通结果',
+                'width': '500px',
+                'size': 'small',
+                'value': '有需求',
+                'required': True,
+                'options': [
+                    {
+                        'key': '有需求',
+                        'label': '有需求'
+                    },
+                    {
+                        'key': '有意向',
+                        'label': '有意向'
+                    },
+                    {
+                        'key': '再联系',
+                        'label': '再联系'
+                    },
+                    {
+                        'key': '拒绝沟通',
+                        'label': '拒绝沟通'
+                    },
+                    {
+                        'key': '未接通',
+                        'label': '未接通'
+                    },
+                ]
+            }, {
+                'type': 'textarea',
+                'key': 'Memo',
+                'label': '沟通内容',
+                'width': '500px',
+                'size': 'large',
+                'value': '',
+                'required': True
+            }]
+    }
+
     def Status_report(self, request, queryset):
         pass
+
     Status_report.short_description = '数据报表'
     Status_report.icon = 'fas fa-audio-description'
     Status_report.type = 'success'
-    Status_report.action_type=1
-    Status_report.action_url='/crm/'
+    Status_report.action_type = 1
+    Status_report.action_url = '/crm/'
+
     def layer_input(self, request, queryset):
 
         post = request.POST
@@ -117,7 +186,7 @@ class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
         'labelWidth': "80px",
         'params': [
             {
-                'type': 'select',
+                'type': 'radio',
                 'key': 'type',
                 'label': '执行人',
                 'width': '200px',
@@ -137,12 +206,12 @@ class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
         # html = '<a target="blank" href="/makecall/?destNumber='
         # html = html + obj.Phone1
         # html = html +'">拨打<a/>'
-        html = '<button onclick="makecall('
+        html = '<button type="success" icon="el-icon-phone" onclick="makecall('
         html = html + obj.Phone1
         html = html + ')">拨打1</button>'
         if obj.Phone2:
             # print('我有老二：' + obj.Phone2)
-            html = html + '<button onclick="makecall('
+            html = html + '<button type="success" icon="el-icon-phone" onclick="makecall('
             html = html + obj.Phone2
             html = html + ')">拨打2</button>'
         return format_html(html)

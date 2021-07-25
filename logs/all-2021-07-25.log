@@ -884,3 +884,535 @@ AttributeError: 'NoneType' object has no attribute 'append'
 [2021-07-25 15:49:43,010] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
 [2021-07-25 15:49:46,465] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8171
 [2021-07-25 15:50:20,463] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8171
+[2021-07-25 21:58:36,719] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 21:58:45,494] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 21:58:46,235] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-07-25 21:58:46,236] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 5394
+[2021-07-25 21:58:51,014] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 462866
+[2021-07-25 21:58:51,048] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/call.js HTTP/1.1" 304 0
+[2021-07-25 21:58:51,211] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:01:16,937] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:01:19,042] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:01:22,174] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:01:24,649] [log.py:224] [log:log_response] [ERROR]- Internal Server Error: /admin/crm/oblist/
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\db\models\options.py", line 608, in get_field
+    return self.fields_map[field_name]
+KeyError: 'CallDetail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\contrib\admin\utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\utils.py", line 296, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "D:\Python39\lib\site-packages\django\db\models\options.py", line 610, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Oblist has no field named 'CallDetail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python39\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "D:\Python39\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Python39\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "D:\Python39\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+  File "D:\Python39\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 281, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "D:\Python39\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\utils.py", line 274, in lookup_field
+    value = attr(obj)
+TypeError: CallDetail() missing 1 required positional argument: 'queryset'
+[2021-07-25 22:01:24,657] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET /admin/crm/oblist/ HTTP/1.1" 500 469311
+[2021-07-25 22:02:09,515] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:02:11,605] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:02:18,648] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:02:21,981] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 470410
+[2021-07-25 22:02:22,181] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:03:23,237] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:03:25,517] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:05:22,276] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:05:24,284] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:11:32,833] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:11:35,207] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:11:53,143] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:11:55,265] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:12:21,338] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:12:23,521] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:12:52,153] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:12:53,191] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:13:16,613] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:13:18,715] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:13:23,318] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:13:25,601] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:13:29,976] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:13:30,666] [log.py:224] [log:log_response] [ERROR]- Internal Server Error: /admin/crm/oblist/
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\db\models\options.py", line 608, in get_field
+    return self.fields_map[field_name]
+KeyError: 'CallDetail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\contrib\admin\utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\utils.py", line 296, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "D:\Python39\lib\site-packages\django\db\models\options.py", line 610, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Oblist has no field named 'CallDetail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python39\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "D:\Python39\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Python39\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "D:\Python39\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+  File "D:\Python39\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 281, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "D:\Python39\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\utils.py", line 274, in lookup_field
+    value = attr(obj)
+TypeError: CallDetail() missing 1 required positional argument: 'queryset'
+[2021-07-25 22:13:30,679] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET /admin/crm/oblist/ HTTP/1.1" 500 469323
+[2021-07-25 22:14:03,212] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:14:05,605] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:14:10,444] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:14:14,627] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 464451
+[2021-07-25 22:14:17,836] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:17:57,421] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:17:59,472] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:18:01,603] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:18:03,774] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 464451
+[2021-07-25 22:18:04,427] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:18:16,226] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/ajax HTTP/1.1" 200 62
+[2021-07-25 22:18:19,997] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 464474
+[2021-07-25 22:18:21,555] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:19:38,096] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:19:40,164] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:20:05,644] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:20:07,722] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:20:45,823] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:20:46,679] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:20:59,590] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:21:00,475] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:21:12,100] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:21:12,985] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:21:20,152] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:21:21,045] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:21:41,446] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:21:42,345] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:22:03,931] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:22:04,794] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:22:56,755] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:22:57,734] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:25:46,351] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:25:48,617] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:25:59,915] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:26:01,545] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 464984
+[2021-07-25 22:26:01,704] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:27:01,078] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:27:03,197] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:27:06,614] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:27:08,709] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:27:27,670] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:27:29,109] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 464984
+[2021-07-25 22:27:29,265] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:28:30,304] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:28:32,455] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:28:34,353] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:28:35,629] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 464987
+[2021-07-25 22:28:35,769] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:29:25,251] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/ajax HTTP/1.1" 200 62
+[2021-07-25 22:29:27,543] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 466317
+[2021-07-25 22:29:27,707] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:30:56,334] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\models.py changed, reloading.
+[2021-07-25 22:30:58,377] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:31:00,455] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:31:01,711] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 466317
+[2021-07-25 22:31:01,882] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:31:35,497] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:31:37,806] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:31:39,447] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:31:40,762] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467221
+[2021-07-25 22:31:40,909] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:31:57,314] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\models.py changed, reloading.
+[2021-07-25 22:31:59,556] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:32:00,738] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:32:02,232] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467132
+[2021-07-25 22:32:02,392] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:34:14,073] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:34:16,294] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:34:29,055] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:34:30,501] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467132
+[2021-07-25 22:34:30,650] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:35:15,848] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:35:17,959] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:35:19,493] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 22:35:20,819] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467114
+[2021-07-25 22:35:20,966] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:35:32,964] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8172
+[2021-07-25 22:41:24,185] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 22:43:25,775] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 6938
+[2021-07-25 22:43:53,342] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/process_import/ HTTP/1.1" 302 0
+[2021-07-25 22:43:54,571] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467536
+[2021-07-25 22:43:54,729] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:44:10,341] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/ HTTP/1.1" 200 6357
+[2021-07-25 22:44:10,377] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+[2021-07-25 22:44:12,541] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/ HTTP/1.1" 302 0
+[2021-07-25 22:44:13,666] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467189
+[2021-07-25 22:44:13,819] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:44:53,144] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 22:45:04,145] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 6382
+[2021-07-25 22:45:12,836] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 22:46:10,577] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 6939
+[2021-07-25 22:52:59,340] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 302 0
+[2021-07-25 22:52:59,409] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4084
+[2021-07-25 22:52:59,465] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/css/login.css?_=2.1 HTTP/1.1" 200 500
+[2021-07-25 22:52:59,478] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/login.js?_=3.3 HTTP/1.1" 200 669
+[2021-07-25 22:52:59,480] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/css/all.min.css HTTP/1.1" 200 55111
+[2021-07-25 22:52:59,488] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 200 232478
+[2021-07-25 22:52:59,493] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/particles/app.js HTTP/1.1" 200 3728
+[2021-07-25 22:52:59,496] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/particles/particles.js HTTP/1.1" 200 51264
+[2021-07-25 22:52:59,501] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/images/Miracle-Logo-1.png HTTP/1.1" 200 24169
+[2021-07-25 22:52:59,520] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/vue.min.js?_=2021.5.21 HTTP/1.1" 200 93675
+[2021-07-25 22:52:59,521] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/img/bg.svg HTTP/1.1" 200 9547
+[2021-07-25 22:52:59,641] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/index.js?_=2021.5.21 HTTP/1.1" 200 567853
+[2021-07-25 22:52:59,760] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 74256
+[2021-07-25 22:52:59,785] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-07-25 22:52:59,786] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 5394
+[2021-07-25 22:53:01,205] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 200 28200
+[2021-07-25 22:53:01,830] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2021-07-25 22:53:02,093] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23181
+[2021-07-25 22:53:02,147] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/en-us.js?_=2021.5.21 HTTP/1.1" 200 811
+[2021-07-25 22:53:02,147] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2021.5.21 HTTP/1.1" 200 1254
+[2021-07-25 22:53:02,159] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/cookie.js?_=2021.5.21 HTTP/1.1" 200 524
+[2021-07-25 22:53:02,165] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 200 3861
+[2021-07-25 22:53:02,170] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 200 6608
+[2021-07-25 22:53:02,171] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/theme/theme.js?_=2021.5.21 HTTP/1.1" 200 4274
+[2021-07-25 22:53:02,177] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/segment.js?_=2021.5.21 HTTP/1.1" 200 1186
+[2021-07-25 22:53:02,177] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/dicts.js?_=2021.5.21 HTTP/1.1" 200 6292
+[2021-07-25 22:53:02,186] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/menu.js?_=2021.5.21 HTTP/1.1" 200 1189
+[2021-07-25 22:53:02,190] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/waves/waves.min.js?_=2021.5.21 HTTP/1.1" 200 6329
+[2021-07-25 22:53:02,193] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/index.js?_=2021.5.21 HTTP/1.1" 200 20820
+[2021-07-25 22:53:02,369] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13552
+[2021-07-25 22:53:05,233] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467114
+[2021-07-25 22:53:05,246] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 200 1254
+[2021-07-25 22:53:05,247] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 200 811
+[2021-07-25 22:53:05,254] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 200 4270
+[2021-07-25 22:53:05,254] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 200 189
+[2021-07-25 22:53:05,257] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 200 524
+[2021-07-25 22:53:05,262] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 200 3323
+[2021-07-25 22:53:05,272] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/changelists.css?_=20180905 HTTP/1.1" 200 6874
+[2021-07-25 22:53:05,272] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/base.css?_=2.7 HTTP/1.1" 200 19513
+[2021-07-25 22:53:05,273] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/responsive.css?_=20180905 HTTP/1.1" 200 18545
+[2021-07-25 22:53:05,273] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+[2021-07-25 22:53:05,285] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[2021-07-25 22:53:05,292] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2021-07-25 22:53:05,296] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[2021-07-25 22:53:05,297] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[2021-07-25 22:53:05,309] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[2021-07-25 22:53:05,312] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/call.js HTTP/1.1" 200 1454
+[2021-07-25 22:53:05,312] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/actions.js HTTP/1.1" 200 7664
+[2021-07-25 22:53:05,312] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[2021-07-25 22:53:05,316] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 200 6292
+[2021-07-25 22:53:05,318] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 200 1186
+[2021-07-25 22:53:05,329] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[2021-07-25 22:53:05,332] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+[2021-07-25 22:53:05,339] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 200 14237
+[2021-07-25 22:53:05,355] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 200 89476
+[2021-07-25 22:53:05,357] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[2021-07-25 22:53:05,412] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:53:05,869] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[2021-07-25 22:53:06,005] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[2021-07-25 22:53:09,799] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 22:53:09,872] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/import_export/import.css HTTP/1.1" 200 1376
+[2021-07-25 22:53:21,913] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 22:54:35,472] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:54:37,798] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:55:43,449] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:55:44,946] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23181
+[2021-07-25 22:55:48,863] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467114
+[2021-07-25 22:55:49,043] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:55:51,158] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 22:56:14,176] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 22:56:47,551] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:56:49,530] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:56:50,903] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23181
+[2021-07-25 22:56:52,376] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467114
+[2021-07-25 22:56:52,531] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:56:55,890] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 22:57:05,259] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 22:57:36,101] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:57:38,261] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:57:41,483] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467114
+[2021-07-25 22:57:41,635] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:57:44,929] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 22:57:53,221] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 22:59:27,677] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 22:59:29,824] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 22:59:36,774] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467114
+[2021-07-25 22:59:36,912] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 22:59:40,807] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 22:59:49,441] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 23:02:38,096] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:02:40,235] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:03:25,394] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:03:27,432] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:03:33,898] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467114
+[2021-07-25 23:03:34,048] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:03:36,281] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:03:46,376] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 23:04:37,743] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:04:39,873] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:05:00,018] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467114
+[2021-07-25 23:05:00,178] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:05:04,338] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8172
+[2021-07-25 23:05:07,684] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 48654)
+
+[2021-07-25 23:05:07,767] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/ HTTP/1.1" 302 0
+[2021-07-25 23:05:08,915] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467173
+[2021-07-25 23:05:09,079] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:05:13,452] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/export/? HTTP/1.1" 200 5827
+[2021-07-25 23:05:18,853] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/export/? HTTP/1.1" 200 46638
+[2021-07-25 23:06:08,096] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104655
+[2021-07-25 23:06:08,260] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:06:15,052] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467114
+[2021-07-25 23:06:15,211] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:06:18,302] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:06:30,568] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 23:06:34,170] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/process_import/ HTTP/1.1" 302 0
+[2021-07-25 23:06:35,321] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467481
+[2021-07-25 23:06:35,494] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:06:46,863] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/ HTTP/1.1" 200 6515
+[2021-07-25 23:06:49,110] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/ HTTP/1.1" 302 0
+[2021-07-25 23:06:50,303] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 467207
+[2021-07-25 23:06:50,458] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:08:09,202] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:08:11,385] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:08:13,216] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23153
+[2021-07-25 23:08:14,549] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 468170
+[2021-07-25 23:08:14,710] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:10:42,073] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:10:44,388] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:10:45,694] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23153
+[2021-07-25 23:10:47,107] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 468698
+[2021-07-25 23:10:47,275] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:11:06,532] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:11:08,754] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:11:47,245] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:11:49,303] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:12:26,679] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:12:28,823] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:12:34,630] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:12:36,728] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:12:53,601] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:12:55,591] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:12:56,804] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23153
+[2021-07-25 23:12:58,158] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 473090
+[2021-07-25 23:12:58,312] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:13:56,121] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:13:58,376] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:14:01,113] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23153
+[2021-07-25 23:14:02,480] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 474086
+[2021-07-25 23:14:02,641] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:14:05,798] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /makecall/ HTTP/1.1" 200 106
+[2021-07-25 23:14:07,811] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /makecall/ HTTP/1.1" 200 106
+[2021-07-25 23:14:08,387] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /makecall/ HTTP/1.1" 200 106
+[2021-07-25 23:14:08,768] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /makecall/ HTTP/1.1" 200 106
+[2021-07-25 23:15:09,678] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:15:11,708] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:15:13,330] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23153
+[2021-07-25 23:15:14,652] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 473090
+[2021-07-25 23:15:14,789] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:18:52,198] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:18:54,190] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:19:04,325] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23153
+[2021-07-25 23:19:05,803] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 473069
+[2021-07-25 23:19:05,838] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/import_export/action_formats.js HTTP/1.1" 200 765
+[2021-07-25 23:19:05,983] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:19:37,694] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:19:46,520] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 23:20:02,681] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:20:04,757] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:20:10,267] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104655
+[2021-07-25 23:20:10,423] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:20:11,804] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 473090
+[2021-07-25 23:20:11,955] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:20:15,965] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:20:27,297] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 23:21:08,515] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 473090
+[2021-07-25 23:21:08,673] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:21:18,553] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:21:29,166] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7494
+[2021-07-25 23:21:35,074] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 473090
+[2021-07-25 23:21:35,226] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:25:04,573] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:25:06,587] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:25:38,300] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23153
+[2021-07-25 23:25:39,694] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 473069
+[2021-07-25 23:25:39,834] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:25:42,995] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:25:53,084] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 23:25:56,720] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104655
+[2021-07-25 23:25:56,866] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:26:01,708] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 473069
+[2021-07-25 23:26:01,855] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:29:59,707] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23153
+[2021-07-25 23:30:01,133] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 473069
+[2021-07-25 23:30:01,273] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:30:03,202] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:30:11,941] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 23:30:51,210] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104655
+[2021-07-25 23:30:51,364] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:37:15,740] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:37:17,841] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:37:24,837] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:37:26,762] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:37:33,808] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 473072
+[2021-07-25 23:37:33,958] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:37:36,566] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:37:47,521] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 121
+[2021-07-25 23:38:04,921] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 473072
+[2021-07-25 23:38:05,082] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:38:07,248] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:38:17,392] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
+[2021-07-25 23:38:26,227] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:38:28,195] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
