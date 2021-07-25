@@ -22,7 +22,7 @@ from django.urls import path, include
 from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
 from Miracle.models import MiracleNumber
-
+from django.conf.urls import include, url
 
 
 class MiracleNumberSerializer(serializers.HyperlinkedModelSerializer):
@@ -73,6 +73,7 @@ urlpatterns = [
     path('Miracle/MiracleOrders/', MiracleViews.MiracleOrder_search, name='MiracleOrders_search'),
     path('crm/Contacts/', crmViews.Contacts_search, name='Contacts_search'),
     path('crm/Oblist/', crmViews.Oblist_search, name='Oblist_search'),
+    url(r'crm/', include('crm.urls')),
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

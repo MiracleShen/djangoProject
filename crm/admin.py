@@ -3,6 +3,9 @@ from .models import *
 import json
 from django.http import JsonResponse
 from simpleui.admin import AjaxAdmin
+from import_export.fields import Field
+from import_export.admin import ImportExportModelAdmin
+from import_export import resources
 
 
 class ContactHistoryAdmin(admin.ModelAdmin):
@@ -50,12 +53,18 @@ class OrganizationAdmin(admin.ModelAdmin):
 admin.site.register(Organization, OrganizationAdmin)
 
 
-class OblistAdmin(AjaxAdmin):
+class OblistResource(resources.ModelResource):
+    class Meta:
+        model = Oblist
+
+
+class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
     fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
     search_fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
     list_display = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'colored_Status', 'Memo', 'Owner', 'makecall')
     list_filter = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
     list_editable = ('Status', 'Owner')
+    resources_class = OblistResource
     # 增加自定义按钮
     actions = ('layer_input',)
 
@@ -72,13 +81,19 @@ class OblistAdmin(AjaxAdmin):
             })
         else:
             # print('我是参数'+post['type'])
-            for qs in queryset:
-                self.model.objects.filter(id=qs.id).update(Owner=post['type'])
-                # print(str(qs.id)+'我被选中了'+qs.Owner)
-            return JsonResponse(data={
-                'status': 'success',
-                'msg': '处理成功！'
-            })
+            if request.user.is_superuser:
+                for qs in queryset:
+                    self.model.objects.filter(id=qs.id).update(Owner=post['type'])
+                    # print(str(qs.id)+'我被选中了'+qs.Owner)
+                return JsonResponse(data={
+                    'status': 'success',
+                    'msg': '处理成功！'
+                })
+            else:
+                return JsonResponse(data={
+                    'status': 'error',
+                    'msg': '您没有权限，请找管理员分配数据'
+                })
 
     layer_input.short_description = '分配数据'
     layer_input.type = 'success'

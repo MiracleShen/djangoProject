@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/all-2021-07-24.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/all-2021-07-25.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error-2021-07-24.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error-2021-07-25.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/info-2021-07-24.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/info-2021-07-25.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/components.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/macro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/nb_components.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/nb_jupyter_globe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/nb_jupyter_lab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/nb_jupyter_lab_tab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/nb_jupyter_notebook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/nb_jupyter_notebook_tab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/nb_nteract.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/simple_chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/simple_globe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/simple_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/templates/simple_tab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/djangoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crm/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/all-2021-07-25.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/all-2021-07-25.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -59,8 +72,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="D:/电脑维修公司-手机.csv" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/crm/templates" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -178,7 +191,7 @@
       <workItem from="1626953985549" duration="18650000" />
       <workItem from="1627004547709" duration="665000" />
       <workItem from="1627031348055" duration="600000" />
-      <workItem from="1627139809770" duration="6287000" />
+      <workItem from="1627139809770" duration="15577000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，在家里的电脑上做的一些工作：&#10;1、MiracleOrders做的比较完整&#10;2、MiracleNumber刚刚开始">
       <created>1621805529488</created>
@@ -327,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626968397893</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="1、攻克了批处理的问题&#10;2、AjaxAdmin学习了。">
+      <created>1627146265271</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1627146265271</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +385,8 @@
     <MESSAGE value="1、联系记录完整使用&#10;2、账单格式化" />
     <MESSAGE value="1、开发了一套Oblist&#10;2、点击拨号，做成js文件了" />
     <MESSAGE value="1、增加了与EZPhone的账号绑定的功能&#10;2、自动识别当前账户" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、增加了与EZPhone的账号绑定的功能&#10;2、自动识别当前账户" />
+    <MESSAGE value="1、攻克了批处理的问题&#10;2、AjaxAdmin学习了。" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、攻克了批处理的问题&#10;2、AjaxAdmin学习了。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
