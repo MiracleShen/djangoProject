@@ -34,17 +34,12 @@ def Oblist_search(request):
 
 
 def index(request):
-    OWN = []
-    bar = Bar().add_xaxis(OWNERS.values).set_global_opts(title_opts=opts.TitleOpts(title="意向情况", subtitle="电脑维修公司"))
+    bar = Bar().add_xaxis(OWNERS.values).set_global_opts(title_opts=opts.TitleOpts(title="数据报表", subtitle="所有数据"))
     for x in Status.values:
         y1 =[]
-        print (x)
         for y in OWNERS.values:
-            print(y)
             A = Oblist.objects.filter(Owner=y).filter(Status=x)
-            # y1.append(A.values['Status_Count'])
             y1.append(A.count())
-        print (y1)
         bar = bar.add_yaxis(x,y1)
     c = (
         bar

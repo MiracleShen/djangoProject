@@ -840,3 +840,47 @@ AttributeError: 'NoneType' object has no attribute 'append'
 [2021-07-25 15:17:35,075] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\views.py changed, reloading.
 [2021-07-25 15:17:37,227] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
 [2021-07-25 15:17:42,497] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8183
+[2021-07-25 15:21:17,816] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\views.py changed, reloading.
+[2021-07-25 15:21:19,996] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 15:21:24,850] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\views.py changed, reloading.
+[2021-07-25 15:21:27,347] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 15:21:33,307] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8183
+[2021-07-25 15:26:48,158] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\views.py changed, reloading.
+[2021-07-25 15:26:50,240] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 15:27:07,008] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8183
+[2021-07-25 15:28:35,837] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 15:28:38,086] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 15:30:15,956] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 15:30:17,018] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 15:32:01,168] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 15:32:03,273] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 15:32:11,232] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 462861
+[2021-07-25 15:32:11,409] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 15:32:14,368] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8183
+[2021-07-25 15:32:21,857] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104655
+[2021-07-25 15:32:22,009] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 15:33:07,361] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 15:33:09,869] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 15:33:21,857] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 462861
+[2021-07-25 15:33:22,006] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 15:33:24,047] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8183
+[2021-07-25 15:33:50,399] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/ HTTP/1.1" 302 0
+[2021-07-25 15:33:51,731] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 462973
+[2021-07-25 15:33:51,891] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 15:33:54,340] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8183
+[2021-07-25 15:36:38,938] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8183
+[2021-07-25 15:36:56,908] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8183
+[2021-07-25 15:42:25,781] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8183
+[2021-07-25 15:43:19,833] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\views.py changed, reloading.
+[2021-07-25 15:43:21,915] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 15:43:23,120] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8171
+[2021-07-25 15:45:42,183] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8171
+[2021-07-25 15:49:19,750] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\views.py changed, reloading.
+[2021-07-25 15:49:21,789] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 15:49:34,232] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 15:49:36,397] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 15:49:41,355] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23175
+[2021-07-25 15:49:42,839] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 462867
+[2021-07-25 15:49:43,010] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 15:49:46,465] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8171
+[2021-07-25 15:50:20,463] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8171

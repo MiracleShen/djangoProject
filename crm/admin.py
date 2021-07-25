@@ -66,8 +66,14 @@ class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
     list_editable = ('Status', 'Owner')
     resources_class = OblistResource
     # 增加自定义按钮
-    actions = ('layer_input',)
-
+    actions = ('layer_input','Status_report')
+    def Status_report(self, request, queryset):
+        pass
+    Status_report.short_description = '数据报表'
+    Status_report.icon = 'fas fa-audio-description'
+    Status_report.type = 'success'
+    Status_report.action_type=1
+    Status_report.action_url='/crm/'
     def layer_input(self, request, queryset):
 
         post = request.POST
