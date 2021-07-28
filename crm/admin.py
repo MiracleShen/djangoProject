@@ -41,7 +41,7 @@ class ContactsAdmin(admin.ModelAdmin):
 admin.site.register(Contacts, ContactsAdmin)
 
 
-class OrganizationAdmin(admin.ModelAdmin):
+class OrganizationAdmin(ImportExportModelAdmin):
     fields = ('OrganizeName', 'OrganizeID', 'Memo')
     search_fields = ('OrganizeName', 'OrganizeID', 'Memo')
     list_display = ('OrganizeName', 'OrganizeID', 'Memo')
@@ -56,7 +56,7 @@ class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
     search_fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
     list_display = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'colored_Status', 'short_content', 'Owner', 'makecall')
     list_filter = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
-    list_editable = ('Status', 'Owner')
+    # list_editable = ('Status', 'Owner')
     actions = ('CallDetail', 'layer_input', 'Status_report')
 
     def CallDetail(self, request, queryset):
@@ -71,7 +71,7 @@ class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
             })
         else:
             for qs in queryset:
-                self.model.objects.filter(id=qs.id).update(Memo=post['Memo'])
+                self.model.objects.filter(id=qs.id).update(Memo=post['Memo'],Status=post['Status'])
                 # print(str(qs.id)+'我被选中了'+qs.Owner)
             return JsonResponse(data={
                 'status': 'success',
@@ -98,7 +98,7 @@ class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
                 'key': 'Status',
                 'label': '沟通结果',
                 'width': '500px',
-                'size': 'small',
+                'size': 'large',
                 'value': '有需求',
                 'required': True,
                 'options': [

@@ -8,47 +8,26 @@ from django.http import HttpResponse
 from openpyxl import Workbook
 
 from .models import MiracleNumber, MiracleOrders, MiracleCredit, MiracleBill
-
+from simpleui.admin import AjaxAdmin
+from import_export.admin import ImportExportModelAdmin
 admin.AdminSite.site_header = 'MiracleOS系统'
 admin.AdminSite.site_title = 'MiracleOS系统'
 
 
-class ExportExcelMixin(object):
-    def export_as_excel(self, request, queryset):
-        meta = self.model._meta
-        field_names = [field.name for field in meta.fields]
-        response = HttpResponse(content_type='application/msexcel')
-        response['Content-Disposition'] = f'attachment; filename={meta}.xls'
-        wb = Workbook()
-        ws = wb.active
-        ws.append(field_names)
-        for obj in queryset:
-            for field in field_names:
-                data = [f'{getattr(obj, field)}' for field in field_names]
-            row = ws.append(data)
-        wb.save(response)
-        return response
 
-    export_as_excel.short_description = '导出Excel'
-
-
-class ExcelImportForm(forms.Form):
-    excel_file = forms.FileField()
-
-
-class MiracleNumberAdmin(admin.ModelAdmin, ExportExcelMixin):
+class MiracleNumberAdmin(ImportExportModelAdmin, AjaxAdmin):
     fields = ('Zip', 'Number', 'Stars','Operator', 'Status', 'Organize')
     search_fields = ('Zip', 'Number', 'Stars','Operator', 'Status', 'Organize')
     list_display = ('Zip', 'Number', 'Stars','Operator', 'colored_Status', 'Organize')
     list_filter = ('Zip', 'Operator', 'Stars','Status', 'Organize')
     list_per_page = 20
-    actions = ['export_as_excel']
+    # actions = ['export_as_excel']
 
 
 admin.site.register(MiracleNumber, MiracleNumberAdmin)
 
 
-class MiracleOrdersAdmin(admin.ModelAdmin, ExportExcelMixin):
+class MiracleOrdersAdmin(ImportExportModelAdmin, AjaxAdmin):
     fields = (
         'CustomerName', 'OrderDate', 'Number_0', 'Number_1', 'Number_2', 'Number_3', 'Number_4', 'Number_5',
         'Line_Number',

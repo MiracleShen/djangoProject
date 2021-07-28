@@ -1,0 +1,37 @@
+[2021-07-26 12:30:14,923] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-26 12:30:18,664] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23222
+[2021-07-26 12:30:19,138] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-07-26 12:30:19,139] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 5394
+[2021-07-26 12:30:23,125] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414587
+[2021-07-26 12:30:23,144] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/call.js HTTP/1.1" 304 0
+[2021-07-26 12:30:23,276] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-26 12:30:46,070] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/ajax HTTP/1.1" 200 62
+[2021-07-26 12:30:47,618] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414612
+[2021-07-26 12:30:47,768] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-26 12:30:52,226] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/1477/change/ HTTP/1.1" 200 20852
+[2021-07-26 12:30:52,375] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-26 12:31:05,806] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/1477/change/ HTTP/1.1" 302 0
+[2021-07-26 12:31:06,391] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414799
+[2021-07-26 12:31:06,537] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-26 12:34:13,987] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /crm/ HTTP/1.1" 200 8172
+[2021-07-26 12:39:34,863] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-26 12:39:43,693] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 6939
+[2021-07-26 12:40:19,435] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-26 12:40:21,413] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-26 12:40:22,877] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414648
+[2021-07-26 12:40:23,012] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-26 12:40:46,711] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-26 12:40:48,812] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-26 12:40:50,219] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23222
+[2021-07-26 12:40:50,964] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414630
+[2021-07-26 12:40:51,117] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-26 12:41:20,155] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-26 12:41:22,120] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-26 12:41:26,895] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23222
+[2021-07-26 12:41:27,572] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414648
+[2021-07-26 12:41:27,727] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-26 12:41:39,422] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-26 12:41:41,395] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-26 12:41:42,847] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23222
+[2021-07-26 12:41:43,570] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414648
+[2021-07-26 12:41:43,714] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398

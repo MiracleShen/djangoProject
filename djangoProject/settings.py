@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'pymysql',
     'rest_framework',
 ]
+IMPORT_EXPORT_USE_TRANSACTIONS = True
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.

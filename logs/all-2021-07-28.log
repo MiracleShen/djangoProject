@@ -1,0 +1,36 @@
+[2021-07-28 12:21:32,113] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-28 12:21:55,501] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-07-28 12:21:57,540] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-28 12:22:06,131] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-28 12:22:43,692] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\tasks\admin.py changed, reloading.
+[2021-07-28 12:22:45,729] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-28 12:22:50,409] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23136
+[2021-07-28 12:22:50,978] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-07-28 12:22:50,979] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 5394
+[2021-07-28 12:23:05,898] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/tasks/task/ HTTP/1.1" 200 58991
+[2021-07-28 12:23:06,086] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-28 12:23:06,194] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[2021-07-28 12:23:06,244] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[2021-07-28 12:23:11,112] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/Miracle/miraclenumber/ HTTP/1.1" 200 60441
+[2021-07-28 12:23:11,267] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-28 12:23:20,733] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/Miracle/miraclenumber/?Stars__exact=%E6%99%AE%E9%80%9A%E5%8F%B7&Status__exact=%E5%8F%AF%E9%80%89 HTTP/1.1" 200 64202
+[2021-07-28 12:23:20,886] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-28 12:23:22,378] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/Miracle/miraclenumber/export/?Stars__exact=%E6%99%AE%E9%80%9A%E5%8F%B7&Status__exact=%E5%8F%AF%E9%80%89 HTTP/1.1" 200 5838
+[2021-07-28 12:23:28,830] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/Miracle/miraclenumber/export/?Stars__exact=%E6%99%AE%E9%80%9A%E5%8F%B7&Status__exact=%E5%8F%AF%E9%80%89 HTTP/1.1" 200 7316
+[2021-07-28 12:32:47,572] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\tasks\admin.py changed, reloading.
+[2021-07-28 12:32:49,869] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-28 12:46:03,505] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23139
+[2021-07-28 12:46:04,012] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/tasks/task/ HTTP/1.1" 200 58910
+[2021-07-28 12:46:04,180] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-28 12:46:07,051] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/Miracle/miraclenumber/ HTTP/1.1" 200 60441
+[2021-07-28 12:46:07,206] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-28 13:05:30,289] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\tasks\admin.py changed, reloading.
+[2021-07-28 13:05:32,338] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-28 13:05:36,697] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23118
+[2021-07-28 13:05:37,184] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/Miracle/miraclenumber/ HTTP/1.1" 200 60441
+[2021-07-28 13:05:37,336] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-28 13:05:41,165] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/tasks/task/ HTTP/1.1" 200 60787
+[2021-07-28 13:05:41,309] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-28 13:05:53,965] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/tasks/task/ajax HTTP/1.1" 200 62
+[2021-07-28 13:05:55,454] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/tasks/task/ HTTP/1.1" 200 60787
+[2021-07-28 13:05:55,606] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398

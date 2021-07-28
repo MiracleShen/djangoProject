@@ -1416,3 +1416,60 @@ TypeError: CallDetail() missing 1 required positional argument: 'queryset'
 [2021-07-25 23:38:17,392] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 7495
 [2021-07-25 23:38:26,227] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
 [2021-07-25 23:38:28,195] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:39:45,226] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:39:47,170] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:40:23,835] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-25 23:40:25,753] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:40:34,135] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23153
+[2021-07-25 23:40:34,726] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-25 23:40:34,877] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:40:36,450] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/import/ HTTP/1.1" 200 6274
+[2021-07-25 23:40:45,344] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/organization/import/ HTTP/1.1" 200 121
+[2021-07-25 23:40:48,311] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414022
+[2021-07-25 23:40:48,464] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:40:49,337] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-25 23:40:49,478] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:40:51,065] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/import/ HTTP/1.1" 200 6274
+[2021-07-25 23:41:01,444] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/organization/import/ HTTP/1.1" 200 12233
+[2021-07-25 23:41:46,969] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-25 23:41:47,119] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:41:48,685] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/import/ HTTP/1.1" 200 6274
+[2021-07-25 23:41:58,924] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/organization/import/ HTTP/1.1" 200 6597
+[2021-07-25 23:42:12,023] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-25 23:42:12,165] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:42:13,750] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/import/ HTTP/1.1" 200 6274
+[2021-07-25 23:42:22,981] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/organization/import/ HTTP/1.1" 200 6597
+[2021-07-25 23:48:08,713] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/719/change/ HTTP/1.1" 200 21223
+[2021-07-25 23:48:08,747] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[2021-07-25 23:48:08,748] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+[2021-07-25 23:48:08,906] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:48:11,349] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414022
+[2021-07-25 23:48:11,512] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:48:30,783] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/718/change/ HTTP/1.1" 200 20856
+[2021-07-25 23:48:30,940] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:48:33,522] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414022
+[2021-07-25 23:48:33,676] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:48:52,993] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:49:04,513] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 6939
+[2021-07-25 23:52:35,018] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\settings.py changed, reloading.
+[2021-07-25 23:52:37,220] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-25 23:52:53,436] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-25 23:52:53,597] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:52:57,212] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414022
+[2021-07-25 23:52:57,356] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:52:59,574] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:53:08,695] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 6939
+[2021-07-25 23:53:21,043] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-25 23:53:21,194] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:53:23,049] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414022
+[2021-07-25 23:53:23,202] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-25 23:57:03,621] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-25 23:57:16,107] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 122
+[2021-07-26 00:00:41,334] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414022
+[2021-07-26 00:00:41,479] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-26 00:00:43,374] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-26 00:00:54,588] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 122
+[2021-07-26 00:01:06,921] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414022
+[2021-07-26 00:01:07,080] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-26 00:01:09,158] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/import/ HTTP/1.1" 200 6289
+[2021-07-26 00:01:21,408] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/oblist/import/ HTTP/1.1" 200 122
