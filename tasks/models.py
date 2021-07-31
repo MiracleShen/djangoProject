@@ -26,6 +26,7 @@ class Tasktype(models.TextChoices):
 class OWNERS(models.TextChoices):
     MIR = '沈承永','沈承永'
     GMM = '耿萌萌','耿萌萌'
+    WZM = '王忠盟','王忠盟'
 
 class Task(models.Model):
     tasktype = models.CharField(verbose_name='任务类型', default='账务管理', max_length=8, choices=Tasktype.choices)

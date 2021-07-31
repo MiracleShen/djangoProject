@@ -14,7 +14,8 @@ class ContactHistory(models.Model):
     ContactDateTime = models.DateTimeField(auto_now_add=True, verbose_name='联系时间')
     # ContactMedia = models.CharField(null=True, max_length=20, verbose_name='联系方式')
     Creator = models.CharField(verbose_name='创建人', default='沈承永', max_length=40)
-
+    def __str__(self):
+        return self.Contact.Name
     class Meta:
         verbose_name_plural = '联系记录'
 
@@ -63,6 +64,7 @@ class Organization(models.Model):
 class OWNERS(models.TextChoices):
     MIR = '沈承永', '沈承永'
     GMM = '耿萌萌', '耿萌萌'
+    WZM = '王忠盟','王忠盟'
 class Status(models.TextChoices):
     AA = '未联系', '未联系'
     BB = '未接通', '未接通'

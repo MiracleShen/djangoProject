@@ -58,7 +58,7 @@ class TaskAdmin(ImportExportModelAdmin,AjaxAdmin):
                 'type': 'radio',
                 'key': 'type',
                 'label': '执行人',
-                'width': '200px',
+                'width': '500px',
                 'size': 'small',
                 'value': '沈承永',
                 'options': [{
@@ -67,7 +67,10 @@ class TaskAdmin(ImportExportModelAdmin,AjaxAdmin):
                 }, {
                     'key': '耿萌萌',
                     'label': '耿萌萌'
-                }]
+                }, {
+                    'key': '王忠盟',
+                    'label': '王忠盟'
+                },]
             }, ]
     }
 

@@ -1,0 +1,472 @@
+[2021-07-30 15:07:45,341] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:07:53,642] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23269
+[2021-07-30 15:07:53,899] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/images/Miracle-Logo-1.png HTTP/1.1" 304 0
+[2021-07-30 15:07:54,312] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-07-30 15:07:54,312] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 5394
+[2021-07-30 15:08:00,032] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:08:00,225] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:08:02,373] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 30548
+[2021-07-30 15:08:02,393] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[2021-07-30 15:08:02,406] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/vendor/select2/select2.css HTTP/1.1" 200 17358
+[2021-07-30 15:08:02,407] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/autocomplete.css HTTP/1.1" 200 9114
+[2021-07-30 15:08:02,411] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/autocomplete.js HTTP/1.1" 200 1320
+[2021-07-30 15:08:02,429] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[2021-07-30 15:08:02,430] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/inlines.js HTTP/1.1" 200 15225
+[2021-07-30 15:08:02,445] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/select2/select2.full.js HTTP/1.1" 200 173566
+[2021-07-30 15:08:02,490] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2021-07-30 15:08:02,499] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2021-07-30 15:08:02,545] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:08:02,700] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+[2021-07-30 15:09:46,775] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/contacts/13/change/ HTTP/1.1" 302 0
+[2021-07-30 15:09:47,134] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59624
+[2021-07-30 15:09:47,294] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:09:50,008] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 32468
+[2021-07-30 15:09:50,049] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/select2/i18n/zh-CN.js HTTP/1.1" 200 768
+[2021-07-30 15:09:50,167] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:12:54,023] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:12:56,347] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:13:00,819] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:13:00,966] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:13:02,983] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 31928
+[2021-07-30 15:13:03,124] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:13:34,466] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:13:34,623] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:13:37,460] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacthistory/ HTTP/1.1" 200 56689
+[2021-07-30 15:13:37,608] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:13:53,949] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/12/change/ HTTP/1.1" 200 30213
+[2021-07-30 15:13:54,110] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:16:07,342] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:16:09,367] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:16:16,445] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:16:18,426] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:17:03,400] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:17:05,297] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:17:27,879] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:17:29,840] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:17:37,725] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:17:37,890] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:17:40,124] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 31928
+[2021-07-30 15:17:40,277] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:18:42,216] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:18:44,215] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:18:47,000] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23334
+[2021-07-30 15:18:47,528] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:18:47,672] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:18:50,101] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 32092
+[2021-07-30 15:18:50,246] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:18:59,556] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacthistory/16/change/ HTTP/1.1" 200 20027
+[2021-07-30 15:18:59,713] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:19:02,502] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 43519)
+
+[2021-07-30 15:19:03,561] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacthistory/ HTTP/1.1" 200 56689
+[2021-07-30 15:19:03,710] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:19:06,253] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacthistory/16/change/ HTTP/1.1" 200 20023
+[2021-07-30 15:19:06,406] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:19:09,223] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacthistory/ HTTP/1.1" 200 56689
+[2021-07-30 15:19:09,390] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:19:21,783] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-30 15:19:22,167] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:19:24,884] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacthistory/ HTTP/1.1" 200 56689
+[2021-07-30 15:19:25,049] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:19:26,646] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:19:26,788] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:19:31,613] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 32092
+[2021-07-30 15:19:31,756] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:19:52,226] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:19:54,341] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:19:55,631] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:19:55,792] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:19:57,757] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23334
+[2021-07-30 15:19:58,249] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:19:58,399] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:20:02,343] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-30 15:20:02,487] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:20:26,826] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:20:28,945] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:20:34,069] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23334
+[2021-07-30 15:20:34,603] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:20:34,751] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:21:09,297] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:21:11,306] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:21:13,616] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23334
+[2021-07-30 15:21:14,121] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:21:14,270] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:21:24,691] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:21:26,666] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:21:46,022] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:21:48,230] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:21:51,623] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23334
+[2021-07-30 15:21:52,142] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:21:52,281] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:21:54,987] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 31928
+[2021-07-30 15:21:55,157] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:25:47,624] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:25:49,830] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:26:46,685] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:26:48,702] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:27:30,519] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:27:32,433] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:28:04,716] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:28:06,718] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:28:19,883] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:28:21,862] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:28:34,189] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:28:34,336] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:28:36,509] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 26948
+[2021-07-30 15:28:36,675] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:29:30,555] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:29:32,651] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:29:36,347] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 45285)
+
+[2021-07-30 15:29:36,713] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:29:36,859] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:29:38,661] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 25798
+[2021-07-30 15:29:38,820] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:30:17,943] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/contacts/13/change/ HTTP/1.1" 302 0
+[2021-07-30 15:30:18,380] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59624
+[2021-07-30 15:30:18,529] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:30:20,857] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 25868
+[2021-07-30 15:30:21,017] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:31:37,833] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\models.py changed, reloading.
+[2021-07-30 15:31:39,858] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:31:42,652] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23339
+[2021-07-30 15:31:43,143] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:31:43,291] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:31:45,257] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 25758
+[2021-07-30 15:31:45,429] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:32:47,479] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:32:49,408] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:32:54,430] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23339
+[2021-07-30 15:32:54,946] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:32:55,097] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:32:57,315] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 25758
+[2021-07-30 15:32:57,470] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:33:29,812] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:33:31,922] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:33:33,114] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23339
+[2021-07-30 15:33:33,614] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:33:33,771] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:33:36,001] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 28731
+[2021-07-30 15:33:36,170] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:33:47,148] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacthistory/ HTTP/1.1" 200 56689
+[2021-07-30 15:33:47,304] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:33:55,708] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacthistory/add/ HTTP/1.1" 200 19269
+[2021-07-30 15:33:55,884] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:33:57,475] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/autocomplete/?app_label=crm&model_name=contacthistory&field_name=Contact HTTP/1.1" 200 1319
+[2021-07-30 15:34:00,061] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 45876)
+
+[2021-07-30 15:34:00,578] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/autocomplete/?term=%E8%83%A1%E9%91%AB&app_label=crm&model_name=contacthistory&field_name=Contact HTTP/1.1" 200 108
+[2021-07-30 15:34:07,101] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/contacthistory/add/ HTTP/1.1" 302 0
+[2021-07-30 15:34:07,642] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacthistory/ HTTP/1.1" 200 57755
+[2021-07-30 15:34:07,786] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:34:12,618] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:34:12,776] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:34:14,548] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 29901
+[2021-07-30 15:34:14,707] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:40:06,055] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:40:08,026] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:40:25,453] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:40:25,615] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:40:27,372] [log.py:224] [log:log_response] [ERROR]- Internal Server Error: /admin/crm/contacts/13/change/
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "D:\Python39\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 1604, in _changeform_view
+    formsets, inline_instances = self._create_formsets(request, obj, change=True)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 1961, in _create_formsets
+    for FormSet, inline in self.get_formsets_with_inlines(*get_formsets_args):
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 799, in get_formsets_with_inlines
+    yield inline.get_formset(request, obj), inline
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 2141, in get_formset
+    return inlineformset_factory(self.parent_model, self.model, **defaults)
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 1095, in inlineformset_factory
+    FormSet = modelformset_factory(model, **kwargs)
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 884, in modelformset_factory
+    form = modelform_factory(model, form=form, fields=fields, exclude=exclude,
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 261, in __new__
+    fields = fields_for_model(
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 158, in fields_for_model
+    raise FieldError(
+django.core.exceptions.FieldError: 'ContactDateTime' cannot be specified for ContactHistory model form as it is a non-editable field
+[2021-07-30 15:40:27,375] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 500 164452
+[2021-07-30 15:40:44,944] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:40:47,032] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:40:52,709] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23313
+[2021-07-30 15:40:53,210] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:40:53,376] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:40:55,130] [log.py:224] [log:log_response] [ERROR]- Internal Server Error: /admin/crm/contacts/13/change/
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "D:\Python39\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 1604, in _changeform_view
+    formsets, inline_instances = self._create_formsets(request, obj, change=True)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 1961, in _create_formsets
+    for FormSet, inline in self.get_formsets_with_inlines(*get_formsets_args):
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 799, in get_formsets_with_inlines
+    yield inline.get_formset(request, obj), inline
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 2141, in get_formset
+    return inlineformset_factory(self.parent_model, self.model, **defaults)
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 1095, in inlineformset_factory
+    FormSet = modelformset_factory(model, **kwargs)
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 884, in modelformset_factory
+    form = modelform_factory(model, form=form, fields=fields, exclude=exclude,
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 276, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (colored_ContactType) specified for ContactHistory
+[2021-07-30 15:40:55,134] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 500 157874
+[2021-07-30 15:41:12,501] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:41:14,555] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:41:18,890] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23313
+[2021-07-30 15:41:19,363] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:41:19,530] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:41:21,587] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 29831
+[2021-07-30 15:41:21,747] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:41:43,368] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:41:45,445] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:41:49,795] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23313
+[2021-07-30 15:41:50,257] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:41:50,416] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:41:52,674] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 30865
+[2021-07-30 15:41:52,820] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:43:30,076] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/contacts/13/change/ HTTP/1.1" 302 0
+[2021-07-30 15:43:30,934] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59624
+[2021-07-30 15:43:31,092] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:43:34,146] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 30954
+[2021-07-30 15:43:34,285] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:45:19,747] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:45:19,889] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:45:22,772] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 30954
+[2021-07-30 15:45:22,918] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:46:51,653] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:46:53,863] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:47:14,199] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:47:16,475] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:47:17,740] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23374
+[2021-07-30 15:47:18,289] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:47:18,452] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:47:22,366] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 30884
+[2021-07-30 15:47:22,534] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:47:37,046] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:47:39,168] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:47:40,378] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23374
+[2021-07-30 15:47:40,880] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:47:41,036] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:47:43,327] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 30884
+[2021-07-30 15:47:43,491] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:48:05,062] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23374
+[2021-07-30 15:48:05,549] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:48:05,712] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:48:08,443] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 30884
+[2021-07-30 15:48:08,612] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:48:18,795] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:48:20,854] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:48:22,528] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23374
+[2021-07-30 15:48:23,021] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:48:23,192] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:48:25,810] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 32465
+[2021-07-30 15:48:25,984] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:48:48,778] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 15:48:50,965] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 15:48:53,716] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23374
+[2021-07-30 15:48:54,473] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:48:54,618] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:48:56,396] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 28394
+[2021-07-30 15:48:56,569] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 15:50:45,600] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 15:50:45,757] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 16:12:16,798] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 16:12:18,849] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 16:12:23,584] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23374
+[2021-07-30 16:12:24,125] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 16:12:24,289] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 16:12:28,898] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 59893
+[2021-07-30 16:12:29,047] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:47:17,541] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 17:47:19,569] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 17:49:09,279] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 17:49:11,257] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 17:49:18,999] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23318
+[2021-07-30 17:49:19,584] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 17:49:19,764] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:50:12,915] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 28394
+[2021-07-30 17:50:13,073] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:51:25,227] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 17:51:27,273] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 17:51:28,429] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23318
+[2021-07-30 17:51:28,906] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 17:51:29,053] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:51:31,010] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 26571
+[2021-07-30 17:51:31,175] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:51:45,501] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 17:51:47,604] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 17:53:13,543] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\models.py changed, reloading.
+[2021-07-30 17:53:15,504] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 17:53:16,891] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23318
+[2021-07-30 17:53:17,420] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 17:53:17,584] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:53:19,380] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 26553
+[2021-07-30 17:53:19,552] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:53:52,713] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 17:53:54,775] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 17:53:56,122] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 17:53:56,276] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:53:57,793] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 25951
+[2021-07-30 17:53:57,952] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:54:16,267] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 17:54:18,338] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 17:54:23,258] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-30 17:54:23,399] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:54:26,745] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 17:54:26,909] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:54:28,555] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 25951
+[2021-07-30 17:54:28,698] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:54:45,520] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23318
+[2021-07-30 17:54:46,006] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 17:54:46,162] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:54:47,477] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 25951
+[2021-07-30 17:54:47,626] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:55:04,529] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 17:55:06,502] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 17:55:12,304] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 17:55:14,366] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 17:55:16,451] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23318
+[2021-07-30 17:55:16,889] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 17:55:17,036] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:55:19,252] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 26859
+[2021-07-30 17:55:19,404] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:55:52,558] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\models.py changed, reloading.
+[2021-07-30 17:55:54,856] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 17:55:59,910] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23318
+[2021-07-30 17:56:00,482] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 17:56:00,639] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 17:56:37,798] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 26937
+[2021-07-30 17:56:37,949] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:05:46,935] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:05:48,934] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:05:59,487] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23318
+[2021-07-30 18:06:00,013] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 18:06:00,173] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:06:02,098] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 58312
+[2021-07-30 18:06:02,256] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:06:22,118] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\models.py changed, reloading.
+[2021-07-30 18:06:24,052] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:06:28,512] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23318
+[2021-07-30 18:06:29,026] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 18:06:29,165] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:06:30,873] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 58252
+[2021-07-30 18:06:31,032] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:07:11,665] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:07:13,736] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:07:19,264] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23318
+[2021-07-30 18:07:19,757] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 18:07:19,923] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:07:22,083] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 59922
+[2021-07-30 18:07:22,253] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:08:22,400] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414648
+[2021-07-30 18:08:22,413] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/call.js HTTP/1.1" 304 0
+[2021-07-30 18:08:22,578] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:08:26,504] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/1477/change/ HTTP/1.1" 200 20864
+[2021-07-30 18:08:26,666] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:08:29,284] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/oblist/ HTTP/1.1" 200 414648
+[2021-07-30 18:08:29,443] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:15:26,312] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:15:28,578] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:15:49,682] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:15:51,705] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:16:35,792] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:16:37,728] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:18:13,411] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:18:15,358] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:18:51,407] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:18:53,386] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:19:07,558] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:19:09,478] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:20:23,139] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:20:25,085] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:21:59,467] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:22:01,388] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:22:19,039] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:22:21,074] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:22:29,507] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23318
+[2021-07-30 18:22:30,035] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 18:22:30,188] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:22:35,182] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/13/change/ HTTP/1.1" 200 74939
+[2021-07-30 18:22:35,342] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:22:46,713] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/autocomplete/?app_label=crm&model_name=contacts&field_name=Organize HTTP/1.1" 200 2072
+[2021-07-30 18:24:52,995] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacthistory/ HTTP/1.1" 200 57654
+[2021-07-30 18:24:53,161] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:25:11,352] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-30 18:25:11,514] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:26:26,221] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:26:28,300] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:27:49,912] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:27:51,921] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:27:58,348] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23318
+[2021-07-30 18:27:58,898] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-30 18:27:59,047] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:28:00,768] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/378/change/ HTTP/1.1" 200 38356
+[2021-07-30 18:28:00,933] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:28:11,349] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 59453
+[2021-07-30 18:28:11,522] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:28:16,391] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-30 18:28:16,541] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:28:19,673] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/377/change/ HTTP/1.1" 200 38401
+[2021-07-30 18:28:19,826] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:28:57,259] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-30 18:28:57,418] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:29:09,242] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\crm\admin.py changed, reloading.
+[2021-07-30 18:29:11,548] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-07-30 18:29:13,000] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/378/change/ HTTP/1.1" 200 39544
+[2021-07-30 18:29:13,159] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:30:08,132] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /admin/crm/organization/378/change/ HTTP/1.1" 302 0
+[2021-07-30 18:30:08,577] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 105010
+[2021-07-30 18:30:08,742] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:30:23,318] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23348
+[2021-07-30 18:30:23,788] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/ HTTP/1.1" 200 60572
+[2021-07-30 18:30:23,940] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:38:03,065] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacthistory/ HTTP/1.1" 200 57803
+[2021-07-30 18:38:03,217] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:38:19,640] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/contacts/14/change/ HTTP/1.1" 200 46312
+[2021-07-30 18:38:19,814] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-07-30 18:38:28,006] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/crm/organization/ HTTP/1.1" 200 104844
+[2021-07-30 18:38:28,149] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398

@@ -5,6 +5,14 @@ from simpleui.admin import AjaxAdmin
 from import_export.admin import ImportExportModelAdmin
 
 
+class ContactHistoryInline(admin.StackedInline):
+    model = ContactHistory
+    fields = ('Contact', 'ContactType', 'Memo', 'Creator', 'ContactDateTime')
+    extra = 0
+    raw_id_fields = ('Contact',)
+    readonly_fields = ['ContactType', 'Memo', 'Creator', 'ContactDateTime']
+    can_delete = False
+
 
 class ContactHistoryAdmin(admin.ModelAdmin):
     fields = ('Contact', 'ContactType', 'Memo')
@@ -31,21 +39,35 @@ admin.site.register(ContactHistory, ContactHistoryAdmin)
 
 
 class ContactsAdmin(admin.ModelAdmin):
-    fields = ('Organize', 'Name', 'Mobile', 'Email', 'Memo')
     search_fields = ('Organize__OrganizeName', 'Name', 'Mobile', 'Email', 'Memo')
-    list_display = ('Organize', 'Name', 'Mobile', 'Email', 'Memo')
+    list_display = ('Name', 'Organize', 'Mobile', 'Email', 'Memo')
     list_filter = ('Organize', 'Name', 'Mobile', 'Email', 'Memo')
     autocomplete_fields = ['Organize']
+    fieldsets = [
+        ('基础信息', {'fields': ('Organize', 'Name')}),
+        ('联系信息', {'fields': ('Mobile', 'Email')}),
+        ('备注信息', {'fields': ('Memo',)})]
+    inlines = [
+        ContactHistoryInline,
+    ]
 
 
 admin.site.register(Contacts, ContactsAdmin)
-
+class ContactsInline(admin.StackedInline):
+    model = Contacts
+    fields = ('Name', 'Organize', 'Mobile', 'Email', 'Memo')
+    extra = 0
+    # readonly_fields = ['Name', 'Organize', 'Mobile', 'Email', 'Memo']
+    can_delete = False
 
 class OrganizationAdmin(ImportExportModelAdmin):
     fields = ('OrganizeName', 'OrganizeID', 'Memo')
     search_fields = ('OrganizeName', 'OrganizeID', 'Memo')
     list_display = ('OrganizeName', 'OrganizeID', 'Memo')
     list_filter = ('OrganizeName', 'OrganizeID', 'Memo')
+    inlines = [
+        ContactsInline,
+    ]
 
 
 admin.site.register(Organization, OrganizationAdmin)
@@ -54,7 +76,8 @@ admin.site.register(Organization, OrganizationAdmin)
 class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
     fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
     search_fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
-    list_display = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'colored_Status', 'short_content', 'Owner', 'makecall')
+    list_display = (
+    'Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'colored_Status', 'short_content', 'Owner', 'makecall')
     list_filter = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
     # list_editable = ('Status', 'Owner')
     actions = ('CallDetail', 'layer_input', 'Status_report')
@@ -71,7 +94,7 @@ class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
             })
         else:
             for qs in queryset:
-                self.model.objects.filter(id=qs.id).update(Memo=post['Memo'],Status=post['Status'])
+                self.model.objects.filter(id=qs.id).update(Memo=post['Memo'], Status=post['Status'])
                 # print(str(qs.id)+'我被选中了'+qs.Owner)
             return JsonResponse(data={
                 'status': 'success',
@@ -189,7 +212,7 @@ class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
                 'type': 'radio',
                 'key': 'type',
                 'label': '执行人',
-                'width': '200px',
+                'width': '500px',
                 'size': 'small',
                 'value': '沈承永',
                 'options': [{
@@ -198,7 +221,11 @@ class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
                 }, {
                     'key': '耿萌萌',
                     'label': '耿萌萌'
-                }]
+                }, {
+                    'key': '王忠盟',
+                    'label': '王忠盟'
+                },
+                ]
             }, ]
     }
 
