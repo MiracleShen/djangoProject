@@ -1,0 +1,47 @@
+[2021-08-10 11:14:44,509] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-08-10 11:14:50,695] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 23127
+[2021-08-10 11:14:50,800] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/css/all.min.css HTTP/1.1" 200 55111
+[2021-08-10 11:14:50,808] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 200 3861
+[2021-08-10 11:14:50,815] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 200 6608
+[2021-08-10 11:14:50,857] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 200 232478
+[2021-08-10 11:14:50,861] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/dicts.js?_=2021.5.21 HTTP/1.1" 200 6292
+[2021-08-10 11:14:50,872] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/segment.js?_=2021.5.21 HTTP/1.1" 200 1186
+[2021-08-10 11:14:50,878] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/en-us.js?_=2021.5.21 HTTP/1.1" 200 811
+[2021-08-10 11:14:50,884] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/vue.min.js?_=2021.5.21 HTTP/1.1" 200 93675
+[2021-08-10 11:14:50,886] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/cookie.js?_=2021.5.21 HTTP/1.1" 200 524
+[2021-08-10 11:14:50,887] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2021.5.21 HTTP/1.1" 200 1254
+[2021-08-10 11:14:50,887] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/theme/theme.js?_=2021.5.21 HTTP/1.1" 200 4274
+[2021-08-10 11:14:50,911] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/waves/waves.min.js?_=2021.5.21 HTTP/1.1" 200 6329
+[2021-08-10 11:14:50,971] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/index.js?_=2021.5.21 HTTP/1.1" 200 20820
+[2021-08-10 11:14:50,979] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/images/Miracle-Logo-1.png HTTP/1.1" 200 24169
+[2021-08-10 11:14:50,993] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/menu.js?_=2021.5.21 HTTP/1.1" 200 1189
+[2021-08-10 11:14:51,029] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/index.js?_=2021.5.21 HTTP/1.1" 200 567853
+[2021-08-10 11:14:51,249] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 200 28200
+[2021-08-10 11:14:51,251] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13552
+[2021-08-10 11:14:51,265] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 74256
+[2021-08-10 11:14:51,433] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-08-10 11:14:51,434] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 5394
+[2021-08-10 11:14:54,052] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-08-10 11:14:54,053] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 5394
+[2021-08-10 11:14:54,635] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-08-10 11:14:54,635] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 5394
+[2021-08-10 11:14:55,241] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-08-10 11:14:55,242] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 5394
+[2021-08-10 11:14:55,835] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-08-10 11:14:55,836] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 5394
+[2021-08-10 11:14:56,440] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-08-10 11:14:56,440] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 5394
+[2021-08-10 11:14:57,131] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 15440
+[2021-08-10 11:14:57,208] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/popper/popper.js HTTP/1.1" 200 69253
+[2021-08-10 11:14:57,210] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/bootstrap/css/bootstrap.css HTTP/1.1" 200 209709
+[2021-08-10 11:14:57,230] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/jquery/jquery-3.6.0.min.js HTTP/1.1" 200 89503
+[2021-08-10 11:14:57,256] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/bootstrap/js/bootstrap.js HTTP/1.1" 200 148340
+[2021-08-10 12:32:41,349] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\urls.py changed, reloading.
+[2021-08-10 12:32:42,834] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-08-10 12:32:59,345] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\urls.py changed, reloading.
+[2021-08-10 12:33:01,028] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-08-10 12:35:53,584] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-08-10 12:35:55,104] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-08-10 12:36:49,802] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12434
+[2021-08-10 12:39:41,135] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\header.html changed, reloading.
+[2021-08-10 12:39:42,832] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader

@@ -68,8 +68,8 @@ class TaskAdmin(ImportExportModelAdmin,AjaxAdmin):
                     'key': '耿萌萌',
                     'label': '耿萌萌'
                 }, {
-                    'key': '王忠盟',
-                    'label': '王忠盟'
+                    'key': '王志杰',
+                    'label': '王志杰'
                 },]
             }, ]
     }

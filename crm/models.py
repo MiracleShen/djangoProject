@@ -64,7 +64,7 @@ class Organization(models.Model):
 class OWNERS(models.TextChoices):
     MIR = '沈承永', '沈承永'
     GMM = '耿萌萌', '耿萌萌'
-    WZM = '王忠盟','王忠盟'
+    WZM = '王志杰','王志杰'
 class Status(models.TextChoices):
     AA = '未联系', '未联系'
     BB = '未接通', '未接通'

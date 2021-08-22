@@ -5,7 +5,6 @@ from django.db import models
 from django.contrib import admin
 from django.utils.html import format_html
 
-
 # 关于号码的管理，主要在于当前号码是否可选、当前号码被谁占用了；当前号码开了几个并发（这个功能还需要EZUC+加以配合）
 class MiracleNumber(models.Model):
     OPERATORS = (
@@ -56,7 +55,18 @@ class MiracleNumber(models.Model):
 
 
 class MiracleOrders(models.Model):
-    CustomerName = models.CharField(max_length=40, verbose_name='客户名称')
+    PBXTYPE = (
+        ('免费版', '免费版'),
+        ('查询版', '查询版'),
+        ('管理版', '管理版'),
+        ('本地部署版', '本地部署版'),
+
+    )
+    YESORNO = (
+        ('无', '无'),
+        ('有', '有'),
+    )
+    CustomerName = models.ForeignKey('crm.Organization', on_delete=models.CASCADE, default='1', verbose_name='客户名称')
     OrderDate = models.DateTimeField(verbose_name='下单时间')
     Number_0 = models.IntegerField(default=0, verbose_name='普通号码数')
     Number_1 = models.IntegerField(default=0, verbose_name='1星号码数')
@@ -65,13 +75,13 @@ class MiracleOrders(models.Model):
     Number_4 = models.IntegerField(default=0, verbose_name='4星号码数')
     Number_5 = models.IntegerField(default=0, verbose_name='5星号码数')
     Line_Number = models.IntegerField(default=0, verbose_name='并发数')
-    PBX_Type = models.CharField(max_length=10, verbose_name='交换机类型')
-    MCU_Type = models.CharField(max_length=10, verbose_name='多方通话许可')
-    API_Type = models.CharField(max_length=10, verbose_name='API许可')
-    APP_Number = models.IntegerField(verbose_name='APP许可数')
-    SIP_Number = models.IntegerField(verbose_name='SIP许可数')
-    Log_Number = models.IntegerField(verbose_name='录音许可数')
-    CC_Number = models.IntegerField(verbose_name='轻客服许可数')
+    PBX_Type = models.CharField(max_length=10, verbose_name='交换机类型', default='免费版', choices=PBXTYPE)
+    MCU_Type = models.CharField(max_length=10, verbose_name='多方通话许可',default='无',choices=YESORNO)
+    API_Type = models.CharField(max_length=10, verbose_name='API许可',default='无',choices=YESORNO)
+    APP_Number = models.IntegerField(default=0,verbose_name='APP许可数')
+    SIP_Number = models.IntegerField(default=0,verbose_name='SIP许可数')
+    Log_Number = models.IntegerField(default=0,verbose_name='录音许可数')
+    CC_Number = models.IntegerField(default=0,verbose_name='轻客服许可数')
     HPR_Number = models.IntegerField(default=0, verbose_name='话机月租数量')  # 话机月租统一10元/月，WiFi话机，看长线
 
     class Meta:
