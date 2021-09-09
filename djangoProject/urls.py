@@ -28,7 +28,7 @@ from django.conf.urls import include, url
 class MiracleNumberSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = MiracleNumber
-        fields = ['Zip', 'Number', 'Stars', 'Operator', 'Organize']
+        fields = ['Zip', 'Number', 'Stars', 'Operator','Status', 'Organize']
 
 
 # Serializers define the API representation.
@@ -65,7 +65,7 @@ def return_static(request, path, insecure=True, **kwargs):
 admin.autodiscover()
 urlpatterns = [
     re_path(r'^static/(?P<path>.*)$', return_static, name='static'),
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('tasks/', include('tasks.urls')),
     path("Miracle/", MiracleViews.hello),
     path("makecall/", MiracleViews.makecall),
@@ -74,6 +74,8 @@ urlpatterns = [
     path('crm/Contacts/', crmViews.Contacts_search, name='Contacts_search'),
     path('crm/Oblist/', crmViews.Oblist_search, name='Oblist_search'),
     url(r'crm/', include('crm.urls')),
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
+    path('', admin.site.urls),
+    path('/Miracle/', MiracleViews.hello),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

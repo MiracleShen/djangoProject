@@ -28,7 +28,7 @@ class MiracleNumber(models.Model):
         ('5星级', '5星级'),
     )
     Zip = models.CharField(max_length=4, default='021', verbose_name='区号')
-    Number = models.IntegerField(verbose_name='固话号码')
+    Number = models.CharField(max_length=8,verbose_name='固话号码')
     Stars = models.CharField(max_length=8,verbose_name='星级',default='普通号',choices= STAR)
     Operator = models.CharField(max_length=12, verbose_name='运营商', choices=OPERATORS)
     Status = models.CharField(max_length=8, verbose_name='状态', default='可选', choices=STATUSS)

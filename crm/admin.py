@@ -53,12 +53,15 @@ class ContactsAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Contacts, ContactsAdmin)
+
+
 class ContactsInline(admin.StackedInline):
     model = Contacts
     fields = ('Name', 'Organize', 'Mobile', 'Email', 'Memo')
     extra = 0
     # readonly_fields = ['Name', 'Organize', 'Mobile', 'Email', 'Memo']
     can_delete = False
+
 
 class OrganizationAdmin(ImportExportModelAdmin):
     fields = ('OrganizeName', 'OrganizeID', 'Memo')
@@ -77,7 +80,7 @@ class OblistAdmin(ImportExportModelAdmin, AjaxAdmin):
     fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
     search_fields = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
     list_display = (
-    'Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'colored_Status', 'short_content', 'Owner', 'makecall')
+        'Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'colored_Status', 'short_content', 'Owner', 'makecall')
     list_filter = ('Campaign', 'Name', 'Phone1', 'Phone2', 'Status', 'Memo', 'Owner')
     # list_editable = ('Status', 'Owner')
     actions = ('CallDetail', 'layer_input', 'Status_report')
