@@ -33,14 +33,14 @@ class MiracleNumberSerializer(serializers.HyperlinkedModelSerializer):
 
 # Serializers define the API representation.
 class MiracleNumberViewSet(viewsets.ModelViewSet):
-    queryset = MiracleNumber.objects.all()
+    queryset = MiracleNumber.objects.filter(Status='可选').filter(Zip='021').order_by('Stars')
     serializer_class = MiracleNumberSerializer
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ['url', 'username', 'email', 'is_staff']
+        fields = ['username', 'first_name', 'last_name']
 
 
 # ViewSets define the view behavior.
@@ -71,11 +71,11 @@ urlpatterns = [
     path("makecall/", MiracleViews.makecall),
     path('Miracle/MiracleNumber/', MiracleViews.MiracleNumber_search, name='MiracleNumber_search'),
     path('Miracle/MiracleOrders/', MiracleViews.MiracleOrder_search, name='MiracleOrders_search'),
+    path('Miracle/Hello/', MiracleViews.hello, name='hello'),
     path('crm/Contacts/', crmViews.Contacts_search, name='Contacts_search'),
     path('crm/Oblist/', crmViews.Oblist_search, name='Oblist_search'),
     url(r'crm/', include('crm.urls')),
     path('api/', include(router.urls)),
     path('', admin.site.urls),
-    path('/Miracle/', MiracleViews.hello),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

@@ -50,6 +50,7 @@ class Contacts(models.Model):
 
 
 class Organization(models.Model):
+    Park = models.ForeignKey('Park.Park',null=True,on_delete=models.SET_NULL,verbose_name='园区')
     OrganizeName = models.CharField(max_length=60, verbose_name='组织名称')
     OrganizeID = models.CharField(max_length=60, unique=True, verbose_name='组织代码')
     Memo = models.TextField(verbose_name='备注')

@@ -6,6 +6,7 @@ from django.contrib import admin
 from django.utils.html import format_html
 
 # 关于号码的管理，主要在于当前号码是否可选、当前号码被谁占用了；当前号码开了几个并发（这个功能还需要EZUC+加以配合）
+
 class MiracleNumber(models.Model):
     OPERATORS = (
         ('中国电信', '中国电信'),

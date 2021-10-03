@@ -64,13 +64,14 @@ class ContactsInline(admin.StackedInline):
 
 
 class OrganizationAdmin(ImportExportModelAdmin):
-    fields = ('OrganizeName', 'OrganizeID', 'Memo')
-    search_fields = ('OrganizeName', 'OrganizeID', 'Memo')
-    list_display = ('OrganizeName', 'OrganizeID', 'Memo')
-    list_filter = ('OrganizeName', 'OrganizeID', 'Memo')
+    fields = ('Park','OrganizeName', 'OrganizeID', 'Memo')
+    search_fields = ('Park','OrganizeName', 'OrganizeID', 'Memo')
+    list_display = ('Park','OrganizeName', 'OrganizeID', 'Memo')
+    list_filter = ('Park','OrganizeName', 'OrganizeID', 'Memo')
     inlines = [
         ContactsInline,
     ]
+    autocomplete_fields = ['Park']
 
 
 admin.site.register(Organization, OrganizationAdmin)

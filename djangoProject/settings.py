@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'pymysql',
     'rest_framework',
+    'CloudNet',
+    'Park',
 ]
 IMPORT_EXPORT_USE_TRANSACTIONS = True
 REST_FRAMEWORK = {

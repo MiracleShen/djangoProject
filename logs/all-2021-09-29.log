@@ -1,0 +1,180 @@
+[2021-09-29 16:02:17,496] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-29 16:02:18,605] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders HTTP/1.1" 302 0
+[2021-09-29 16:02:18,656] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/Miracle/MiracleOrders HTTP/1.1" 200 4108
+[2021-09-29 16:02:18,724] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/css/login.css?_=2.1 HTTP/1.1" 200 500
+[2021-09-29 16:02:18,725] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/css/all.min.css HTTP/1.1" 200 55111
+[2021-09-29 16:02:18,758] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/login.js?_=3.3 HTTP/1.1" 200 669
+[2021-09-29 16:02:18,760] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/vue.min.js?_=2021.5.21 HTTP/1.1" 200 93675
+[2021-09-29 16:02:18,762] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/particles/particles.js HTTP/1.1" 200 51264
+[2021-09-29 16:02:18,764] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/particles/app.js HTTP/1.1" 200 3728
+[2021-09-29 16:02:18,768] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 200 232478
+[2021-09-29 16:02:18,782] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/images/Miracle-Logo-1.png HTTP/1.1" 200 24169
+[2021-09-29 16:02:18,786] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/index.js?_=2021.5.21 HTTP/1.1" 200 567853
+[2021-09-29 16:02:18,791] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/img/bg.svg HTTP/1.1" 200 9547
+[2021-09-29 16:02:19,007] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 74256
+[2021-09-29 16:02:19,049] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-29 16:02:19,058] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-29 16:02:28,371] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 200 28200
+[2021-09-29 16:02:36,602] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /login/?next=/Miracle/MiracleOrders HTTP/1.1" 302 0
+[2021-09-29 16:02:36,797] [log.py:224] [log:log_response] [WARNING]- Not Found: /Miracle/MiracleOrders
+[2021-09-29 16:02:36,798] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /Miracle/MiracleOrders HTTP/1.1" 404 7010
+[2021-09-29 16:02:37,063] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-09-29 16:02:37,063] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 6980
+[2021-09-29 16:02:44,310] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-29 16:02:44,318] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-29 16:02:44,917] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-29 16:02:44,924] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-29 16:02:45,531] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-29 16:02:45,539] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-29 16:02:46,148] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-29 16:02:46,157] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-29 16:02:46,841] [log.py:224] [log:log_response] [WARNING]- Not Found: /admin
+[2021-09-29 16:02:46,842] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /admin HTTP/1.1" 404 6962
+[2021-09-29 16:02:53,260] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-29 16:02:53,268] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-29 16:02:53,878] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-29 16:02:53,884] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-29 16:02:54,489] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-29 16:02:54,495] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-29 16:02:55,024] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 23027
+[2021-09-29 16:02:55,076] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 200 3861
+[2021-09-29 16:02:55,085] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/dicts.js?_=2021.5.21 HTTP/1.1" 200 6292
+[2021-09-29 16:02:55,086] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/segment.js?_=2021.5.21 HTTP/1.1" 200 1186
+[2021-09-29 16:02:55,089] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2021.5.21 HTTP/1.1" 200 1254
+[2021-09-29 16:02:55,089] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 200 6608
+[2021-09-29 16:02:55,090] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/cookie.js?_=2021.5.21 HTTP/1.1" 200 524
+[2021-09-29 16:02:55,091] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/en-us.js?_=2021.5.21 HTTP/1.1" 200 811
+[2021-09-29 16:02:55,093] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/theme/theme.js?_=2021.5.21 HTTP/1.1" 200 4274
+[2021-09-29 16:02:55,094] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/waves/waves.min.js?_=2021.5.21 HTTP/1.1" 200 6329
+[2021-09-29 16:02:55,095] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/menu.js?_=2021.5.21 HTTP/1.1" 200 1189
+[2021-09-29 16:02:55,096] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/index.js?_=2021.5.21 HTTP/1.1" 200 20820
+[2021-09-29 16:02:55,320] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13552
+[2021-09-29 16:04:17,124] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\CloudNet\admin.py changed, reloading.
+[2021-09-29 16:04:20,238] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-29 16:04:49,118] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\CloudNet\admin.py changed, reloading.
+[2021-09-29 16:04:52,590] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-29 16:04:58,537] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-29 16:04:59,971] [log.py:224] [log:log_response] [WARNING]- Not Found: /Miracle/MiracleOrders
+[2021-09-29 16:04:59,971] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /Miracle/MiracleOrders HTTP/1.1" 404 7180
+[2021-09-29 16:05:05,475] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-29 16:05:05,489] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-29 16:05:06,470] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 23405
+[2021-09-29 16:05:15,163] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/ HTTP/1.1" 200 39363
+[2021-09-29 16:05:15,186] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/base.css?_=2.7 HTTP/1.1" 200 19513
+[2021-09-29 16:05:15,188] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 200 189
+[2021-09-29 16:05:15,188] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 200 811
+[2021-09-29 16:05:15,188] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/changelists.css?_=20180905 HTTP/1.1" 200 6874
+[2021-09-29 16:05:15,194] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/responsive.css?_=20180905 HTTP/1.1" 200 18545
+[2021-09-29 16:05:15,196] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 200 3323
+[2021-09-29 16:05:15,197] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 200 524
+[2021-09-29 16:05:15,197] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 200 1254
+[2021-09-29 16:05:15,199] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 200 4270
+[2021-09-29 16:05:15,207] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[2021-09-29 16:05:15,207] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[2021-09-29 16:05:15,208] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2021-09-29 16:05:15,213] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[2021-09-29 16:05:15,218] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[2021-09-29 16:05:15,219] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/actions.js HTTP/1.1" 200 7664
+[2021-09-29 16:05:15,221] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[2021-09-29 16:05:15,225] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 200 6292
+[2021-09-29 16:05:15,226] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 200 1186
+[2021-09-29 16:05:15,231] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 200 14237
+[2021-09-29 16:05:15,231] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 200 89476
+[2021-09-29 16:05:15,233] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[2021-09-29 16:05:15,234] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[2021-09-29 16:05:15,371] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:05:15,535] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[2021-09-29 16:05:15,570] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[2021-09-29 16:05:44,586] [log.py:224] [log:log_response] [ERROR]- Internal Server Error: /CloudNet/card/add/
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 710, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 261, in __new__
+    fields = fields_for_model(
+  File "D:\Python39\lib\site-packages\django\forms\models.py", line 158, in fields_for_model
+    raise FieldError(
+django.core.exceptions.FieldError: 'RecordDate' cannot be specified for Card model form as it is a non-editable field
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 1657, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\Python39\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 1574, in _changeform_view
+    ModelForm = self.get_form(
+  File "D:\Python39\lib\site-packages\django\contrib\admin\options.py", line 712, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: 'RecordDate' cannot be specified for Card model form as it is a non-editable field. Check fields/fieldsets/exclude attributes of class CardAdmin.
+[2021-09-29 16:05:44,591] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET /CloudNet/card/add/ HTTP/1.1" 500 138791
+[2021-09-29 16:06:09,150] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\CloudNet\admin.py changed, reloading.
+[2021-09-29 16:06:09,889] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\CloudNet\admin.py changed, reloading.
+[2021-09-29 16:06:12,476] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-29 16:06:13,325] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-29 16:06:14,442] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 23405
+[2021-09-29 16:06:15,131] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/ HTTP/1.1" 200 39363
+[2021-09-29 16:06:15,517] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:06:17,956] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/add/ HTTP/1.1" 200 18111
+[2021-09-29 16:06:17,983] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+[2021-09-29 16:06:17,987] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+[2021-09-29 16:06:17,987] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[2021-09-29 16:06:18,006] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+[2021-09-29 16:06:18,155] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:06:40,080] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /CloudNet/card/add/ HTTP/1.1" 302 0
+[2021-09-29 16:06:40,374] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/ HTTP/1.1" 200 40089
+[2021-09-29 16:06:40,787] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:06:47,592] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/1/change/ HTTP/1.1" 200 18734
+[2021-09-29 16:06:47,791] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:06:59,004] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\CloudNet\models.py changed, reloading.
+[2021-09-29 16:06:59,476] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\CloudNet\models.py changed, reloading.
+[2021-09-29 16:07:02,235] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-29 16:07:02,745] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-29 16:07:04,079] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/ HTTP/1.1" 200 39951
+[2021-09-29 16:07:04,263] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:10:51,564] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\CloudNet\models.py changed, reloading.
+[2021-09-29 16:10:52,266] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\CloudNet\models.py changed, reloading.
+[2021-09-29 16:10:54,693] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-29 16:10:55,451] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-29 16:11:06,173] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/import/ HTTP/1.1" 200 6291
+[2021-09-29 16:11:06,210] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/import_export/import.css HTTP/1.1" 200 1376
+[2021-09-29 16:12:24,800] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /CloudNet/card/import/ HTTP/1.1" 200 50983
+[2021-09-29 16:15:30,163] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/ HTTP/1.1" 200 39951
+[2021-09-29 16:15:30,327] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:15:32,296] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/import/ HTTP/1.1" 200 6291
+[2021-09-29 16:15:44,712] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /CloudNet/card/import/ HTTP/1.1" 200 37909
+[2021-09-29 16:15:59,283] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/ HTTP/1.1" 200 39951
+[2021-09-29 16:15:59,449] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:16:24,344] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/import/ HTTP/1.1" 200 6291
+[2021-09-29 16:17:06,972] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /CloudNet/card/import/ HTTP/1.1" 200 41661
+[2021-09-29 16:17:17,161] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /CloudNet/card/process_import/ HTTP/1.1" 302 0
+[2021-09-29 16:17:17,525] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/ HTTP/1.1" 200 63337
+[2021-09-29 16:17:17,720] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:17:22,576] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/?p=2 HTTP/1.1" 200 63786
+[2021-09-29 16:17:22,765] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:17:24,336] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/?p=3 HTTP/1.1" 200 60012
+[2021-09-29 16:17:24,507] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:17:26,556] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/?p=1 HTTP/1.1" 200 63786
+[2021-09-29 16:17:26,770] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-29 16:17:36,162] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /CloudNet/card/?q=2940 HTTP/1.1" 200 48945
+[2021-09-29 16:17:36,340] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-09-30 13:48:10,231] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\CloudNet\models.py changed, reloading.
+[2021-09-30 13:48:10,825] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\CloudNet\models.py changed, reloading.
