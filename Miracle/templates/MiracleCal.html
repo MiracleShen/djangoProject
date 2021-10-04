@@ -1,0 +1,25 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %}
+
+<!-- 写入 base.html 中定义的 title -->
+{% block title %}
+    月租计算方法
+{% endblock title %}
+
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+    <table class="d-table table-responsive table-bordered">
+        <thead class="text-center">
+        <th>公司</th>
+        <th>月租</th>
+        </thead>
+        <tbody >
+        {% for i in qs %}
+            <tr>
+                <td>{{ i.CustomerName__OrganizeName }}</td>
+                <td class="text-right">{{ i.CustomerName }}元/月</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}

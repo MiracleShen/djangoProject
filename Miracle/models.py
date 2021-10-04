@@ -67,8 +67,13 @@ class MiracleOrders(models.Model):
         ('无', '无'),
         ('有', '有'),
     )
+    ORDERTYPE =(
+        ('新增','新增'),
+        ('退订','退订'),
+    )
     CustomerName = models.ForeignKey('crm.Organization', on_delete=models.CASCADE, default='1', verbose_name='客户名称')
-    OrderDate = models.DateTimeField(verbose_name='下单时间')
+    OrderType = models.CharField(max_length=10, verbose_name='订单类型', default='新增', choices=ORDERTYPE)
+    OrderDate = models.DateTimeField(verbose_name='生效时间')
     Number_0 = models.IntegerField(default=0, verbose_name='普通号码数')
     Number_1 = models.IntegerField(default=0, verbose_name='1星号码数')
     Number_2 = models.IntegerField(default=0, verbose_name='2星号码数')

@@ -2856,3 +2856,60 @@ KeyError: 'result'
 [2021-10-03 13:42:24,054] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /Park/park/1/change/ HTTP/1.1" 302 0
 [2021-10-03 13:42:24,587] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Park/park/ HTTP/1.1" 200 48142
 [2021-10-03 13:42:24,820] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-10-04 11:06:10,389] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 25495
+[2021-10-04 11:06:16,818] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-10-04 11:06:16,958] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-10-04 11:06:17,417] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-10-04 11:06:17,432] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-10-04 11:06:18,033] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/Hello HTTP/1.1" 301 0
+[2021-10-04 11:06:18,717] [log.py:224] [log:log_response] [ERROR]- Internal Server Error: /Miracle/Hello/
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoProject\Miracle\views.py", line 43, in hello
+    print (res2)
+OSError: [Errno 22] Invalid argument
+[2021-10-04 11:06:18,718] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET /Miracle/Hello/ HTTP/1.1" 500 75391
+[2021-10-04 11:06:25,932] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-10-04 11:06:25,941] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-10-04 11:06:26,546] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-10-04 11:06:26,560] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-10-04 11:06:27,141] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-10-04 11:06:27,149] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-10-04 11:06:27,745] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-10-04 11:06:27,751] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-10-04 11:06:28,364] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders HTTP/1.1" 301 0
+[2021-10-04 11:06:29,413] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/ HTTP/1.1" 200 16052
+[2021-10-04 11:08:24,660] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 25495
+[2021-10-04 11:09:29,797] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-10-04 11:09:29,809] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-10-04 11:09:30,397] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-10-04 11:09:30,409] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-10-04 11:09:31,039] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-10-04 11:09:31,053] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-10-04 11:09:31,646] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-10-04 11:09:31,664] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-10-04 11:09:32,245] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-10-04 11:09:32,255] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-10-04 11:09:32,541] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders HTTP/1.1" 301 0
+[2021-10-04 11:09:33,766] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/ HTTP/1.1" 200 16052
+[2021-10-04 11:09:39,600] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 25495
+[2021-10-04 11:24:24,097] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,109] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,138] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,186] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,259] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,341] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,346] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,388] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,555] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,582] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,583] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,657] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,847] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,874] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,974] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:24,982] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.
+[2021-10-04 11:24:25,244] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\views.py changed, reloading.

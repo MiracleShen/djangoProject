@@ -114,12 +114,12 @@ admin.site.register(MiracleNumber, MiracleNumberAdmin)
 
 class MiracleOrdersAdmin(ImportExportModelAdmin, AjaxAdmin):
     fields = (
-        'CustomerName', 'OrderDate', 'Number_0', 'Number_1', 'Number_2', 'Number_3', 'Number_4', 'Number_5',
+        'CustomerName','OrderType','OrderDate', 'Number_0', 'Number_1', 'Number_2', 'Number_3', 'Number_4', 'Number_5',
         'Line_Number',
         'PBX_Type', 'MCU_Type', 'API_Type', 'APP_Number', 'SIP_Number', 'Log_Number', 'CC_Number', 'HPR_Number')
-    search_fields = ('CustomerName', 'OrderDate', 'PBX_Type', 'MCU_Type', 'API_Type')
+    search_fields = ('CustomerName','OrderType','OrderDate', 'PBX_Type', 'MCU_Type', 'API_Type')
     list_display = (
-        'CustomerName', 'OrderDate', 'Number_0', 'Number_1', 'Line_Number', 'PBX_Type', 'MCU_Type', 'API_Type',
+        'CustomerName','OrderType','OrderDate', 'Number_0', 'Number_1', 'Line_Number', 'PBX_Type', 'MCU_Type', 'API_Type',
         'APP_Number', 'SIP_Number', 'Log_Number', 'CC_Number', 'HPR_Number')
     list_filter = ('OrderDate',)
     date_hierarchy = 'OrderDate'

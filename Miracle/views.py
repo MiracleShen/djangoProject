@@ -7,12 +7,60 @@ import datetime, json, ast
 from urllib import request, parse
 import ssl
 from django.views.decorators.csrf import csrf_exempt
-
 ssl._create_default_https_context = ssl._create_unverified_context
 import requests
 
 
 # Create your views here.
+def Cal(req):
+    context={}
+    qs = MiracleOrders.objects.values("CustomerName","CustomerName__OrganizeName").distinct()
+    for i in qs:
+        print (i['CustomerName__OrganizeName'],OrgCal(i['CustomerName']))
+        i['CustomerName']=OrgCal(i['CustomerName'])
+        # print (i.CustomerName__OrganizeName,OrgCal(i.CustomerName__OrganizeName))
+    print (qs)
+    context['qs']=qs
+    return render(req, "MiracleCal.html", context)
+def OrgCal(CN):
+    qs = MiracleOrders.objects.filter(CustomerName=CN)
+    MRent =0
+    for i in qs:
+        MRent= MRent+OrdCal(i.id,i.OrderType)
+    return MRent
+def OrdCal(id,OrderType):
+    qs = MiracleOrders.objects.filter(id=id)
+    Rent =0
+    for i in qs:
+        if OrderType =='退订':
+            Rent = Rent +i.APP_Number*10+i.SIP_Number*10+i.CC_Number*30+i.Log_Number*30+i.HPR_Number*10
+            Rent = Rent + i.Number_0*35+i.Number_1*100+i.Number_2*200+i.Number_3*500+i.Line_Number*100
+            if i.PBX_Type == '免费版':
+                Rent=Rent + 0
+            elif i.PBX_Type == '查询版':
+                Rent=Rent + 30
+            elif i.PBX_Type == '管理版':
+                Rent = Rent + 300
+            elif i.PBX_Type == '本地部署版':
+                Rent = Rent + 1200
+            else:
+                print('交换机版本设置有误，目前只有免费版、查询版、管理版、本地部署版')
+            Rent = -Rent
+        else:
+            Rent = Rent +i.APP_Number*10+i.SIP_Number*10+i.CC_Number*30+i.Log_Number*30+i.HPR_Number*10
+            Rent = Rent + i.Number_0*35+i.Number_1*100+i.Number_2*200+i.Number_3*500+i.Line_Number*100
+            if i.PBX_Type == '免费版':
+                Rent=Rent + 0
+            elif i.PBX_Type == '查询版':
+                Rent=Rent + 30
+            elif i.PBX_Type == '管理版':
+                Rent = Rent + 300
+            elif i.PBX_Type == '本地部署版':
+                Rent = Rent + 1200
+            else:
+                print('交换机版本设置有误，目前只有免费版、查询版、管理版、本地部署版')
+    return Rent
+
 def hello(req):
     CITY='上海'
     if 'City' in req.GET and req.GET['City']:
@@ -124,10 +172,61 @@ def MiracleNumber_search(request):
     page_obj = paginator.get_page(page)
     context = {'page_obj': page_obj, 'paginator': paginator,
                'is_paginated': True, 'filter': f, }
+
     return render(request, 'MiracleNumber_filter.html', context)
-
-
+def MonthlyRent(request):
+    CS = '金开区'
+    f = MiracleOrderFilter(request.GET, queryset=MiracleOrders.objects.filter(CustomerName__OrganizeName__icontains=CS).order_by('-OrderDate'))
+    paginator = Paginator(f.qs, 20)
+    page = request.GET.get('page')
+    page_obj = paginator.get_page(page)
+    context = {'page_obj': page_obj, 'paginator': paginator,
+               'is_paginated': True, 'filter': f, }
+    # Miracle Number月租计算
+    context['Number_Total'] = f.qs.aggregate(
+        Number_Total=Sum('Number_0') * 35 + Sum('Number_1') * 100 + Sum('Number_2') * 200 + Sum('Number_3') * 500 + Sum(
+            'Number_4') * 2000 + Sum('Number_5') * 5000 + Sum('Line_Number') * 35)
+    # Miracle Phone月租（含硬件话机租赁)计算
+    context['Phone_Total'] = f.qs.aggregate(
+        Phone_Total=Sum('APP_Number') * 10 + Sum('SIP_Number') * 10 + Sum('Log_Number') * 30 + Sum('CC_Number') * 30 + Sum(
+            'HPR_Number') * 10)
+    # Miracle PBX租金计算
+    for i in f.qs.values('PBX_Type'):
+        PBX_Sum=0
+        if i['PBX_Type'] == '免费版':
+            PBX_Sum = PBX_Sum + 0
+        elif i['PBX_Type'] == '查询版':
+            PBX_Sum= PBX_Sum + 30
+        elif i['PBX_Type'] == '管理版':
+            PBX_Sum = PBX_Sum + 300
+        elif i['PBX_Type'] == '本地部署版':
+            PBX_Sum = PBX_Sum + 1200
+        else:
+            print('交换机版本设置有误，目前只有免费版、查询版、管理版、本地部署版')
+    # Miracle MCU租金计算
+    for i in f.qs.values('MCU_Type'):
+        MCU_Sum =0
+        if i['MCU_Type'] == '无':
+            MCU_Sum = MCU_Sum + 0
+        elif i['MCU_Type'] == '有':
+            MCU_Sum = MCU_Sum + 300
+        else:
+            print('MCU设置有误，目前只有有和无')
+    # Miracle API租金计算
+    for i in f.qs.values('API_Type'):
+        API_Sum =0
+        if i['API_Type'] == '无':
+            context['API_Sum'] = API_Sum + 0
+        elif i['API_Type'] == '有':
+            API_Sum = API_Sum+ 1000
+        else:
+            print('API设置有误，目前只有有和无')
+    context['PBX_Total']=PBX_Sum+MCU_Sum+API_Sum
+    context['Total']=context['Number_Total']['Number_Total']+context['Phone_Total']['Phone_Total']+context['PBX_Total']
+    return render(request, 'MonthlyRent_filter.html', context)
+# Miracle订单分析，可以展示Miracle订单产生的总的月租表，也可以看出每一类、每一项产品所产生的月租收入情况。
 def MiracleOrder_search(request):
+
     f = MiracleOrderFilter(request.GET, queryset=MiracleOrders.objects.all().order_by('-OrderDate'))
     # 分页处理
     paginator = Paginator(f.qs, 10)

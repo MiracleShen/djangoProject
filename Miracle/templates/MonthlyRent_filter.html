@@ -1,0 +1,97 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %}
+
+<!-- 写入 base.html 中定义的 title -->
+{% block title %}
+    月租计算方法
+{% endblock title %}
+
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+    {% if is_paginated %}
+        <h1>总月租为：{{ Total }}元/月</h1>
+        <p>MiracleNumber月租：{{ Number_Total.Number_Total }}元/月</p>
+        <p>MiraclePhone月租：{{ Phone_Total.Phone_Total}}元/月</p>
+        <p>MiraclePBX月租：{{ PBX_Total}}元/月</p>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>公司名称</th>
+                <th>下单日期</th>
+                <th>PBX类型</th>
+                <th>MCU类型</th>
+                <th>API类型</th>
+                <th>APP许可数量</th>
+                <th>SIP许可数量</th>
+                <th>Log许可数量</th>
+                <th>CC许可数量</th>
+                <th>话机月租数量</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for Order in page_obj %}
+                <tr>
+                <td>
+                    {{ Order.CustomerName }}
+                </td>
+                <td>
+                    {{ Order.OrderDate | date:"Y-m-d" }}
+                </td>
+                <td>
+                    {{ Order.PBX_Type }}
+                </td>
+                <td>
+                    {{ Order.MCU_Type }}
+                </td>
+                <td>
+                    {{ Order.API_Type }}
+                </td>
+                <td>
+                    {{ Order.APP_Number }}
+                </td>
+                <td>
+                    {{ Order.SIP_Number }}
+                </td>
+                <td>
+                    {{ Order.Log_Number }}
+                </td>
+                <td>
+                    {{ Order.CC_Number }}
+                </td>
+                <td>
+                    {{ Order.HPR_Number }}
+                </td>
+            {% endfor %}
+            </tr>
+            </tbody>
+        </table>
+    {% else %}
+        <p>There are no Orders yet.</p>
+    {% endif %}
+    {% if is_paginated %}
+        <ul class="pagination">
+            {% if page_obj.has_previous %}
+                <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
+                </li>
+            {% else %}
+                <li class="page-item disabled"><span class="page-link">&laquo;</span></li>
+            {% endif %}
+
+            {% for i in paginator.page_range %}
+                {% if page_obj.number == i %}
+                    <li class="page-item active"><span class="page-link"> {{ i }} <span class="sr-only">(current)</span></span>
+                    </li>
+                {% else %}
+                    <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+                <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+            {% else %}
+                <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
+            {% endif %}
+        </ul>
+    {% endif %}
+    <p>总计：{{ filter.qs.count }} 个记录</p>
+{% endblock content %}
