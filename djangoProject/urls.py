@@ -17,6 +17,7 @@ from django.contrib.staticfiles.views import serve
 from django.urls import path, include, re_path
 from Miracle import views as MiracleViews
 from crm import views as crmViews
+from Park import views as ParkViews
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth.models import User
@@ -28,7 +29,7 @@ from django.conf.urls import include, url
 class MiracleNumberSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = MiracleNumber
-        fields = ['Zip', 'Number', 'Stars', 'Operator','Status', 'Organize']
+        fields = ['Zip', 'Number', 'Stars', 'Operator', 'Status', 'Organize']
 
 
 # Serializers define the API representation.
@@ -74,6 +75,9 @@ urlpatterns = [
     path('Miracle/MonthlyRent/', MiracleViews.MonthlyRent, name='MonthlyRent'),
     path('Miracle/Hello/', MiracleViews.hello, name='hello'),
     path('Miracle/Cal/', MiracleViews.Cal, name='Cal'),
+    path('Miracle/CallInit/', MiracleViews.CallInit, name='CallInit'),
+    path('Miracle/CallCal/', MiracleViews.CallCal, name='CallCal'),
+    path('Park/GetTown/', ParkViews.GetTown, name='GetStreet'),
     path('crm/Contacts/', crmViews.Contacts_search, name='Contacts_search'),
     path('crm/Oblist/', crmViews.Oblist_search, name='Oblist_search'),
     url(r'crm/', include('crm.urls')),

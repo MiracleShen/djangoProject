@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .filters import ContactsFilter, OblistFilter
-from .models import Contacts, Oblist, Status, OWNERS
+from .filters import ContactsFilter
+from .models import Contacts
 from django.db.models import Count
 from django.core.paginator import Paginator
 from jinja2 import Environment, FileSystemLoader

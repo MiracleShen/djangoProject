@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'CloudNet',
     'Park',
+    'Marketing',
 ]
 IMPORT_EXPORT_USE_TRANSACTIONS = True
 REST_FRAMEWORK = {

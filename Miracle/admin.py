@@ -7,7 +7,7 @@ from django.forms import forms  # 2021-02-27 admin添加导入功能，上传文
 from django.http import HttpResponse
 from openpyxl import Workbook
 from django.http import JsonResponse
-from .models import MiracleNumber, MiracleOrders, MiracleCredit, MiracleBill
+from .models import MiracleNumber, MiracleOrders, MiracleCredit, MiracleBill, MiraclePBX, MiracleDID
 from simpleui.admin import AjaxAdmin
 from import_export.admin import ImportExportModelAdmin
 
@@ -21,7 +21,7 @@ class MiracleNumberAdmin(ImportExportModelAdmin, AjaxAdmin):
     list_display = ('Zip', 'Number', 'Stars', 'Operator', 'colored_Status', 'Organize')
     list_filter = ('Zip', 'Operator', 'Stars', 'Status', 'Organize')
     list_per_page = 20
-    actions = ['NumberStatus', 'NumberReport','NumberOrganizeReport']
+    actions = ['NumberStatus', 'NumberReport', 'NumberOrganizeReport']
 
     def NumberReport(self, request, queryset):
         pass
@@ -114,12 +114,14 @@ admin.site.register(MiracleNumber, MiracleNumberAdmin)
 
 class MiracleOrdersAdmin(ImportExportModelAdmin, AjaxAdmin):
     fields = (
-        'CustomerName','OrderType','OrderDate', 'Number_0', 'Number_1', 'Number_2', 'Number_3', 'Number_4', 'Number_5',
+        'CustomerName', 'OrderType', 'OrderDate', 'Number_0', 'Number_1', 'Number_2', 'Number_3', 'Number_4',
+        'Number_5',
         'Line_Number',
         'PBX_Type', 'MCU_Type', 'API_Type', 'APP_Number', 'SIP_Number', 'Log_Number', 'CC_Number', 'HPR_Number')
-    search_fields = ('CustomerName','OrderType','OrderDate', 'PBX_Type', 'MCU_Type', 'API_Type')
+    search_fields = ('CustomerName', 'OrderType', 'OrderDate', 'PBX_Type', 'MCU_Type', 'API_Type')
     list_display = (
-        'CustomerName','OrderType','OrderDate', 'Number_0', 'Number_1', 'Line_Number', 'PBX_Type', 'MCU_Type', 'API_Type',
+        'CustomerName', 'OrderType', 'OrderDate', 'Number_0', 'Number_1', 'Line_Number', 'PBX_Type', 'MCU_Type',
+        'API_Type',
         'APP_Number', 'SIP_Number', 'Log_Number', 'CC_Number', 'HPR_Number')
     list_filter = ('OrderDate',)
     date_hierarchy = 'OrderDate'
@@ -135,10 +137,10 @@ admin.site.register(MiracleOrders, MiracleOrdersAdmin)
 
 
 class MiracleCreditAdmin(admin.ModelAdmin):
-    fields = ('CustomerID', 'Year', 'Month', 'Credit')
-    search_fields = ('CustomerID',)
-    list_display = ('CustomerID', 'Year', 'Month', 'Credit', 'RecordDate')
-    list_per_page = 10
+    fields = ('Customer','Type','Account', 'Year', 'Month', 'Credit','Memo')
+    search_fields = ('Customer','Type','Account','Memo')
+    list_display = ('Customer','Type','Account', 'Year', 'Month', 'Credit', 'RecordDate','Memo')
+    list_per_page = 20
 
 
 admin.site.register(MiracleCredit, MiracleCreditAdmin)
@@ -148,8 +150,8 @@ class MiracleBillAdmin(admin.ModelAdmin):
     fields = ('CustomerID', 'Year', 'Month', 'Bill_Cycle', 'Bill_Type', 'Bill', 'Bill_Status', 'Memo')
     search_fields = ('CustomerID',)
     list_display = (
-    'CustomerID', 'Year', 'Month', 'Bill_Cycle', 'colored_Bill_Type', 'Bill', 'colored_Bill_Status', 'RecordDate',
-    'UpdateDate', 'Memo')
+        'CustomerID', 'Year', 'Month', 'Bill_Cycle', 'colored_Bill_Type', 'Bill', 'colored_Bill_Status', 'RecordDate',
+        'UpdateDate', 'Memo')
     list_per_page = 20
     list_filter = ('Year', 'Month', 'Bill_Cycle', 'Bill_Type', 'Bill_Status')
     ordering = ['-UpdateDate']
@@ -157,3 +159,25 @@ class MiracleBillAdmin(admin.ModelAdmin):
 
 
 admin.site.register(MiracleBill, MiracleBillAdmin)
+
+
+class MiraclePBXAdmin(ImportExportModelAdmin, AjaxAdmin):
+    fields = ('Customer', 'Server', 'PBX', 'Memo')
+    search_fields = ('Customer__OrganizeName', 'Server', 'PBX','Memo')
+    list_display = ('Customer', 'Server', 'PBX', 'RecordDate', 'UpdateDate', 'Memo')
+    list_per_page = 20
+    autocomplete_fields = ['Customer']
+
+
+admin.site.register(MiraclePBX, MiraclePBXAdmin)
+
+
+class MiracleDIDAdmin(ImportExportModelAdmin, AjaxAdmin):
+    fields = ('Customer', 'Server', 'PBX', 'DID', 'Memo')
+    search_fields = ('Customer__OrganizeName', 'Server', 'PBX', 'DID')
+    list_display = ('Customer', 'Server', 'PBX', 'DID', 'RecordDate', 'UpdateDate', 'Memo')
+    list_per_page = 20
+    autocomplete_fields = ['Customer']
+
+
+admin.site.register(MiracleDID, MiracleDIDAdmin)

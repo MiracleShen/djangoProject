@@ -6,6 +6,8 @@ from django.contrib import admin
 from django.utils.html import format_html
 
 # 关于号码的管理，主要在于当前号码是否可选、当前号码被谁占用了；当前号码开了几个并发（这个功能还需要EZUC+加以配合）
+import crm.models
+
 
 class MiracleNumber(models.Model):
     OPERATORS = (
@@ -20,17 +22,17 @@ class MiracleNumber(models.Model):
         ('锁定', '锁定'),
         ('已售', '已售'),
     )
-    STAR =(
+    STAR = (
         ('普通号', '普通号'),
-        ('1星级','1星级'),
+        ('1星级', '1星级'),
         ('2星级', '2星级'),
         ('3星级', '3星级'),
         ('4星级', '4星级'),
         ('5星级', '5星级'),
     )
     Zip = models.CharField(max_length=4, default='021', verbose_name='区号')
-    Number = models.CharField(max_length=8,verbose_name='固话号码')
-    Stars = models.CharField(max_length=8,verbose_name='星级',default='普通号',choices= STAR)
+    Number = models.CharField(max_length=8, verbose_name='固话号码')
+    Stars = models.CharField(max_length=8, verbose_name='星级', default='普通号', choices=STAR)
     Operator = models.CharField(max_length=12, verbose_name='运营商', choices=OPERATORS)
     Status = models.CharField(max_length=8, verbose_name='状态', default='可选', choices=STATUSS)
     Organize = models.CharField(max_length=30, default=' ', verbose_name='客户名称')
@@ -52,7 +54,7 @@ class MiracleNumber(models.Model):
 
     class Meta:
         unique_together = (("Zip", "Number"),)
-        verbose_name_plural = 'Miracle码号'
+        verbose_name_plural = '码号'
 
 
 class MiracleOrders(models.Model):
@@ -67,9 +69,9 @@ class MiracleOrders(models.Model):
         ('无', '无'),
         ('有', '有'),
     )
-    ORDERTYPE =(
-        ('新增','新增'),
-        ('退订','退订'),
+    ORDERTYPE = (
+        ('新增', '新增'),
+        ('退订', '退订'),
     )
     CustomerName = models.ForeignKey('crm.Organization', on_delete=models.CASCADE, default='1', verbose_name='客户名称')
     OrderType = models.CharField(max_length=10, verbose_name='订单类型', default='新增', choices=ORDERTYPE)
@@ -82,12 +84,12 @@ class MiracleOrders(models.Model):
     Number_5 = models.IntegerField(default=0, verbose_name='5星号码数')
     Line_Number = models.IntegerField(default=0, verbose_name='并发数')
     PBX_Type = models.CharField(max_length=10, verbose_name='交换机类型', default='免费版', choices=PBXTYPE)
-    MCU_Type = models.CharField(max_length=10, verbose_name='多方通话许可',default='无',choices=YESORNO)
-    API_Type = models.CharField(max_length=10, verbose_name='API许可',default='无',choices=YESORNO)
-    APP_Number = models.IntegerField(default=0,verbose_name='APP许可数')
-    SIP_Number = models.IntegerField(default=0,verbose_name='SIP许可数')
-    Log_Number = models.IntegerField(default=0,verbose_name='录音许可数')
-    CC_Number = models.IntegerField(default=0,verbose_name='轻客服许可数')
+    MCU_Type = models.CharField(max_length=10, verbose_name='多方通话许可', default='无', choices=YESORNO)
+    API_Type = models.CharField(max_length=10, verbose_name='API许可', default='无', choices=YESORNO)
+    APP_Number = models.IntegerField(default=0, verbose_name='APP许可数')
+    SIP_Number = models.IntegerField(default=0, verbose_name='SIP许可数')
+    Log_Number = models.IntegerField(default=0, verbose_name='录音许可数')
+    CC_Number = models.IntegerField(default=0, verbose_name='轻客服许可数')
     HPR_Number = models.IntegerField(default=0, verbose_name='话机月租数量')  # 话机月租统一10元/月，WiFi话机，看长线
 
     class Meta:
@@ -97,14 +99,39 @@ class MiracleOrders(models.Model):
 # 话费账单，由EZUC+系统生成，每月月初手工录入到系统中
 # 后期考虑系统自动从EZUC+抓取通话清单，系统自动计算生成月度账单到MiracleBill，用户也可以在系统中查询详单；实时的话单，还是要到服务器上去查看
 class MiracleCredit(models.Model):
-    CustomerID = models.ForeignKey('crm.Organization', default=1, on_delete=models.CASCADE, verbose_name='客户名称')
+    Customer = models.ForeignKey('crm.Organization', null=True, on_delete=models.CASCADE, verbose_name='客户名称')
+    Type= models.CharField(max_length=10, null=True,verbose_name='账户类型')
+    Account = models.CharField(max_length=50, null=True,verbose_name='账户名称')
     Year = models.CharField(max_length=4, verbose_name='年份')
     Month = models.CharField(max_length=2, verbose_name='月份')
     Credit = models.FloatField(verbose_name='消费金额')
     RecordDate = models.DateTimeField(auto_now=True, verbose_name='记录时间')
-
+    Memo = models.TextField(default='无', verbose_name='备注')
     class Meta:
         verbose_name_plural = 'Miracle话单'
+
+
+class MiraclePBX(models.Model):
+    Customer = models.ForeignKey('crm.Organization', default=1, on_delete=models.CASCADE, verbose_name='客户名称')
+    Server = models.CharField(max_length=50, verbose_name='服务器')
+    PBX = models.CharField(max_length=30, verbose_name='企业编号')
+    RecordDate = models.DateTimeField(auto_now_add=True, verbose_name='记录时间')
+    UpdateDate = models.DateTimeField(auto_now=True, null=True, verbose_name='更新时间')
+    Memo = models.TextField(default='无', verbose_name='备注')
+    class Meta:
+        verbose_name_plural = '交换'
+
+
+class MiracleDID(models.Model):
+    Customer = models.ForeignKey('crm.Organization', default=1, on_delete=models.CASCADE, verbose_name='客户名称')
+    Server = models.CharField(max_length=50, verbose_name='服务器')
+    PBX = models.CharField(max_length=30, verbose_name='企业编号')
+    DID = models.CharField(max_length=30, verbose_name='直线账户')
+    RecordDate = models.DateTimeField(auto_now_add=True, verbose_name='记录时间')
+    UpdateDate = models.DateTimeField(auto_now=True, null=True, verbose_name='更新时间')
+    Memo = models.TextField(default='无', verbose_name='备注')
+    class Meta:
+        verbose_name_plural = '直线'
 
 
 # 客户账单，目前由两部分生成，一部分是根据Miracle Order里的数据，每月自动计算生成月租费账单；另一部分是从EZUC+中获取每月话费账单，插入到Miracle Bill中。两者相加，就是用户当月应付的账单。
@@ -144,6 +171,7 @@ class MiracleBill(models.Model):
         )
 
     colored_Bill_Type.short_description = u"账单类型"
+
     def colored_Bill_Status(self):
         if self.Bill_Status == '已出账':
             color_code = 'blue'
@@ -160,5 +188,6 @@ class MiracleBill(models.Model):
         )
 
     colored_Bill_Status.short_description = u"账单状态"
+
     class Meta:
         verbose_name_plural = 'Miracle账单'

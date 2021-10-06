@@ -6,66 +6,18 @@ from django.db.models import Sum
 import datetime, json, ast
 from urllib import request, parse
 import ssl
+from .CalBill import *
 from django.views.decorators.csrf import csrf_exempt
 ssl._create_default_https_context = ssl._create_unverified_context
 import requests
 
 
 # Create your views here.
-def Cal(req):
-    context={}
-    qs = MiracleOrders.objects.values("CustomerName","CustomerName__OrganizeName").distinct()
-    for i in qs:
-        print (i['CustomerName__OrganizeName'],OrgCal(i['CustomerName']))
-        i['CustomerName']=OrgCal(i['CustomerName'])
-        # print (i.CustomerName__OrganizeName,OrgCal(i.CustomerName__OrganizeName))
-    print (qs)
-    context['qs']=qs
-    return render(req, "MiracleCal.html", context)
-def OrgCal(CN):
-    qs = MiracleOrders.objects.filter(CustomerName=CN)
-    MRent =0
-    for i in qs:
-        MRent= MRent+OrdCal(i.id,i.OrderType)
-    return MRent
-def OrdCal(id,OrderType):
-    qs = MiracleOrders.objects.filter(id=id)
-    Rent =0
-    for i in qs:
-        if OrderType =='退订':
-            Rent = Rent +i.APP_Number*10+i.SIP_Number*10+i.CC_Number*30+i.Log_Number*30+i.HPR_Number*10
-            Rent = Rent + i.Number_0*35+i.Number_1*100+i.Number_2*200+i.Number_3*500+i.Line_Number*100
-            if i.PBX_Type == '免费版':
-                Rent=Rent + 0
-            elif i.PBX_Type == '查询版':
-                Rent=Rent + 30
-            elif i.PBX_Type == '管理版':
-                Rent = Rent + 300
-            elif i.PBX_Type == '本地部署版':
-                Rent = Rent + 1200
-            else:
-                print('交换机版本设置有误，目前只有免费版、查询版、管理版、本地部署版')
-            Rent = -Rent
-        else:
-            Rent = Rent +i.APP_Number*10+i.SIP_Number*10+i.CC_Number*30+i.Log_Number*30+i.HPR_Number*10
-            Rent = Rent + i.Number_0*35+i.Number_1*100+i.Number_2*200+i.Number_3*500+i.Line_Number*100
-            if i.PBX_Type == '免费版':
-                Rent=Rent + 0
-            elif i.PBX_Type == '查询版':
-                Rent=Rent + 30
-            elif i.PBX_Type == '管理版':
-                Rent = Rent + 300
-            elif i.PBX_Type == '本地部署版':
-                Rent = Rent + 1200
-            else:
-                print('交换机版本设置有误，目前只有免费版、查询版、管理版、本地部署版')
-    return Rent
 
 def hello(req):
     CITY='上海'
     if 'City' in req.GET and req.GET['City']:
         CITY = req.GET['City']
-
     URL = 'http://api.map.baidu.com/api_region_search/v1/'
 
     params = {
@@ -94,6 +46,11 @@ def hello(req):
     res23 = str(res22['result']['location']['lat'])+','+str(res22['result']['location']['lng'])
     # 根据坐标获得所在的国家、省份、城市、区县、乡镇、街道
     URL3 = 'https://api.map.baidu.com/reverse_geocoding/v3/'
+    ####测试行级按钮获得六级地址
+    # print ('Status的值是：',req.GET.get('id',0),req.GET.get('status',88))
+    # XY = req.GET.get('status',88)
+    # XY =str(XY)
+    # print (XY)
     params3 = {
         "ak": 'Xmjf4HD2kly5zqZybYhmZV9RW7fx7ass',
         "output": 'json',
@@ -101,16 +58,21 @@ def hello(req):
         "ret_coordtype":'bd09II',
         "extensions_town": "true",
         "extensions_road":"true",
-        "location":str(res23),
+        "location":res23,
         "sub_admin": 3
     }
     res3 = requests.get(url=URL3, params=params3)
     print(res3.text)
     context['res3']=json.loads(res3.text)['result']
+    #####测试行级按钮获取六级地址
+    # add=json.loads(res3.text)['result']
+    # add1 =add['addressComponent']['province']+add['addressComponent']['city']+add['addressComponent']['district']+add['addressComponent']['town']
     context['res23']=res23
-    context['ADDRESS']=ADDRESS
-    return render(req, "a_hello.html", context)
 
+    context['ADDRESS']=ADDRESS
+    return render(req,"a_hello.html", context)
+    #####测试行级按钮获取六级地址
+    # return HttpResponse(add1)
 
 @csrf_exempt
 def makecall(req):
@@ -163,8 +125,6 @@ def makecall(req):
         json_data = json.loads(html)
         print(json_data)
     return HttpResponse(html)
-
-
 def MiracleNumber_search(request):
     f = MiracleNumberFilter(request.GET, queryset=MiracleNumber.objects.filter(Status='可选').order_by('-Stars'))
     paginator = Paginator(f.qs, 20)

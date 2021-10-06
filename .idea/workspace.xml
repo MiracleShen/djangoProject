@@ -5,21 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0031_auto_20211004_1637.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Miracle/templates/MiracleCal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Miracle/templates/MonthlyRent_filter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Park/migrations/0004_park_xy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/all-2021-10-04.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error-2021-10-04.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/info-2021-10-04.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marketing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marketing/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marketing/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marketing/filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marketing/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marketing/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marketing/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marketing/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Miracle/CalBill.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djangoProject/static/css/HideAdminOriginal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/all-2021-10-06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/error-2021-10-06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/info-2021-10-06.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Miracle/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Miracle/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Miracle/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Park/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Park/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Park/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/all-2021-10-03.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/all-2021-10-03.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +46,7 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -66,7 +78,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Miracle/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Marketing" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -75,17 +88,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\djangoProject\Marketing" />
+      <recent name="E:\djangoProject\djangoProject\static\css" />
       <recent name="E:\djangoProject\Miracle\templates" />
       <recent name="E:\djangoProject\crm\templates" />
       <recent name="E:\djangoProject\crm" />
-      <recent name="C:\Users\Miracle\PycharmProjects\djangoProject\djangoProject\static\images" />
-      <recent name="C:\Users\Miracle\PycharmProjects\djangoProject\djangoProject\Static\popper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\djangoProject\djangoProject\static\images" />
+      <recent name="E:\djangoProject\djangoProject\static\css" />
+      <recent name="E:\djangoProject\djangoProject\static" />
       <recent name="E:\djangoProject\Miracle\templates" />
       <recent name="C:\Users\Miracle\PycharmProjects\djangoProject\djangoProject\Static\jquery" />
-      <recent name="C:\Users\Miracle\PycharmProjects\djangoProject\djangoProject\Static\bootstrap" />
-      <recent name="C:\Users\Miracle\PycharmProjects\djangoProject\djangoProject" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.Miracle">
@@ -271,7 +285,30 @@
       <workItem from="1633338022283" duration="1785000" />
       <workItem from="1633339833681" duration="1781000" />
       <workItem from="1633341643650" duration="1780000" />
-      <workItem from="1633343464476" duration="1549000" />
+      <workItem from="1633343464476" duration="1786000" />
+      <workItem from="1633435532656" duration="1609000" />
+      <workItem from="1633437327312" duration="1782000" />
+      <workItem from="1633439142043" duration="1792000" />
+      <workItem from="1633440960312" duration="1780000" />
+      <workItem from="1633442777546" duration="862000" />
+      <workItem from="1633491243827" duration="1575000" />
+      <workItem from="1633493064191" duration="1484000" />
+      <workItem from="1633494874902" duration="1782000" />
+      <workItem from="1633496698966" duration="1024000" />
+      <workItem from="1633499081541" duration="1781000" />
+      <workItem from="1633500895351" duration="1781000" />
+      <workItem from="1633502704341" duration="1781000" />
+      <workItem from="1633504519189" duration="1782000" />
+      <workItem from="1633506436065" duration="1139000" />
+      <workItem from="1633519736344" duration="1780000" />
+      <workItem from="1633521551164" duration="1775000" />
+      <workItem from="1633523412018" duration="1779000" />
+      <workItem from="1633525260860" duration="886000" />
+      <workItem from="1633526260068" duration="1162000" />
+      <workItem from="1633528143734" duration="1781000" />
+      <workItem from="1633529961463" duration="1771000" />
+      <workItem from="1633531773112" duration="1789000" />
+      <workItem from="1633533607337" duration="441000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，在家里的电脑上做的一些工作：&#10;1、MiracleOrders做的比较完整&#10;2、MiracleNumber刚刚开始">
       <created>1621805529488</created>
@@ -483,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633239986564</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="1、增加了所有企业月租计算模块（还需要改进）&#10;2、增加了根据园区倒查六级地址的部分&#10;3、增加了输入企业名称查询月租简化版">
+      <created>1633345129095</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1633345129095</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +572,8 @@
     <MESSAGE value="1、电话号码统计表&#10;2、客户电话号码统计表" />
     <MESSAGE value="增加了王忠盟的信息" />
     <MESSAGE value="1、增加了Park模块&#10;2、增加了CloudNet模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、增加了Park模块&#10;2、增加了CloudNet模块" />
+    <MESSAGE value="1、增加了所有企业月租计算模块（还需要改进）&#10;2、增加了根据园区倒查六级地址的部分&#10;3、增加了输入企业名称查询月租简化版" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、增加了所有企业月租计算模块（还需要改进）&#10;2、增加了根据园区倒查六级地址的部分&#10;3、增加了输入企业名称查询月租简化版" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
