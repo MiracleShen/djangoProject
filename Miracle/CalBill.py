@@ -115,7 +115,7 @@ def CallInit(req):
     qs_did = MiracleDID.objects.values('Customer__id', 'Customer', 'PBX', 'DID').distinct()
     for i in qs_did:
         print(i['Customer'])
-        qs_credit = MiracleCredit.objects.filter(Customer=i['Customer'], Account=i['DID'])
+        qs_credit = MiracleCredit.objects.filter(Customer=i['Customer'], Account__icontains=i['DID'])
         if qs_credit:
             print(qs_credit, '有数据')
         else:
