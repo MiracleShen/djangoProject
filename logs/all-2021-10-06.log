@@ -9010,3 +9010,45 @@ OSError: [Errno 22] Invalid argument
 [2021-10-06 23:40:39,720] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 25886
 [2021-10-06 23:40:40,472] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/miraclebill/ HTTP/1.1" 200 58879
 [2021-10-06 23:40:40,643] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /jsi18n/ HTTP/1.1" 200 8398
+[2021-10-06 23:43:22,819] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:22,892] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:22,928] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,079] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,109] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,169] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,193] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,342] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,403] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,412] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,493] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,534] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,556] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,560] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,602] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,716] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,794] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,950] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:23,964] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:24,248] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:24,535] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\Miracle\admin.py changed, reloading.
+[2021-10-06 23:43:34,845] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:34,857] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:35,007] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:35,354] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:35,371] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:35,381] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:35,424] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:36,414] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:36,499] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:36,644] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:36,664] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:37,020] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:37,029] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:37,074] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:37,106] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:37,129] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:37,175] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:37,354] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:37,372] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:37,398] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-10-06 23:43:37,478] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader

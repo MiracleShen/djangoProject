@@ -5,8 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae92cf60-2a0a-40a2-b710-b0080bbd3d11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CloudNet/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNet/migrations/0002_auto_20210930_1405.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNet/migrations/0003_card_device.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNet/migrations/0004_cloudnet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNet/migrations/0005_auto_20210930_1426.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNet/migrations/0006_auto_20210930_1511.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNet/migrations/0007_device_type.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNet/migrations/0008_auto_20210930_1638.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CloudNet/migrations/0009_ticket_organize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marketing/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marketing/migrations/0002_alter_oblist_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0029_auto_20210901_1036.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0030_alter_miraclenumber_number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0032_alter_miracleorders_ordertype.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0033_miracledid_miraclepbx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0034_auto_20211006_2203.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Miracle/migrations/0035_miraclecredit_memo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Park/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Park/migrations/0002_auto_20211003_0852.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Park/migrations/0003_auto_20211003_0913.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Park/migrations/0005_auto_20211005_2117.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Park/migrations/0006_auto_20211005_2149.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Park/migrations/0007_auto_20211006_1543.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Park/migrations/0008_alter_parklog_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Park/migrations/0009_alter_park_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0019_organization_park.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0020_delete_oblist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/migrations/0021_alter_contacthistory_options.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Miracle/CalBill.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/CalBill.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Miracle/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miracle/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/all-2021-10-06.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/all-2021-10-06.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +314,8 @@
       <workItem from="1633529961463" duration="1771000" />
       <workItem from="1633531773112" duration="1789000" />
       <workItem from="1633533607337" duration="613000" />
-      <workItem from="1633534251075" duration="496000" />
+      <workItem from="1633534251075" duration="809000" />
+      <workItem from="1633665097532" duration="105000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，在家里的电脑上做的一些工作：&#10;1、MiracleOrders做的比较完整&#10;2、MiracleNumber刚刚开始">
       <created>1621805529488</created>
@@ -512,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633534203148</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="1、话费自动计算部分已经完成&#10;2、月租自动计算部分也已经完成&#10;3、剩下话费自动获取部分了，需要跟赞云做一下接口。">
+      <created>1633534856511</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1633534856511</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

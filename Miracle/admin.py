@@ -148,7 +148,7 @@ admin.site.register(MiracleCredit, MiracleCreditAdmin)
 
 class MiracleBillAdmin(admin.ModelAdmin):
     fields = ('CustomerID', 'Year', 'Month', 'Bill_Cycle', 'Bill_Type', 'Bill', 'Bill_Status', 'Memo')
-    search_fields = ('CustomerID',)
+    search_fields = ('CustomerID__OrganizeName',)
     list_display = (
         'CustomerID', 'Year', 'Month', 'Bill_Cycle', 'colored_Bill_Type', 'Bill', 'colored_Bill_Status', 'RecordDate',
         'UpdateDate', 'Memo')
