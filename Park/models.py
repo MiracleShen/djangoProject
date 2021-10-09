@@ -7,7 +7,7 @@ class Park(models.Model):
     Province = models.CharField(max_length=50, null=True, blank=True, verbose_name='省')
     City = models.CharField(max_length=50, null=True, blank=True, verbose_name='市')
     District = models.CharField(max_length=50, null=True, blank=True, verbose_name='区县')
-    Street = models.CharField(max_length=50, null=True, blank=True, verbose_name='乡镇街道')
+    Town = models.CharField(max_length=50, null=True, blank=True, verbose_name='乡镇')
     Address = models.CharField(max_length=50, null=True, verbose_name='地址')
     PM = models.ForeignKey('ParkManager', on_delete=models.CASCADE, verbose_name='园区管理员')
     RecordDate = models.DateTimeField(auto_now_add=True, verbose_name='记录时间')
@@ -17,16 +17,16 @@ class Park(models.Model):
     def __str__(self):
         return self.ParkName
 
-    def pass_audit_str(self):
-        parameter_str = 'id={}&Address={}'.format(str(self.id), str(self.Address))
-        btn_str = '<a class="btn btn-xs btn-primary" href="{}">' \
-                  '<input name="获取乡镇地址"' \
-                  'type="button" id="passButton" ' \
-                  'title="passButton" value="获取乡镇地址">' \
-                  '</a>'
-        return format_html(btn_str, '/Park/GetTown/?{}'.format(parameter_str))
-
-    pass_audit_str.short_description = '获取乡镇地址'
+    # def pass_audit_str(self):
+    #     parameter_str = 'id={}&Address={}'.format(str(self.id), str(self.Address))
+    #     btn_str = '<a class="btn btn-xs btn-primary" href="{}">' \
+    #               '<input name="获取乡镇地址"' \
+    #               'type="button" id="passButton" ' \
+    #               'title="passButton" value="获取乡镇地址">' \
+    #               '</a>'
+    #     return format_html(btn_str, '/Park/GetTown/?{}'.format(parameter_str))
+    #
+    # pass_audit_str.short_description = '获取乡镇地址'
 
     class Meta:
         verbose_name_plural = '园区'

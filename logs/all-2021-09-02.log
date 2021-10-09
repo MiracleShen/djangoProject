@@ -1,0 +1,226 @@
+[2021-09-02 18:48:24,979] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:48:26,250] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders HTTP/1.1" 301 0
+[2021-09-02 18:48:27,114] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/ HTTP/1.1" 200 15542
+[2021-09-02 18:48:27,143] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/popper/popper.js HTTP/1.1" 200 69253
+[2021-09-02 18:48:27,144] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/jquery/jquery-3.6.0.min.js HTTP/1.1" 200 89503
+[2021-09-02 18:48:27,152] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/bootstrap/css/bootstrap.css HTTP/1.1" 200 209709
+[2021-09-02 18:48:27,162] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/bootstrap/js/bootstrap.js HTTP/1.1" 200 148340
+[2021-09-02 18:48:27,857] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-09-02 18:48:27,858] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 3467
+[2021-09-02 18:48:32,792] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3476
+[2021-09-02 18:48:49,909] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3463
+[2021-09-02 18:48:50,338] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 18:48:50,355] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 200 3861
+[2021-09-02 18:48:50,360] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 200 6608
+[2021-09-02 18:48:50,364] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/css/all.min.css HTTP/1.1" 200 55111
+[2021-09-02 18:48:50,369] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 200 232478
+[2021-09-02 18:48:50,383] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2021.5.21 HTTP/1.1" 200 1254
+[2021-09-02 18:48:50,383] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/en-us.js?_=2021.5.21 HTTP/1.1" 200 811
+[2021-09-02 18:48:50,390] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/vue.min.js?_=2021.5.21 HTTP/1.1" 200 93675
+[2021-09-02 18:48:50,390] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/cookie.js?_=2021.5.21 HTTP/1.1" 200 524
+[2021-09-02 18:48:50,392] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/dicts.js?_=2021.5.21 HTTP/1.1" 200 6292
+[2021-09-02 18:48:50,394] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/segment.js?_=2021.5.21 HTTP/1.1" 200 1186
+[2021-09-02 18:48:50,399] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/theme/theme.js?_=2021.5.21 HTTP/1.1" 200 4274
+[2021-09-02 18:48:50,403] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/waves/waves.min.js?_=2021.5.21 HTTP/1.1" 200 6329
+[2021-09-02 18:48:50,403] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/menu.js?_=2021.5.21 HTTP/1.1" 200 1189
+[2021-09-02 18:48:50,405] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/index.js?_=2021.5.21 HTTP/1.1" 200 20820
+[2021-09-02 18:48:50,421] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/images/Miracle-Logo-1.png HTTP/1.1" 200 24169
+[2021-09-02 18:48:50,428] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/index.js?_=2021.5.21 HTTP/1.1" 200 567853
+[2021-09-02 18:48:50,528] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:48:52,469] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:48:55,483] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3463
+[2021-09-02 18:48:56,335] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 18:49:01,316] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 18:49:01,522] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 18:49:05,394] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 18:49:49,262] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3457
+[2021-09-02 18:49:49,654] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 18:49:49,791] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:49:51,651] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:50:07,105] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:50:09,021] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:50:09,732] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3472
+[2021-09-02 18:50:49,913] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:50:51,885] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:50:52,644] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3470
+[2021-09-02 18:51:05,341] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 18:51:05,669] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 18:51:05,929] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 200 28200
+[2021-09-02 18:51:05,938] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13552
+[2021-09-02 18:51:05,948] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 74256
+[2021-09-02 18:51:54,232] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:51:56,333] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:51:57,608] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3489
+[2021-09-02 18:51:59,827] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 18:52:00,141] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 18:52:43,097] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\base.html changed, reloading.
+[2021-09-02 18:52:45,055] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:52:45,679] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3321
+[2021-09-02 18:52:47,850] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 18:53:00,407] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 18:53:26,691] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:53:28,944] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:53:29,577] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3323
+[2021-09-02 18:53:32,140] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 18:53:47,500] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:53:49,420] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:53:50,042] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3346
+[2021-09-02 18:54:09,235] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:54:11,452] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:54:26,255] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3376
+[2021-09-02 18:54:26,362] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:54:28,948] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:54:29,770] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 18:54:50,985] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:54:53,248] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:54:54,669] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3377
+[2021-09-02 18:55:06,655] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:55:08,670] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:55:09,317] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3376
+[2021-09-02 18:55:36,211] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:55:38,714] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:55:39,582] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3353
+[2021-09-02 18:55:41,375] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 18:55:51,839] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3376
+[2021-09-02 18:55:52,783] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:55:55,178] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:55:56,158] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 18:56:30,201] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:56:32,164] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:56:33,205] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3483
+[2021-09-02 18:56:35,926] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/ HTTP/1.1" 200 15374
+[2021-09-02 18:56:44,068] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/?CustomerName=379&OrderDate= HTTP/1.1" 200 14038
+[2021-09-02 18:57:03,886] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 18:57:06,045] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/ HTTP/1.1" 200 15374
+[2021-09-02 18:57:50,953] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 18:57:52,524] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/ HTTP/1.1" 200 15374
+[2021-09-02 18:58:28,647] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:58:30,588] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:58:31,300] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3480
+[2021-09-02 18:58:56,754] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3481
+[2021-09-02 18:58:57,063] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 18:58:58,043] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 18:58:59,965] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 18:59:08,009] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/?Zip=025&Number=&Stars=&Operator=&Status= HTTP/1.1" 200 11953
+[2021-09-02 18:59:12,824] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/?Zip=021&Number=&Stars=&Operator=&Status= HTTP/1.1" 200 12446
+[2021-09-02 18:59:18,648] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/?page=2 HTTP/1.1" 200 12675
+[2021-09-02 18:59:21,736] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/?page=3 HTTP/1.1" 200 12674
+[2021-09-02 18:59:23,517] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/?page=4 HTTP/1.1" 200 12664
+[2021-09-02 18:59:25,364] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/?page=5 HTTP/1.1" 200 12634
+[2021-09-02 18:59:27,183] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/?page=6 HTTP/1.1" 200 12634
+[2021-09-02 18:59:28,983] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/?page=7 HTTP/1.1" 200 12634
+[2021-09-02 18:59:31,879] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/?page=8 HTTP/1.1" 200 6682
+[2021-09-02 18:59:34,215] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/?page=1 HTTP/1.1" 200 12674
+[2021-09-02 19:01:12,968] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\header.html changed, reloading.
+[2021-09-02 19:01:14,886] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 19:01:17,080] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 19:01:18,943] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 19:02:14,170] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 19:02:16,169] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 19:02:16,788] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 7111
+[2021-09-02 19:02:29,407] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /tasks/ HTTP/1.1" 200 12940
+[2021-09-02 19:02:33,938] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /tasks/3/update/ HTTP/1.1" 200 2015
+[2021-09-02 19:02:43,833] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /tasks/create/ HTTP/1.1" 200 1961
+[2021-09-02 19:02:48,966] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/ HTTP/1.1" 200 16052
+[2021-09-02 19:02:50,474] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 19:03:24,856] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/ HTTP/1.1" 200 16052
+[2021-09-02 19:03:27,813] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/ HTTP/1.1" 200 16052
+[2021-09-02 19:03:33,118] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/ HTTP/1.1" 200 16052
+[2021-09-02 19:03:34,798] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 19:03:41,314] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 19:03:45,663] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders/ HTTP/1.1" 200 16052
+[2021-09-02 19:03:47,041] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 19:03:53,497] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /tasks/ HTTP/1.1" 200 12940
+[2021-09-02 19:04:03,090] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 200 22662
+[2021-09-02 19:04:09,999] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/tasks/task/ HTTP/1.1" 200 60304
+[2021-09-02 19:04:10,020] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/base.css?_=2.7 HTTP/1.1" 200 19513
+[2021-09-02 19:04:10,021] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 200 3323
+[2021-09-02 19:04:10,027] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 200 811
+[2021-09-02 19:04:10,028] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/changelists.css?_=20180905 HTTP/1.1" 200 6874
+[2021-09-02 19:04:10,028] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 200 189
+[2021-09-02 19:04:10,028] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 200 4270
+[2021-09-02 19:04:10,029] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 200 1254
+[2021-09-02 19:04:10,033] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/responsive.css?_=20180905 HTTP/1.1" 200 18545
+[2021-09-02 19:04:10,036] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2021-09-02 19:04:10,039] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[2021-09-02 19:04:10,040] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 200 524
+[2021-09-02 19:04:10,060] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/actions.js HTTP/1.1" 200 7664
+[2021-09-02 19:04:10,061] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[2021-09-02 19:04:10,061] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[2021-09-02 19:04:10,062] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[2021-09-02 19:04:10,067] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[2021-09-02 19:04:10,068] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 200 6292
+[2021-09-02 19:04:10,074] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 200 89476
+[2021-09-02 19:04:10,076] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 200 1186
+[2021-09-02 19:04:10,077] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 200 14237
+[2021-09-02 19:04:10,080] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[2021-09-02 19:04:10,080] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[2021-09-02 19:04:10,207] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2021-09-02 19:04:10,288] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[2021-09-02 19:04:10,304] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[2021-09-02 19:04:10,351] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[2021-09-02 19:04:10,352] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[2021-09-02 19:04:48,853] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\templates\a_hello.html changed, reloading.
+[2021-09-02 19:04:51,199] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 19:04:55,448] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 19:06:10,188] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /tasks/ HTTP/1.1" 200 12940
+[2021-09-02 19:06:12,816] [log.py:224] [log:log_response] [ERROR]- Internal Server Error: /Miracle/MiracleNumber/
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoProject\Miracle\views.py", line 82, in MiracleNumber_search
+    return render(request, 'MiracleNumber_filter.html', context)
+  File "D:\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Python39\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Python39\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Python39\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Python39\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python39\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Python39\lib\site-packages\django\template\base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 25: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2021-09-02 19:06:12,820] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 500 170595
+[2021-09-02 19:06:30,565] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleNumber/ HTTP/1.1" 200 12674
+[2021-09-02 19:26:54,705] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\urls.py changed, reloading.
+[2021-09-02 19:26:57,633] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 19:27:13,977] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\urls.py changed, reloading.
+[2021-09-02 19:27:16,379] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 19:27:35,297] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\urls.py changed, reloading.
+[2021-09-02 19:27:37,667] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-02 19:28:57,830] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\urls.py changed, reloading.
+[2021-09-02 19:28:59,659] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader

@@ -1,0 +1,40 @@
+[2021-09-15 22:02:15,900] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-15 22:02:17,011] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /Miracle/MiracleOrders HTTP/1.1" 302 0
+[2021-09-15 22:02:17,048] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/Miracle/MiracleOrders HTTP/1.1" 200 4108
+[2021-09-15 22:02:17,115] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/css/login.css?_=2.1 HTTP/1.1" 200 500
+[2021-09-15 22:02:17,118] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/css/all.min.css HTTP/1.1" 200 55111
+[2021-09-15 22:02:17,126] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/vue.min.js?_=2021.5.21 HTTP/1.1" 200 93675
+[2021-09-15 22:02:17,127] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 200 232478
+[2021-09-15 22:02:17,139] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/js/login.js?_=3.3 HTTP/1.1" 200 669
+[2021-09-15 22:02:17,139] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/particles/app.js HTTP/1.1" 200 3728
+[2021-09-15 22:02:17,140] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/particles/particles.js HTTP/1.1" 200 51264
+[2021-09-15 22:02:17,157] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/img/bg.svg HTTP/1.1" 200 9547
+[2021-09-15 22:02:17,158] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/images/Miracle-Logo-1.png HTTP/1.1" 200 24169
+[2021-09-15 22:02:17,180] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/index.js?_=2021.5.21 HTTP/1.1" 200 567853
+[2021-09-15 22:02:17,366] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/fontawesome-free-5.8.1-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 74256
+[2021-09-15 22:02:17,432] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-15 22:02:17,445] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-15 22:02:22,190] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 200 28200
+[2021-09-15 22:02:26,367] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /login/?next=/Miracle/MiracleOrders HTTP/1.1" 302 0
+[2021-09-15 22:02:26,547] [log.py:224] [log:log_response] [WARNING]- Not Found: /Miracle/MiracleOrders
+[2021-09-15 22:02:26,548] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /Miracle/MiracleOrders HTTP/1.1" 404 7011
+[2021-09-15 22:02:26,791] [log.py:224] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2021-09-15 22:02:26,791] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 6981
+[2021-09-15 22:02:33,107] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-15 22:02:33,114] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-15 22:02:33,707] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-15 22:02:33,713] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-15 22:02:34,186] [log.py:224] [log:log_response] [WARNING]- Not Found: /MiracleOrders
+[2021-09-15 22:02:34,187] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /MiracleOrders HTTP/1.1" 404 6987
+[2021-09-15 22:02:53,541] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+[2021-09-15 22:02:53,551] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /login/?next=/favicon.ico HTTP/1.1" 200 4088
+[2021-09-15 22:02:54,060] [log.py:224] [log:log_response] [WARNING]- Not Found: /MiracleOrders/
+[2021-09-15 22:02:54,061] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /MiracleOrders/ HTTP/1.1" 404 6990
+[2021-09-15 22:03:01,449] [autoreload.py:250] [autoreload:trigger_reload] [INFO]- E:\djangoProject\djangoProject\urls.py changed, reloading.
+[2021-09-15 22:03:04,249] [autoreload.py:636] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-09-15 22:03:06,960] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /MiracleOrders/ HTTP/1.1" 200 16052
+[2021-09-15 22:03:07,016] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/popper/popper.js HTTP/1.1" 200 69253
+[2021-09-15 22:03:07,017] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/jquery/jquery-3.6.0.min.js HTTP/1.1" 200 89503
+[2021-09-15 22:03:07,025] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/bootstrap/js/bootstrap.js HTTP/1.1" 200 148340
+[2021-09-15 22:03:07,040] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/bootstrap/css/bootstrap.css HTTP/1.1" 200 209709
+[2021-09-15 22:04:03,174] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /MiracleOrders/ HTTP/1.1" 200 16052
