@@ -65,7 +65,7 @@ def return_static(request, path, insecure=True, **kwargs):
 
 admin.autodiscover()
 urlpatterns = [
-    # re_path(r'^static/(?P<path>.*)$', return_static, name='static'),
+    re_path(r'^static/(?P<path>.*)$', return_static, name='static'),
     # path('admin/', admin.site.urls),
     path('tasks/', include('tasks.urls')),
     path("Miracle/", MiracleViews.hello),

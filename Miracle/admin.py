@@ -10,7 +10,7 @@ from django.http import JsonResponse
 from .models import MiracleNumber, MiracleOrders, MiracleCredit, MiracleBill, MiraclePBX, MiracleDID
 from simpleui.admin import AjaxAdmin
 from import_export.admin import ImportExportModelAdmin
-
+from django.contrib import messages
 admin.AdminSite.site_header = 'MiracleOS系统'
 admin.AdminSite.site_title = 'MiracleOS系统'
 
@@ -130,8 +130,45 @@ class MiracleOrdersAdmin(ImportExportModelAdmin, AjaxAdmin):
     }
     show_full_result_count = True
     list_per_page = 10
-    actions = ['export_as_excel']
+    actions = ['export_as_excel','NumberCount','PBXCount','PhoneCount','LogCount','CCCount','HPRCount']
+    def PhoneCount(self,request,queryset):
+       NUM=0
+       for qs in queryset:
+           NUM = NUM+qs.APP_Number+qs.SIP_Number
+       return messages.success(request,'选中的订单一共订购了'+str(NUM)+'个电话账户')
+    def LogCount(self,request,queryset):
+       NUM=0
+       for qs in queryset:
+           NUM = NUM+qs.Log_Number
+       return messages.success(request,'选中的订单一共订购了'+str(NUM)+'个录音账户')
+    def CCCount(self,request,queryset):
+       NUM=0
+       for qs in queryset:
+           NUM = NUM+qs.CC_Number
+       return messages.success(request,'选中的订单一共订购了'+str(NUM)+'个客服账户')
+    def HPRCount(self,request,queryset):
+       NUM=0
+       for qs in queryset:
+           NUM = NUM+qs.HPR_Number
+       return messages.success(request,'选中的订单一共订购了'+str(NUM)+'个话机租赁')
+    def NumberCount(self,request,queryset):
+       NUM=0
+       for qs in queryset:
+           NUM = NUM+qs.Number_0+qs.Number_1+qs.Number_2+qs.Number_3+qs.Number_4+qs.Number_5
+       return messages.success(request,'选中的订单一共订购了'+str(NUM)+'个电话号码')
+    def PBXCount(self,request,queryset):
+       A=0
+       B=0
+       C=0
+       for qs in queryset:
+           if qs.PBX_Type=='免费版':
+               A = A+1
+           elif qs.PBX_Type=='管理版':
+               B = B+1
+           elif qs.PBX_Type=='本地部署版':
+               C = C+1
 
+       return messages.success(request,'免费版：'+str(A)+'个；'+'管理版：'+str(B)+'个；'+'本地部署版：'+str(C)+'个。')
 
 admin.site.register(MiracleOrders, MiracleOrdersAdmin)
 
